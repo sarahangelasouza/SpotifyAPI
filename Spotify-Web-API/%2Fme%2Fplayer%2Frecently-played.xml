@@ -131,6 +131,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="70aa0c6a-b724-4f62-b076-e87d00056ff4" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>

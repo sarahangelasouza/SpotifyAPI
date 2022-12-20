@@ -72,6 +72,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   },\r
   "position_ms" : 0\r
 }</con:request>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>

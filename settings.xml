@@ -15,6 +15,29 @@
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:scope>app-remote-control playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify user-read-private user-read-email user-follow-read user-follow-modify user-top-read user-read-playback-position user-read-playback-state user-read-recently-played user-read-currently-playing user-modify-playback-state ugc-image-upload streaming</con:scope>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>SpotifyOauth2_JWT</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
+      <con:accessToken>BQBj-lQurjGDq0eNquTo56IxFWYGfybvAqnZ8DkpXmMdpboH7yKzxmysmr-0ZQOy4Rzpy3F0fhj1MtnLTxnIaj8wFOSz1WP48Hs2JPmnEd5lc88AwT_f_dE3FOu6Cbu1epsfDxiR0y6wrTuISH0PJWCoUSlLBA2cMMswiSGJqvRWXksUxclPRMdSRsOG6Oex0Ddulg</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1671563786</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
+      <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQBoVW4BlZ8Zi_0uCL1guKc5OIb52SNV4ZLmo_h3nWfTmL_hyqi7lPn6F3YeGAX3rhNSdkHfwSimKaBu79o5_mDK66C83dCJa4xCwV2J5oRAMPMS6VbDPGcEMk7mxWinup4</con:refreshToken>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
   </con:oAuth2ProfileContainer>
   <con:oAuth1ProfileContainer/>
@@ -58,6 +81,36 @@
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:scope>app-remote-control playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify user-read-private user-read-email user-follow-read user-follow-modify user-top-read user-read-playback-position user-read-playback-state user-read-recently-played user-read-currently-playing user-modify-playback-state ugc-image-upload streaming</con:scope>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>SpotifyOauth2_JWT</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
+      <con:accessToken>BQBj-lQurjGDq0eNquTo56IxFWYGfybvAqnZ8DkpXmMdpboH7yKzxmysmr-0ZQOy4Rzpy3F0fhj1MtnLTxnIaj8wFOSz1WP48Hs2JPmnEd5lc88AwT_f_dE3FOu6Cbu1epsfDxiR0y6wrTuISH0PJWCoUSlLBA2cMMswiSGJqvRWXksUxclPRMdSRsOG6Oex0Ddulg</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVAL_CANCELED</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1671563786</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTime/>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
+      <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQBoVW4BlZ8Zi_0uCL1guKc5OIb52SNV4ZLmo_h3nWfTmL_hyqi7lPn6F3YeGAX3rhNSdkHfwSimKaBu79o5_mDK66C83dCJa4xCwV2J5oRAMPMS6VbDPGcEMk7mxWinup4</con:refreshToken>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:javaScripts>
+        <con:entry>document.getElementById("login-username").value = "sarah.angela.souza@gmail.com";
+document.getElementById("login-password").value = "Tessie45535";
+document.getElementById("login-button").click();</con:entry>
+        <con:entry/>
+      </con:javaScripts>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
     </con:oAuth20AuthEntry>
   </con:authRepository>
   <con:tags/>

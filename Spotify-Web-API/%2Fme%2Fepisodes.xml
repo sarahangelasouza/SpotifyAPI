@@ -144,6 +144,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="cf791007-29d0-4805-be3b-be019144bdac" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -208,6 +209,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request>{\r
   "ids" : [ "string" ]\r
 }</con:request>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -272,6 +274,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request>{\r
   "ids" : [ "string" ]\r
 }</con:request>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>

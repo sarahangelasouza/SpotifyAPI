@@ -120,9 +120,21 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
 }</con:sampleContent>
     </con:representation>
     <con:request name="Request 1" id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:parameters/>
+      <con:request/>
+      <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR/albums</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="market" value="US"/>
+        <con:entry key="include_groups" value="album"/>
+        <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
+      </con:parameters>
     </con:request>
   </con:method>
 </con:resource>

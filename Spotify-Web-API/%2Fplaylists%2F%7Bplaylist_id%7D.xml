@@ -225,6 +225,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -293,6 +294,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "description" : "Updated playlist description",\r
   "public" : false\r
 }</con:request>
+      <con:credentials/>
       <con:parameters/>
     </con:request>
   </con:method>
