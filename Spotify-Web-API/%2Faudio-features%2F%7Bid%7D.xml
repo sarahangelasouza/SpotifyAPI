@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/audio-features/{id}" path="/audio-features/{id}" id="f4b07c4a-8873-4acc-98b3-1797235331df" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f4b07c4a-8873-4acc-98b3-1797235331dffileName">%2Faudio-features%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-audio-features" id="25f8b8d5-af37-4013-865e-ee94537f0b58" method="GET">
+    <con:description>Get audio feature information for a single track identified by its unique
+Spotify ID.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:style>TEMPLATE</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Audio features for one track</con:description>
+      <con:sampleContent>{
+  "acousticness" : 0.00242,
+  "analysis_url" : "https://api.spotify.com/v1/audio-analysis/2takcwOaAZWiXQijPHIx7B\n",
+  "danceability" : 0.585,
+  "duration_ms" : 237040,
+  "energy" : 0.842,
+  "id" : "2takcwOaAZWiXQijPHIx7B",
+  "instrumentalness" : 0.00686,
+  "key" : 9,
+  "liveness" : 0.0866,
+  "loudness" : -5.883,
+  "mode" : 0,
+  "speechiness" : 0.0556,
+  "tempo" : 118.211,
+  "time_signature" : 4,
+  "track_href" : "https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B\n",
+  "type" : "audio_features",
+  "uri" : "spotify:track:2takcwOaAZWiXQijPHIx7B",
+  "valence" : 0.428
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="8f3ddb6b-30d8-4cdc-850a-a5466b64588c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

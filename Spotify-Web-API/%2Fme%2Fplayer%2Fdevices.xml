@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/player/devices" path="/me/player/devices" id="f5f0d5f9-4a2e-43f5-9d9a-1add6ff6892e" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f5f0d5f9-4a2e-43f5-9d9a-1add6ff6892efileName">%2Fme%2Fplayer%2Fdevices</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-a-users-available-devices" id="84d25ca9-d90e-4f30-9475-31eaf8190f2c" method="GET">
+    <con:description>Get information about a user’s available devices.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>A set of devices</con:description>
+      <con:sampleContent>{
+  "devices" : [ {
+    "id" : "string",
+    "is_active" : true,
+    "is_private_session" : true,
+    "is_restricted" : true,
+    "name" : "Loudest speaker",
+    "type" : "computer",
+    "volume_percent" : 59
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="bbbf3ee8-5bcc-4ed3-a711-b789fa1353eb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

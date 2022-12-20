@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/shows" path="/me/shows" id="d32ad4af-57fa-4ff9-8dc2-ff7ca69b5baf" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d32ad4af-57fa-4ff9-8dc2-ff7ca69b5baffileName">%2Fme%2Fshows</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-users-saved-shows" id="388e2dfc-30a6-4673-837e-37196add07ee" method="GET">
+    <con:description>Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>limit</con:name>
+        <con:value>20</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>20</con:default>
+      </con:parameter>
+      <con:parameter>
+        <con:name>offset</con:name>
+        <con:value>0</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>0</con:default>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Pages of saved shows</con:description>
+      <con:sampleContent>{
+  "href" : "https://api.spotify.com/v1/me/shows?offset=0&amp;limit=20\n",
+  "items" : [ {
+    "added_at" : "2015-07-20T15:49:04-07:00",
+    "show" : {
+      "available_markets" : [ "string" ],
+      "copyrights" : [ {
+        "text" : "string",
+        "type" : "string"
+      } ],
+      "description" : "string",
+      "html_description" : "string",
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "string",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "is_externally_hosted" : true,
+      "languages" : [ "string" ],
+      "media_type" : "string",
+      "name" : "string",
+      "publisher" : "string",
+      "type" : "show",
+      "uri" : "string"
+    }
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "offset" : 0,
+  "previous" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "total" : 4
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="9ad5c523-2fba-463b-b436-e2f14331052d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="remove-shows-user" id="b7362f74-0049-4c4d-a4b4-7fc188e5b931" method="DELETE">
+    <con:description>Delete one or more shows from current Spotify user's library.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ids</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>market</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ids" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="9dd4930a-373b-455a-840b-d14bc5ea17bd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "ids" : [ "string" ]\r
+}</con:request>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="save-shows-user" id="6b14edaa-7a9e-4d2c-b40d-dcade0926739" method="PUT">
+    <con:description>Save one or more shows to current Spotify user's library.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ids</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ids" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="d24317b4-fb35-4266-aa14-299753fce25d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "ids" : [ "string" ]\r
+}</con:request>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

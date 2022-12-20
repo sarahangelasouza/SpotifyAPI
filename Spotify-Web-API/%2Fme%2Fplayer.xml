@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/player" path="/me/player" id="a00bd374-4c47-4ba0-9842-3af333a4eaea" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a00bd374-4c47-4ba0-9842-3af333a4eaeafileName">%2Fme%2Fplayer</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-information-about-the-users-current-playback" id="bd0daf1e-f841-4365-920c-b86a606e7f3a" method="GET">
+    <con:description>Get information about the user’s current playback state, including track or episode, progress, and active device.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>market</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>additional_types</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Information about playback</con:description>
+      <con:sampleContent>{
+  "device" : {
+    "id" : "string",
+    "is_active" : true,
+    "is_private_session" : true,
+    "is_restricted" : true,
+    "name" : "Loudest speaker",
+    "type" : "computer",
+    "volume_percent" : 59
+  },
+  "repeat_state" : "string",
+  "shuffle_state" : "string",
+  "context" : {
+    "type" : "string",
+    "href" : "string",
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "uri" : "string"
+  },
+  "timestamp" : 0,
+  "progress_ms" : 0,
+  "is_playing" : true,
+  "item" : {
+    "album" : {
+      "album_type" : "compilation",
+      "total_tracks" : 9,
+      "available_markets" : [ "CA", "BR", "IT" ],
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "2up3OPMp9Tb4dAKM2erWXQ",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "name" : "string",
+      "release_date" : "1981-12",
+      "release_date_precision" : "year",
+      "restrictions" : {
+        "reason" : "market"
+      },
+      "type" : "album",
+      "uri" : "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+      "album_group" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "name" : "string",
+        "type" : "artist",
+        "uri" : "string"
+      } ]
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "followers" : {
+        "href" : "string",
+        "total" : 0
+      },
+      "genres" : [ "Prog rock", "Grunge" ],
+      "href" : "string",
+      "id" : "string",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "name" : "string",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "string"
+    } ],
+    "available_markets" : [ "string" ],
+    "disc_number" : 0,
+    "duration_ms" : 0,
+    "explicit" : true,
+    "external_ids" : {
+      "isrc" : "string",
+      "ean" : "string",
+      "upc" : "string"
+    },
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "href" : "string",
+    "id" : "string",
+    "is_playable" : true,
+    "linked_from" : {
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "string",
+      "type" : "string",
+      "uri" : "string"
+    },
+    "restrictions" : {
+      "reason" : "string"
+    },
+    "name" : "string",
+    "popularity" : 0,
+    "preview_url" : "string",
+    "track_number" : 0,
+    "type" : "string",
+    "uri" : "string",
+    "is_local" : true
+  },
+  "currently_playing_type" : "string",
+  "actions" : {
+    "interrupting_playback" : true,
+    "pausing" : true,
+    "resuming" : true,
+    "seeking" : true,
+    "skipping_next" : true,
+    "skipping_prev" : true,
+    "toggling_repeat_context" : true,
+    "toggling_shuffle" : true,
+    "toggling_repeat_track" : true,
+    "transferring_playback" : true
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="d0990eb4-8d74-4c8e-84dc-ed3493750416" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="transfer-a-users-playback" id="7c0f0fe7-2379-48d6-a83d-27008d3a3536" method="PUT">
+    <con:description>Transfer playback to a new device and determine if it should start playing.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "device_ids" : [ "74ASZWbe4lXaubB36ztrGX" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="922ce492-cc6a-405e-8b50-246d9d1a967a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "device_ids" : [ "74ASZWbe4lXaubB36ztrGX" ]\r
+}</con:request>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

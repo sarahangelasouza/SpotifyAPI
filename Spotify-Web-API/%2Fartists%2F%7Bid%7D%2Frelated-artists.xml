@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/artists/{id}/related-artists" path="/artists/{id}/related-artists" id="dd153238-7e43-4881-aa1f-94ce90ae0126" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dd153238-7e43-4881-aa1f-94ce90ae0126fileName">%2Fartists%2F%7Bid%7D%2Frelated-artists</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-an-artists-related-artists" id="d0972d84-3dc6-46dd-be0b-539d6ec53145" method="GET">
+    <con:description>Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's [listening history](http://news.spotify.com/se/2010/02/03/related-artists/).</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:style>TEMPLATE</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>A set of artists</con:description>
+      <con:sampleContent>{
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "followers" : {
+      "href" : "string",
+      "total" : 0
+    },
+    "genres" : [ "Prog rock", "Grunge" ],
+    "href" : "string",
+    "id" : "string",
+    "images" : [ {
+      "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+      "height" : 300,
+      "width" : 300
+    } ],
+    "name" : "string",
+    "popularity" : 0,
+    "type" : "artist",
+    "uri" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="aa44adbf-5ede-46c8-9f19-4e6ab0ca7366" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/top/artists" path="/me/top/artists" id="69fccad7-d8ea-43b2-adf1-fd989002f2bb" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="69fccad7-d8ea-43b2-adf1-fd989002f2bbfileName">%2Fme%2Ftop%2Fartists</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-users-top-artists" id="97db445e-31f9-4d09-8548-5529241c3bf1" method="GET">
+    <con:description>Get the current user's top artists based on calculated affinity.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>time_range</con:name>
+        <con:value>medium_term</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>medium_term</con:default>
+      </con:parameter>
+      <con:parameter>
+        <con:name>limit</con:name>
+        <con:value>20</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>20</con:default>
+      </con:parameter>
+      <con:parameter>
+        <con:name>offset</con:name>
+        <con:value>0</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>0</con:default>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Pages of artists</con:description>
+      <con:sampleContent>{
+  "href" : "https://api.spotify.com/v1/me/shows?offset=0&amp;limit=20\n",
+  "items" : [ {
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "followers" : {
+      "href" : "string",
+      "total" : 0
+    },
+    "genres" : [ "Prog rock", "Grunge" ],
+    "href" : "string",
+    "id" : "string",
+    "images" : [ {
+      "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+      "height" : 300,
+      "width" : 300
+    } ],
+    "name" : "string",
+    "popularity" : 0,
+    "type" : "artist",
+    "uri" : "string"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "offset" : 0,
+  "previous" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "total" : 4
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="b55cb460-63f9-41c2-9cec-f8af3359284b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/player/play" path="/me/player/play" id="c7d01863-69f5-4e6e-b206-57eb07c78c75" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c7d01863-69f5-4e6e-b206-57eb07c78c75fileName">%2Fme%2Fplayer%2Fplay</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="start-a-users-playback" id="37244d6e-95d7-4b65-aa98-050aad080039" method="PUT">
+    <con:description>Start a new context or resume current playback on the user's active device.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>device_id</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "context_uri" : "spotify:album:5ht7ItJgpBH7W6vJ5BqpPr",
+  "offset" : {
+    "position" : 5
+  },
+  "position_ms" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="a07d6a8e-43db-4780-a658-8b314e342360" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "context_uri" : "spotify:album:5ht7ItJgpBH7W6vJ5BqpPr",\r
+  "offset" : {\r
+    "position" : 5\r
+  },\r
+  "position_ms" : 0\r
+}</con:request>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

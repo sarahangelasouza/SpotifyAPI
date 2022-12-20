@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/shows" path="/shows" id="d23674f3-039c-4199-a9a1-4e70bd9d9dad" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d23674f3-039c-4199-a9a1-4e70bd9d9dadfileName">%2Fshows</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-multiple-shows" id="e6f2517a-1ca8-441e-a44c-cd950d3c501c" method="GET">
+    <con:description>Get Spotify catalog information for several shows based on their Spotify IDs.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>market</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ids</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>A set of shows</con:description>
+      <con:sampleContent>{
+  "shows" : [ {
+    "available_markets" : [ "string" ],
+    "copyrights" : [ {
+      "text" : "string",
+      "type" : "string"
+    } ],
+    "description" : "string",
+    "html_description" : "string",
+    "explicit" : true,
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "href" : "string",
+    "id" : "string",
+    "images" : [ {
+      "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+      "height" : 300,
+      "width" : 300
+    } ],
+    "is_externally_hosted" : true,
+    "languages" : [ "string" ],
+    "media_type" : "string",
+    "name" : "string",
+    "publisher" : "string",
+    "type" : "show",
+    "uri" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="60bb9873-00e7-4e88-a85a-6b9266e6f464" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/playlists/{playlist_id}" path="/playlists/{playlist_id}" id="53086958-be70-4ec4-af60-145b9a995467" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="53086958-be70-4ec4-af60-145b9a995467fileName">%2Fplaylists%2F%7Bplaylist_id%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-playlist" id="a837c98d-95f7-41eb-a928-2cc6be0c43cb" method="GET">
+    <con:description>Get a playlist owned by a Spotify user.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>playlist_id</con:name>
+        <con:style>TEMPLATE</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>market</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>additional_types</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>A playlist</con:description>
+      <con:sampleContent>{
+  "collaborative" : true,
+  "description" : "string",
+  "external_urls" : {
+    "spotify" : "string"
+  },
+  "followers" : {
+    "href" : "string",
+    "total" : 0
+  },
+  "href" : "string",
+  "id" : "string",
+  "images" : [ {
+    "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+    "height" : 300,
+    "width" : 300
+  } ],
+  "name" : "string",
+  "owner" : {
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "followers" : {
+      "href" : "string",
+      "total" : 0
+    },
+    "href" : "string",
+    "id" : "string",
+    "type" : "user",
+    "uri" : "string",
+    "display_name" : "string"
+  },
+  "public" : true,
+  "snapshot_id" : "string",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/me/shows?offset=0&amp;limit=20\n",
+    "items" : [ {
+      "added_at" : "2015-07-20T15:49:04-07:00",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "followers" : {
+          "href" : "string",
+          "total" : 0
+        },
+        "href" : "string",
+        "id" : "string",
+        "type" : "user",
+        "uri" : "string"
+      },
+      "is_local" : true,
+      "track" : {
+        "album" : {
+          "album_type" : "compilation",
+          "total_tracks" : 9,
+          "available_markets" : [ "CA", "BR", "IT" ],
+          "external_urls" : {
+            "spotify" : "string"
+          },
+          "href" : "string",
+          "id" : "2up3OPMp9Tb4dAKM2erWXQ",
+          "images" : [ {
+            "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+            "height" : 300,
+            "width" : 300
+          } ],
+          "name" : "string",
+          "release_date" : "1981-12",
+          "release_date_precision" : "year",
+          "restrictions" : {
+            "reason" : "market"
+          },
+          "type" : "album",
+          "uri" : "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+          "album_group" : "compilation",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "string"
+            },
+            "href" : "string",
+            "id" : "string",
+            "name" : "string",
+            "type" : "artist",
+            "uri" : "string"
+          } ]
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "string"
+          },
+          "followers" : {
+            "href" : "string",
+            "total" : 0
+          },
+          "genres" : [ "Prog rock", "Grunge" ],
+          "href" : "string",
+          "id" : "string",
+          "images" : [ {
+            "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+            "height" : 300,
+            "width" : 300
+          } ],
+          "name" : "string",
+          "popularity" : 0,
+          "type" : "artist",
+          "uri" : "string"
+        } ],
+        "available_markets" : [ "string" ],
+        "disc_number" : 0,
+        "duration_ms" : 0,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "string",
+          "ean" : "string",
+          "upc" : "string"
+        },
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "is_playable" : true,
+        "linked_from" : {
+          "external_urls" : {
+            "spotify" : "string"
+          },
+          "href" : "string",
+          "id" : "string",
+          "type" : "string",
+          "uri" : "string"
+        },
+        "restrictions" : {
+          "reason" : "string"
+        },
+        "name" : "string",
+        "popularity" : 0,
+        "preview_url" : "string",
+        "track_number" : 0,
+        "type" : "string",
+        "uri" : "string",
+        "is_local" : true
+      }
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+    "offset" : 0,
+    "previous" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+    "total" : 4
+  },
+  "type" : "string",
+  "uri" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="change-playlist-details" id="93a8da05-e917-4bbb-97d9-0bae974bfdf3" method="PUT">
+    <con:description>Change a playlist's name and public/private state. (The user must, of
+course, own the playlist.)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>playlist_id</con:name>
+        <con:style>TEMPLATE</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "Updated Playlist Name",
+  "description" : "Updated playlist description",
+  "public" : false
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ffcff883-c90f-4f56-811e-c8adc570be46" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "name" : "Updated Playlist Name",\r
+  "description" : "Updated playlist description",\r
+  "public" : false\r
+}</con:request>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

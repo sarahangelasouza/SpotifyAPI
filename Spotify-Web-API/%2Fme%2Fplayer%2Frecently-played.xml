@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/player/recently-played" path="/me/player/recently-played" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8efileName">%2Fme%2Fplayer%2Frecently-played</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-recently-played" id="730b8f45-caaa-4c02-8244-39a6bf1cbbd2" method="GET">
+    <con:description>Get tracks from the current user's recently played tracks.
+_**Note**: Currently doesn't support podcast episodes._</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>limit</con:name>
+        <con:value>20</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>20</con:default>
+      </con:parameter>
+      <con:parameter>
+        <con:name>after</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>before</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Pages of PlayHistory objects</con:description>
+      <con:sampleContent>{
+  "href" : "string",
+  "items" : [ {
+    "track" : {
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "name" : "string",
+        "type" : "artist",
+        "uri" : "string"
+      } ],
+      "available_markets" : [ "string" ],
+      "disc_number" : 0,
+      "duration_ms" : 0,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "string",
+      "is_playable" : true,
+      "linked_from" : {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "type" : "string",
+        "uri" : "string"
+      },
+      "restrictions" : {
+        "reason" : "string"
+      },
+      "name" : "string",
+      "preview_url" : "string",
+      "track_number" : 0,
+      "type" : "string",
+      "uri" : "string",
+      "is_local" : true
+    },
+    "played_at" : "2015-07-20T15:49:04-07:00",
+    "context" : {
+      "type" : "string",
+      "href" : "string",
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "uri" : "string"
+    }
+  } ],
+  "limit" : 0,
+  "next" : "string",
+  "cursors" : {
+    "after" : "string"
+  },
+  "total" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="70aa0c6a-b724-4f62-b076-e87d00056ff4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

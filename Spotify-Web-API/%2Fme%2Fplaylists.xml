@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/me/playlists" path="/me/playlists" id="6ac056c4-ef53-4157-aaeb-d9430c18e015" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6ac056c4-ef53-4157-aaeb-d9430c18e015fileName">%2Fme%2Fplaylists</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-a-list-of-current-users-playlists" id="881a97ef-0b63-435f-a75b-13267bfb9d4a" method="GET">
+    <con:description>Get a list of the playlists owned or followed by the current Spotify
+user.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>limit</con:name>
+        <con:value>20</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>20</con:default>
+      </con:parameter>
+      <con:parameter>
+        <con:name>offset</con:name>
+        <con:value>0</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>0</con:default>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Pages of playlists</con:description>
+      <con:sampleContent>{
+  "href" : "https://api.spotify.com/v1/me/shows?offset=0&amp;limit=20\n",
+  "items" : [ {
+    "collaborative" : true,
+    "description" : "string",
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "href" : "string",
+    "id" : "string",
+    "images" : [ {
+      "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+      "height" : 300,
+      "width" : 300
+    } ],
+    "name" : "string",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "followers" : {
+        "href" : "string",
+        "total" : 0
+      },
+      "href" : "string",
+      "id" : "string",
+      "type" : "user",
+      "uri" : "string",
+      "display_name" : "string"
+    },
+    "public" : true,
+    "snapshot_id" : "string",
+    "tracks" : {
+      "href" : "string",
+      "total" : 0
+    },
+    "type" : "string",
+    "uri" : "string"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "offset" : 0,
+  "previous" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "total" : 4
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="02239375-75e5-4057-a839-d1df6b3e451c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

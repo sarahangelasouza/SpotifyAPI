@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/users/{user_id}" path="/users/{user_id}" id="65a552a6-e64e-4851-866b-eb3cc4ad40b1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="65a552a6-e64e-4851-866b-eb3cc4ad40b1fileName">%2Fusers%2F%7Buser_id%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="get-users-profile" id="5a6a278e-123d-4363-93fa-479d779b756f" method="GET">
+    <con:description>Get public profile information about a Spotify user.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>user_id</con:name>
+        <con:style>TEMPLATE</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>A user</con:description>
+      <con:sampleContent>{
+  "display_name" : "string",
+  "external_urls" : {
+    "spotify" : "string"
+  },
+  "followers" : {
+    "href" : "string",
+    "total" : 0
+  },
+  "href" : "string",
+  "id" : "string",
+  "images" : [ {
+    "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+    "height" : 300,
+    "width" : 300
+  } ],
+  "type" : "user",
+  "uri" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f2c427fb-b70f-4e6e-bd4b-d32f37a83063" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
