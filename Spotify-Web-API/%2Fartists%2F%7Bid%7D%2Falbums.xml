@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/artists/{id}/albums" path="/artists/{id}/albums" id="b4ff6741-c2e5-434b-bb70-27da783e973b" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/artists/{id}/albums" path="/artists/{id}/albums" id="b4ff6741-c2e5-434b-bb70-27da783e973b" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="b4ff6741-c2e5-434b-bb70-27da783e973bfileName">%2Fartists%2F%7Bid%7D%2Falbums</con:setting>
   </con:settings>
@@ -127,6 +127,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request/>
       <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR/albums</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

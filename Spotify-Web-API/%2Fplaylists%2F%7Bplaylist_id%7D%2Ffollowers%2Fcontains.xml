@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/playlists/{playlist_id}/followers/contains" path="/playlists/{playlist_id}/followers/contains" id="5c398530-0f2c-49ff-ace4-b21298a106e1" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/playlists/{playlist_id}/followers/contains" path="/playlists/{playlist_id}/followers/contains" id="5c398530-0f2c-49ff-ace4-b21298a106e1" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="5c398530-0f2c-49ff-ace4-b21298a106e1fileName">%2Fplaylists%2F%7Bplaylist_id%7D%2Ffollowers%2Fcontains</con:setting>
   </con:settings>
@@ -65,7 +65,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="22183d81-5cf8-4ae4-8368-9609014a5683" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

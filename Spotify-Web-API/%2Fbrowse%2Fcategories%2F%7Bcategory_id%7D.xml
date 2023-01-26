@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/browse/categories/{category_id}" path="/browse/categories/{category_id}" id="e3db7075-2fc0-4555-9115-df1f0c7b8e0f" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/browse/categories/{category_id}" path="/browse/categories/{category_id}" id="e3db7075-2fc0-4555-9115-df1f0c7b8e0f" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="e3db7075-2fc0-4555-9115-df1f0c7b8e0ffileName">%2Fbrowse%2Fcategories%2F%7Bcategory_id%7D</con:setting>
   </con:settings>
@@ -78,7 +78,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="51b37b57-7fe0-49d7-890a-54759b94b22b" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

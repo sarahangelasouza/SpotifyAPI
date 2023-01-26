@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/me/player" path="/me/player" id="a00bd374-4c47-4ba0-9842-3af333a4eaea" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/me/player" path="/me/player" id="a00bd374-4c47-4ba0-9842-3af333a4eaea" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="a00bd374-4c47-4ba0-9842-3af333a4eaeafileName">%2Fme%2Fplayer</con:setting>
   </con:settings>
@@ -192,7 +192,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="d0990eb4-8d74-4c8e-84dc-ed3493750416" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -251,7 +254,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request>{\r
   "device_ids" : [ "74ASZWbe4lXaubB36ztrGX" ]\r
 }</con:request>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

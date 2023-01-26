@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/me/shows" path="/me/shows" id="d32ad4af-57fa-4ff9-8dc2-ff7ca69b5baf" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/me/shows" path="/me/shows" id="d32ad4af-57fa-4ff9-8dc2-ff7ca69b5baf" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="d32ad4af-57fa-4ff9-8dc2-ff7ca69b5baffileName">%2Fme%2Fshows</con:setting>
   </con:settings>
@@ -106,7 +106,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="9ad5c523-2fba-463b-b436-e2f14331052d" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -174,7 +177,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request>{\r
   "ids" : [ "string" ]\r
 }</con:request>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -238,7 +244,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request>{\r
   "ids" : [ "string" ]\r
 }</con:request>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/me/player/repeat" path="/me/player/repeat" id="5d9321e1-666a-44d9-b2a1-dbb2fb3fdd45" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/me/player/repeat" path="/me/player/repeat" id="5d9321e1-666a-44d9-b2a1-dbb2fb3fdd45" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="5d9321e1-666a-44d9-b2a1-dbb2fb3fdd45fileName">%2Fme%2Fplayer%2Frepeat</con:setting>
   </con:settings>
@@ -59,7 +59,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="2b2c7404-bd56-49c2-8424-e7629394c722" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

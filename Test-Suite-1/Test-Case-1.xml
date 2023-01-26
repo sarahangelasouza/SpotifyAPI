@@ -3,10 +3,80 @@
   <con:settings>
     <con:setting id="17a6e379-3ac6-48dd-83e5-105c54e805c2fileName">Test-Case-1</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="REST Request" id="cd2443de-35bf-4776-b07d-d60e1916f8c4">
+  <con:testStep type="restrequest" name="Get Artist" id="cd2443de-35bf-4776-b07d-d60e1916f8c4">
     <con:settings/>
     <con:config service="Spotify Web API" resourcePath="/artists/{id}" methodName="get-an-artist" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="REST Request" id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json">
+      <con:restRequest name="Get Artist" id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="031897a9-4143-436a-9661-0f80cd4ada2b" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="dc962933-e8bf-441d-859f-9e444e0937a8" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>SpotifyOauth2_JWT</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get Artist 2" id="f7d3b6e2-a345-40ab-9b90-5909fa9fc092">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/artists/{id}" methodName="get-an-artist" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get Artist 2" id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="031897a9-4143-436a-9661-0f80cd4ada2b" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="dc962933-e8bf-441d-859f-9e444e0937a8" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>SpotifyOauth2_JWT</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="c7db3054-7140-4449-a4fd-d1e1cc78a8bf">
+    <con:settings/>
+    <con:config>
+      <delay>16000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get Artist 3" id="ea501638-10b7-470a-be04-876083315624">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/artists/{id}" methodName="get-an-artist" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get Artist 3" id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>

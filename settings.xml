@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" compositeProjectFormat="1.3" updated="3.42.2" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+<con:soapui-project id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" compositeProjectFormat="1.3" updated="3.42.2" resourceRoot="" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
+  </con:settings>
+  <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
@@ -24,24 +27,30 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBj-lQurjGDq0eNquTo56IxFWYGfybvAqnZ8DkpXmMdpboH7yKzxmysmr-0ZQOy4Rzpy3F0fhj1MtnLTxnIaj8wFOSz1WP48Hs2JPmnEd5lc88AwT_f_dE3FOu6Cbu1epsfDxiR0y6wrTuISH0PJWCoUSlLBA2cMMswiSGJqvRWXksUxclPRMdSRsOG6Oex0Ddulg</con:accessToken>
+      <con:accessToken>BQDiXlGS3g7FnKtlNyTc6RizkoG3A-pVnnfe5do3p1T2SuQEosCv9qpnIoGflDSZZJf9jSCTZeMw-a9LrxgXXOmuc8B4_4mLefYYQZ-OV4225uTJ4zHGRz5F4V0M7iknah-x09dK9tooiPVrULQygwJcNq6P5OdG8Mgj7ADEPhuQoiUsTOJ8lybuhgsLkckdOTo2bRXyV1ZOBbHl3Ryslz58B4m9N744Nqznf85JUWorgRdSRmBb6_EN3BCBNGXKJOGh0VJGFHZ2Z933OCbtHdkH3yvsEJpd59pMvQQReXFXAvDs2bVLAouc_Z6tgYWYodafBVA4zRkBZ_ms8NOk</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1671563786</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1671575451</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTime>15</con:manualAccessTokenExpirationTime>
+      <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
       <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
       <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:refreshToken>AQBoVW4BlZ8Zi_0uCL1guKc5OIb52SNV4ZLmo_h3nWfTmL_hyqi7lPn6F3YeGAX3rhNSdkHfwSimKaBu79o5_mDK66C83dCJa4xCwV2J5oRAMPMS6VbDPGcEMk7mxWinup4</con:refreshToken>
+      <con:refreshToken>AQAmgNH2_qIGUoGmaKYnFgBt68yXW4qbrW3aM6umKZIgPK3SkE4XQd0VfZDK9BBcYKU39nDNSKgFaVJvLv1NTJnB3lvlDRY8omANghKGUiTCkOy6zrO2tXwzj4RJL2FF070</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:javaScripts>
+        <con:entry>document.getElementById("login-username").value = "sarah.angela.souza@gmail.com";
+document.getElementById("login-password").value = "Tessie45535";
+document.getElementById("login-button").click();</con:entry>
+        <con:entry/>
+      </con:javaScripts>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
   </con:oAuth2ProfileContainer>
   <con:oAuth1ProfileContainer/>
-  <con:reporting/>
   <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
     <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to ReadyAPI functional tests
@@ -90,18 +99,18 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBj-lQurjGDq0eNquTo56IxFWYGfybvAqnZ8DkpXmMdpboH7yKzxmysmr-0ZQOy4Rzpy3F0fhj1MtnLTxnIaj8wFOSz1WP48Hs2JPmnEd5lc88AwT_f_dE3FOu6Cbu1epsfDxiR0y6wrTuISH0PJWCoUSlLBA2cMMswiSGJqvRWXksUxclPRMdSRsOG6Oex0Ddulg</con:accessToken>
+      <con:accessToken>BQDiXlGS3g7FnKtlNyTc6RizkoG3A-pVnnfe5do3p1T2SuQEosCv9qpnIoGflDSZZJf9jSCTZeMw-a9LrxgXXOmuc8B4_4mLefYYQZ-OV4225uTJ4zHGRz5F4V0M7iknah-x09dK9tooiPVrULQygwJcNq6P5OdG8Mgj7ADEPhuQoiUsTOJ8lybuhgsLkckdOTo2bRXyV1ZOBbHl3Ryslz58B4m9N744Nqznf85JUWorgRdSRmBb6_EN3BCBNGXKJOGh0VJGFHZ2Z933OCbtHdkH3yvsEJpd59pMvQQReXFXAvDs2bVLAouc_Z6tgYWYodafBVA4zRkBZ_ms8NOk</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>RETRIEVAL_CANCELED</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1671563786</con:accessTokenIssuedTime>
-      <con:manualAccessTokenExpirationTime/>
+      <con:accessTokenIssuedTime>1671575451</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTime>15</con:manualAccessTokenExpirationTime>
+      <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
       <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
       <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:refreshToken>AQBoVW4BlZ8Zi_0uCL1guKc5OIb52SNV4ZLmo_h3nWfTmL_hyqi7lPn6F3YeGAX3rhNSdkHfwSimKaBu79o5_mDK66C83dCJa4xCwV2J5oRAMPMS6VbDPGcEMk7mxWinup4</con:refreshToken>
+      <con:refreshToken>AQAmgNH2_qIGUoGmaKYnFgBt68yXW4qbrW3aM6umKZIgPK3SkE4XQd0VfZDK9BBcYKU39nDNSKgFaVJvLv1NTJnB3lvlDRY8omANghKGUiTCkOy6zrO2tXwzj4RJL2FF070</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
       <con:javaScripts>
         <con:entry>document.getElementById("login-username").value = "sarah.angela.souza@gmail.com";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/search" path="/search" id="f350521f-42c1-417e-96ff-30181d84a23c" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/search" path="/search" id="f350521f-42c1-417e-96ff-30181d84a23c" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="f350521f-42c1-417e-96ff-30181d84a23cfileName">%2Fsearch</con:setting>
   </con:settings>
@@ -316,7 +316,10 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
     <con:request name="Request 1" id="a5a95ac6-6fe3-4e53-8998-0f3cfca9e2c8" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
-      <con:credentials/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
