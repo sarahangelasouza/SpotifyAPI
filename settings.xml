@@ -92,11 +92,12 @@ document.getElementById("login-button").click();</con:entry>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQDMY-GciUsPMaWj1IxviO21loYGLBRIaNELIAvWv0jQnchaoFg4ZqJ0sJSEO7Qcy52Mlv7nuwXkFVty-VrZd8v5uCtCKtz4mrWHDRdI8ZuRdN9uGgbqKTAHIeCZyGC48cfjOlQb_ddW8hEUbm5xXup_XZqv6fhZF-JY5tVi3eWbsAV6FtH_09Pp3W5P_tjCObvg_0XvocseoAoPggeU1U5ihRSwmG6g_7eU_ziQmZpqehnXBGnQHRicxlxSttcGNqwruGRkDhzlHnf3YS8J4gToWI6s-L37sgXCi_0jbrcaqg24L2I4uRfKwS8njPsdyOGrZyFaaFP9rnfJQlHa</con:accessToken>
+      <con:accessToken>BQAm68mkg5mzIoN4tclFWjNlNqdgiLReu3UMk5NdRBjKvt4mWTO4YEscYErQdPxuBtHTnQD6ZYfuDw_z8CWnTj50IEXwKt1pEQamVsGVd9WmDX8j3hUkc_5TKizYcPAHcT-UD5X7voYx7gY9-AF53qyed4BC23LBbSMPNxljUwNpSfWfcXYbywGyTsK8hMLGiA4MafwQXhMPW0YNCgZYHRMP5fql1jlrWBWl0JuDMeyPZ2RWkIhkhIYbYpa-gl20MJivLz8BQBFcuwDYU869YtpqQuLgi3df023Uf4WrgCLdjlE7Ff3A-lVBIdSfVdBfkZH22synKfzhFCVbCajE</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1696942523</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1696946441</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
       <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
       <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
@@ -184,11 +185,12 @@ document.getElementById("login-button").click();</con:entry>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQDMY-GciUsPMaWj1IxviO21loYGLBRIaNELIAvWv0jQnchaoFg4ZqJ0sJSEO7Qcy52Mlv7nuwXkFVty-VrZd8v5uCtCKtz4mrWHDRdI8ZuRdN9uGgbqKTAHIeCZyGC48cfjOlQb_ddW8hEUbm5xXup_XZqv6fhZF-JY5tVi3eWbsAV6FtH_09Pp3W5P_tjCObvg_0XvocseoAoPggeU1U5ihRSwmG6g_7eU_ziQmZpqehnXBGnQHRicxlxSttcGNqwruGRkDhzlHnf3YS8J4gToWI6s-L37sgXCi_0jbrcaqg24L2I4uRfKwS8njPsdyOGrZyFaaFP9rnfJQlHa</con:accessToken>
+      <con:accessToken>BQAm68mkg5mzIoN4tclFWjNlNqdgiLReu3UMk5NdRBjKvt4mWTO4YEscYErQdPxuBtHTnQD6ZYfuDw_z8CWnTj50IEXwKt1pEQamVsGVd9WmDX8j3hUkc_5TKizYcPAHcT-UD5X7voYx7gY9-AF53qyed4BC23LBbSMPNxljUwNpSfWfcXYbywGyTsK8hMLGiA4MafwQXhMPW0YNCgZYHRMP5fql1jlrWBWl0JuDMeyPZ2RWkIhkhIYbYpa-gl20MJivLz8BQBFcuwDYU869YtpqQuLgi3df023Uf4WrgCLdjlE7Ff3A-lVBIdSfVdBfkZH22synKfzhFCVbCajE</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1696942523</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1696946441</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
       <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
       <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>

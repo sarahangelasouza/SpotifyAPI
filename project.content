@@ -62,3 +62,4 @@ Spotify-Web-API\%2Fusers%2F%7Buser_id%7D.xml
 Test-Suite-1\Test-Case-1.xml
 Test-Suite-1\Test-Case-2.xml
 Shuffle\ShuffleTopThree.xml
+GetArtistsData\GetArtists.xml

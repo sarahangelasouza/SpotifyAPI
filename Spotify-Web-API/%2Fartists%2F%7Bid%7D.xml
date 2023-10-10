@@ -3,7 +3,11 @@
   <con:settings id="ee002532-94ea-47f8-a54c-de4da21732bf">
     <con:setting id="eeb5f4e3-d3e1-48a5-9818-358f50a1357ffileName">%2Fartists%2F%7Bid%7D</con:setting>
   </con:settings>
-  <con:parameters/>
+  <con:parameters>
+    <con:parameter>
+      <con:name>id</con:name>
+    </con:parameter>
+  </con:parameters>
   <con:method name="get-an-artist" id="91554091-43ee-4c27-b565-860991f2fdae" method="GET">
     <con:description>Get Spotify catalog information for a single artist identified by their unique Spotify ID.</con:description>
     <con:settings/>
@@ -93,6 +97,9 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters>
         <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
       </con:parameters>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
     </con:request>
   </con:method>
 </con:resource>

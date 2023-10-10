@@ -32,6 +32,9 @@
         <con:parameters>
           <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
         </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -64,6 +67,9 @@
         <con:parameters>
           <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
         </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -102,6 +108,9 @@
         <con:parameters>
           <con:entry key="id" value="5j4HeCoUlzhfWtjAfM1acR"/>
         </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>
