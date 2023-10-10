@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" compositeProjectFormat="1.3" updated="3.42.2" resourceRoot="" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" compositeProjectFormat="1.3" updated="3.48.0" resourceRoot="" encryptionMode="Not encrypted" authProfile="New Spotify July 23">
   <con:settings>
     <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="Shuffle"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="ShuffleTopThree"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.48.0\bin"/>
+  <con:entry key="Environment" value="No Environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
   </con:settings>
   <con:requirements/>
   <con:properties/>
@@ -27,10 +64,10 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQDiXlGS3g7FnKtlNyTc6RizkoG3A-pVnnfe5do3p1T2SuQEosCv9qpnIoGflDSZZJf9jSCTZeMw-a9LrxgXXOmuc8B4_4mLefYYQZ-OV4225uTJ4zHGRz5F4V0M7iknah-x09dK9tooiPVrULQygwJcNq6P5OdG8Mgj7ADEPhuQoiUsTOJ8lybuhgsLkckdOTo2bRXyV1ZOBbHl3Ryslz58B4m9N744Nqznf85JUWorgRdSRmBb6_EN3BCBNGXKJOGh0VJGFHZ2Z933OCbtHdkH3yvsEJpd59pMvQQReXFXAvDs2bVLAouc_Z6tgYWYodafBVA4zRkBZ_ms8NOk</con:accessToken>
+      <con:accessToken>BQBdD9KfBNPUGmuUTlPZrnKwAgIHDxfPCnD9DopXALQKgVXG6wbVo8QslkAF8TJeE5ebDTp9PqzeGEU6GMJmzeiUoNXkLdY-9UF4T_nYRfLYEB1ZoUNDKth2mfoWSx6MiKXl4BKEZgaAEkTYJSKXe-EHAnznofaX2Oo0JiC1Pph1tQU7sSPCisve8LZ7DvmcKafA4mUxdoIJGO6wkUVQReT3qgvHra682LhbuDhcw9Kn2IaGSc-_G1ezU0V_ACjMEzRVQkNVs3u_hX_SNF75rLTg3R8GMmSxOS7aa8dxEb5Y1AvGaL6Geh2zYOHDVzegrLbjeAWu1DDVGc5_wkwy</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1671575451</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1684938386</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>15</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -46,6 +83,26 @@ document.getElementById("login-password").value = "Tessie45535";
 document.getElementById("login-button").click();</con:entry>
         <con:entry/>
       </con:javaScripts>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>New Spotify July 23</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
+      <con:accessToken>BQDMY-GciUsPMaWj1IxviO21loYGLBRIaNELIAvWv0jQnchaoFg4ZqJ0sJSEO7Qcy52Mlv7nuwXkFVty-VrZd8v5uCtCKtz4mrWHDRdI8ZuRdN9uGgbqKTAHIeCZyGC48cfjOlQb_ddW8hEUbm5xXup_XZqv6fhZF-JY5tVi3eWbsAV6FtH_09Pp3W5P_tjCObvg_0XvocseoAoPggeU1U5ihRSwmG6g_7eU_ziQmZpqehnXBGnQHRicxlxSttcGNqwruGRkDhzlHnf3YS8J4gToWI6s-L37sgXCi_0jbrcaqg24L2I4uRfKwS8njPsdyOGrZyFaaFP9rnfJQlHa</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1696942523</con:accessTokenIssuedTime>
+      <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
+      <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
@@ -99,10 +156,10 @@ document.getElementById("login-button").click();</con:entry>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQDiXlGS3g7FnKtlNyTc6RizkoG3A-pVnnfe5do3p1T2SuQEosCv9qpnIoGflDSZZJf9jSCTZeMw-a9LrxgXXOmuc8B4_4mLefYYQZ-OV4225uTJ4zHGRz5F4V0M7iknah-x09dK9tooiPVrULQygwJcNq6P5OdG8Mgj7ADEPhuQoiUsTOJ8lybuhgsLkckdOTo2bRXyV1ZOBbHl3Ryslz58B4m9N744Nqznf85JUWorgRdSRmBb6_EN3BCBNGXKJOGh0VJGFHZ2Z933OCbtHdkH3yvsEJpd59pMvQQReXFXAvDs2bVLAouc_Z6tgYWYodafBVA4zRkBZ_ms8NOk</con:accessToken>
+      <con:accessToken>BQBdD9KfBNPUGmuUTlPZrnKwAgIHDxfPCnD9DopXALQKgVXG6wbVo8QslkAF8TJeE5ebDTp9PqzeGEU6GMJmzeiUoNXkLdY-9UF4T_nYRfLYEB1ZoUNDKth2mfoWSx6MiKXl4BKEZgaAEkTYJSKXe-EHAnznofaX2Oo0JiC1Pph1tQU7sSPCisve8LZ7DvmcKafA4mUxdoIJGO6wkUVQReT3qgvHra682LhbuDhcw9Kn2IaGSc-_G1ezU0V_ACjMEzRVQkNVs3u_hX_SNF75rLTg3R8GMmSxOS7aa8dxEb5Y1AvGaL6Geh2zYOHDVzegrLbjeAWu1DDVGc5_wkwy</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1671575451</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1684938386</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>15</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -118,6 +175,26 @@ document.getElementById("login-password").value = "Tessie45535";
 document.getElementById("login-button").click();</con:entry>
         <con:entry/>
       </con:javaScripts>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>New Spotify July 23</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
+      <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
+      <con:accessToken>BQDMY-GciUsPMaWj1IxviO21loYGLBRIaNELIAvWv0jQnchaoFg4ZqJ0sJSEO7Qcy52Mlv7nuwXkFVty-VrZd8v5uCtCKtz4mrWHDRdI8ZuRdN9uGgbqKTAHIeCZyGC48cfjOlQb_ddW8hEUbm5xXup_XZqv6fhZF-JY5tVi3eWbsAV6FtH_09Pp3W5P_tjCObvg_0XvocseoAoPggeU1U5ihRSwmG6g_7eU_ziQmZpqehnXBGnQHRicxlxSttcGNqwruGRkDhzlHnf3YS8J4gToWI6s-L37sgXCi_0jbrcaqg24L2I4uRfKwS8njPsdyOGrZyFaaFP9rnfJQlHa</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1696942523</con:accessTokenIssuedTime>
+      <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
+      <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth20AuthEntry>

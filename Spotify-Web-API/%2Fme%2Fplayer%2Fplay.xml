@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/me/player/play" path="/me/player/play" id="c7d01863-69f5-4e6e-b206-57eb07c78c75" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player/play" path="/me/player/play" id="c7d01863-69f5-4e6e-b206-57eb07c78c75">
+  <con:settings id="1ad7947b-bb38-44a7-a14f-17b5f398617c">
     <con:setting id="c7d01863-69f5-4e6e-b206-57eb07c78c75fileName">%2Fme%2Fplayer%2Fplay</con:setting>
   </con:settings>
   <con:parameters/>
@@ -73,7 +73,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "position_ms" : 0\r
 }</con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>

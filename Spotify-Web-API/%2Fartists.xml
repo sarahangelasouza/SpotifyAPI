@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/artists" path="/artists" id="ceb11671-a7fa-4545-ba5f-9c3769e3b167" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/artists" path="/artists" id="ceb11671-a7fa-4545-ba5f-9c3769e3b167">
+  <con:settings id="83986fc8-3199-468c-9ef3-3cdb8db85843">
     <con:setting id="ceb11671-a7fa-4545-ba5f-9c3769e3b167fileName">%2Fartists</con:setting>
   </con:settings>
   <con:parameters/>
@@ -81,11 +81,13 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
 }</con:sampleContent>
     </con:representation>
     <con:request name="Request 1" id="31244018-d36d-4d22-a9f3-455777a4ebbc" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

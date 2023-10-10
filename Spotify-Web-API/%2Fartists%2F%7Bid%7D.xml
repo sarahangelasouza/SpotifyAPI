@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/artists/{id}" path="/artists/{id}" id="eeb5f4e3-d3e1-48a5-9818-358f50a1357f" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/artists/{id}" path="/artists/{id}" id="eeb5f4e3-d3e1-48a5-9818-358f50a1357f">
+  <con:settings id="ee002532-94ea-47f8-a54c-de4da21732bf">
     <con:setting id="eeb5f4e3-d3e1-48a5-9818-358f50a1357ffileName">%2Fartists%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters/>
@@ -86,7 +86,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request/>
       <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR</con:originalUri>
       <con:credentials>
-        <con:selectedAuthProfile>SpotifyOauth2_JWT</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/tracks" path="/tracks" id="3c8359f7-fc77-4705-b39e-8129fdb73614" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/tracks" path="/tracks" id="3c8359f7-fc77-4705-b39e-8129fdb73614">
+  <con:settings id="d9c2d6b5-8db1-488c-a035-f8d1dd69d342">
     <con:setting id="3c8359f7-fc77-4705-b39e-8129fdb73614fileName">%2Ftracks</con:setting>
   </con:settings>
   <con:parameters/>
@@ -158,7 +158,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>

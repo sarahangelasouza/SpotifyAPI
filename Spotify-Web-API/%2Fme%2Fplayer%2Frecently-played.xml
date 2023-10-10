@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/me/player/recently-played" path="/me/player/recently-played" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player/recently-played" path="/me/player/recently-played" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e">
+  <con:settings id="00742a6f-156d-4653-9660-07e15b419096">
     <con:setting id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8efileName">%2Fme%2Fplayer%2Frecently-played</con:setting>
   </con:settings>
   <con:parameters/>
@@ -132,7 +132,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>

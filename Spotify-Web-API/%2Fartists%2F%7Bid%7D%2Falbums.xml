@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/artists/{id}/albums" path="/artists/{id}/albums" id="b4ff6741-c2e5-434b-bb70-27da783e973b" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/artists/{id}/albums" path="/artists/{id}/albums" id="b4ff6741-c2e5-434b-bb70-27da783e973b">
+  <con:settings id="3ff1e2be-f59e-4e49-8281-fb61f2e2b67a">
     <con:setting id="b4ff6741-c2e5-434b-bb70-27da783e973bfileName">%2Fartists%2F%7Bid%7D%2Falbums</con:setting>
   </con:settings>
   <con:parameters/>
@@ -127,7 +127,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:request/>
       <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR/albums</con:originalUri>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/users/{user_id}/playlists" path="/users/{user_id}/playlists" id="bdac6fd8-ea8e-4956-9371-7b821920c80b" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/users/{user_id}/playlists" path="/users/{user_id}/playlists" id="bdac6fd8-ea8e-4956-9371-7b821920c80b">
+  <con:settings id="3b9ddb16-ce1d-47c8-889c-086774a15188">
     <con:setting id="bdac6fd8-ea8e-4956-9371-7b821920c80bfileName">%2Fusers%2F%7Buser_id%7D%2Fplaylists</con:setting>
   </con:settings>
   <con:parameters/>
@@ -118,7 +118,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
@@ -349,7 +349,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "public" : false\r
 }</con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>

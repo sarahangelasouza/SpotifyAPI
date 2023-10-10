@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/me/player" path="/me/player" id="a00bd374-4c47-4ba0-9842-3af333a4eaea" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player" path="/me/player" id="a00bd374-4c47-4ba0-9842-3af333a4eaea">
+  <con:settings id="80a92d2a-f1cc-4d19-b934-c7f0d6505850">
     <con:setting id="a00bd374-4c47-4ba0-9842-3af333a4eaeafileName">%2Fme%2Fplayer</con:setting>
   </con:settings>
   <con:parameters/>
@@ -193,7 +193,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
@@ -255,7 +255,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "device_ids" : [ "74ASZWbe4lXaubB36ztrGX" ]\r
 }</con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>

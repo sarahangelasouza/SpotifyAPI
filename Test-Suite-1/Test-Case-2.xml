@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bdc253c1-7c99-43cf-9efa-90adcd7b23ac" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 2" searchProperties="true" timeout="0">
+  <con:settings id="a0819d30-72a3-45b9-b35d-63a7a501fa66">
+    <con:setting id="bdc253c1-7c99-43cf-9efa-90adcd7b23acfileName">Test-Case-2</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="GetArtistByID" id="8b232bfc-881e-4bd7-866f-5e7e7e23f827">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/artists/{id}/albums" methodName="get-an-artists-albums" xsi:type="con:RestRequestStep">
+      <con:restRequest name="GetArtistByID" id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR/albums</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="fe313387-5f68-4853-91b2-9f7052c7ba56" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="22b17415-e216-4081-a582-7053886af789" name="Response SLA">
+          <con:configuration>
+            <SLA>300</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="market" value="US"/>
+          <con:entry key="include_groups" value="album"/>
+          <con:entry key="limit" value="1"/>
+          <con:entry key="id" value="6zFYqv1mOsgBRQbae3JJ9e"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
