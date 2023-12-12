@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bdc253c1-7c99-43cf-9efa-90adcd7b23ac" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 2" searchProperties="true" timeout="0">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bdc253c1-7c99-43cf-9efa-90adcd7b23ac" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Artist By ID" searchProperties="true" timeout="0">
   <con:settings id="a0819d30-72a3-45b9-b35d-63a7a501fa66">
-    <con:setting id="bdc253c1-7c99-43cf-9efa-90adcd7b23acfileName">Test-Case-2</con:setting>
+    <con:setting id="bdc253c1-7c99-43cf-9efa-90adcd7b23acfileName">Get-Artist-By-ID</con:setting>
   </con:settings>
   <con:testStep type="restrequest" name="GetArtistByID" id="8b232bfc-881e-4bd7-866f-5e7e7e23f827">
     <con:settings/>

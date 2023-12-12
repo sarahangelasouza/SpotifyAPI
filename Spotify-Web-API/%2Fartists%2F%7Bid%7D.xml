@@ -6,6 +6,7 @@
   <con:parameters>
     <con:parameter>
       <con:name>id</con:name>
+      <con:style>QUERY</con:style>
     </con:parameter>
   </con:parameters>
   <con:method name="get-an-artist" id="91554091-43ee-4c27-b565-860991f2fdae" method="GET">

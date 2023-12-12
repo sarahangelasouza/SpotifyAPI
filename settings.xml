@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" compositeProjectFormat="1.3" updated="3.48.0" resourceRoot="" encryptionMode="Not encrypted" authProfile="New Spotify July 23">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" updated="3.49.0" resourceRoot="" encryptionMode="Not encrypted" authProfile="New Spotify July 23">
   <con:settings>
     <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -16,7 +16,7 @@
   <con:entry key="Test Suite Tags" value=""/>
   <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
   <con:entry key="System Properties" value=""/>
-  <con:entry key="Test Suite" value="Shuffle"/>
+  <con:entry key="Test Suite" value="Test Suite 1"/>
   <con:entry key="Run in-process" value="false"/>
   <con:entry key="Password" value=""/>
   <con:entry key="Print Report" value="true"/>
@@ -25,7 +25,7 @@
   <con:entry key="Export JUnit Results with test properties" value="false"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="Project Properties" value=""/>
-  <con:entry key="Test Case" value="ShuffleTopThree"/>
+  <con:entry key="Test Case" value="Test Case 1"/>
   <con:entry key="Slack Access Token" value=""/>
   <con:entry key="Project Password" value=""/>
   <con:entry key="Username" value=""/>
@@ -92,11 +92,12 @@ document.getElementById("login-button").click();</con:entry>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQAm68mkg5mzIoN4tclFWjNlNqdgiLReu3UMk5NdRBjKvt4mWTO4YEscYErQdPxuBtHTnQD6ZYfuDw_z8CWnTj50IEXwKt1pEQamVsGVd9WmDX8j3hUkc_5TKizYcPAHcT-UD5X7voYx7gY9-AF53qyed4BC23LBbSMPNxljUwNpSfWfcXYbywGyTsK8hMLGiA4MafwQXhMPW0YNCgZYHRMP5fql1jlrWBWl0JuDMeyPZ2RWkIhkhIYbYpa-gl20MJivLz8BQBFcuwDYU869YtpqQuLgi3df023Uf4WrgCLdjlE7Ff3A-lVBIdSfVdBfkZH22synKfzhFCVbCajE</con:accessToken>
+      <con:accessToken>BQArX-BLKJRpiqwNAjDFD5CUjLyr884ugZBe2-7THcg0R9QwKrlFPFgMr-a0d1ccDtvnqRmOVBu8GAcz0w21KRWZo5arP8U46EpHqoCoeAAKJ5HwgU1COHNNkCcNBhxPwaxS8hQhqdGR9ZHsZar27MIlDj3nTk1cOFARtsMwTY5IcI4Wu66UQxs_M5aavj_vYF7-FD677EUsopCKvNwMntZRQz3Kg_YkP1bZhEGTiOg5HDDO_xOHnqbHYELrdN2okacbJ3GW9773UiC943M7hpbOKj92_glyE05w4b0RvUzMCI7Q7j_kxpzfrpwnWu2X70MQBLFK0zSKwadxkqjO</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1696946441</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1701203247</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
+      <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
       <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
       <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
@@ -104,6 +105,17 @@ document.getElementById("login-button").click();</con:entry>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>sample profile oct19</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessToken/>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
@@ -185,11 +197,12 @@ document.getElementById("login-button").click();</con:entry>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQAm68mkg5mzIoN4tclFWjNlNqdgiLReu3UMk5NdRBjKvt4mWTO4YEscYErQdPxuBtHTnQD6ZYfuDw_z8CWnTj50IEXwKt1pEQamVsGVd9WmDX8j3hUkc_5TKizYcPAHcT-UD5X7voYx7gY9-AF53qyed4BC23LBbSMPNxljUwNpSfWfcXYbywGyTsK8hMLGiA4MafwQXhMPW0YNCgZYHRMP5fql1jlrWBWl0JuDMeyPZ2RWkIhkhIYbYpa-gl20MJivLz8BQBFcuwDYU869YtpqQuLgi3df023Uf4WrgCLdjlE7Ff3A-lVBIdSfVdBfkZH22synKfzhFCVbCajE</con:accessToken>
+      <con:accessToken>BQArX-BLKJRpiqwNAjDFD5CUjLyr884ugZBe2-7THcg0R9QwKrlFPFgMr-a0d1ccDtvnqRmOVBu8GAcz0w21KRWZo5arP8U46EpHqoCoeAAKJ5HwgU1COHNNkCcNBhxPwaxS8hQhqdGR9ZHsZar27MIlDj3nTk1cOFARtsMwTY5IcI4Wu66UQxs_M5aavj_vYF7-FD677EUsopCKvNwMntZRQz3Kg_YkP1bZhEGTiOg5HDDO_xOHnqbHYELrdN2okacbJ3GW9773UiC943M7hpbOKj92_glyE05w4b0RvUzMCI7Q7j_kxpzfrpwnWu2X70MQBLFK0zSKwadxkqjO</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1696946441</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1701203247</con:accessTokenIssuedTime>
+      <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
+      <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
       <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
       <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
@@ -197,6 +210,17 @@ document.getElementById("login-button").click();</con:entry>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>sample profile oct19</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessToken/>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth20AuthEntry>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" id="17a6e379-3ac6-48dd-83e5-105c54e805c2" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="17a6e379-3ac6-48dd-83e5-105c54e805c2" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Auth Token Refresh" searchProperties="true" timeout="0">
   <con:settings id="6a63f686-7005-4866-a9cd-5be804896eac">
-    <con:setting id="17a6e379-3ac6-48dd-83e5-105c54e805c2fileName">Test-Case-1</con:setting>
+    <con:setting id="17a6e379-3ac6-48dd-83e5-105c54e805c2fileName">Auth-Token-Refresh</con:setting>
   </con:settings>
   <con:testStep type="restrequest" name="Get Artist" id="cd2443de-35bf-4776-b07d-d60e1916f8c4">
     <con:settings/>
@@ -76,7 +76,7 @@
   <con:testStep type="delay" name="Delay" id="c7db3054-7140-4449-a4fd-d1e1cc78a8bf">
     <con:settings/>
     <con:config>
-      <delay>16000</delay>
+      <delay>11000</delay>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="Get Artist 3" id="ea501638-10b7-470a-be04-876083315624">
