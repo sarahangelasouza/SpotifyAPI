@@ -47,55 +47,16 @@
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer>
     <con:oAuth2Profile>
-      <con:name>oauth_2_0 AUTHORIZATION</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
-      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:scope>app-remote-control playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify user-read-private user-read-email user-follow-read user-follow-modify user-top-read user-read-playback-position user-read-playback-state user-read-recently-played user-read-currently-playing user-modify-playback-state ugc-image-upload streaming</con:scope>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth2Profile>
-    <con:oAuth2Profile>
-      <con:name>SpotifyOauth2_JWT</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
-      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
-      <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBdD9KfBNPUGmuUTlPZrnKwAgIHDxfPCnD9DopXALQKgVXG6wbVo8QslkAF8TJeE5ebDTp9PqzeGEU6GMJmzeiUoNXkLdY-9UF4T_nYRfLYEB1ZoUNDKth2mfoWSx6MiKXl4BKEZgaAEkTYJSKXe-EHAnznofaX2Oo0JiC1Pph1tQU7sSPCisve8LZ7DvmcKafA4mUxdoIJGO6wkUVQReT3qgvHra682LhbuDhcw9Kn2IaGSc-_G1ezU0V_ACjMEzRVQkNVs3u_hX_SNF75rLTg3R8GMmSxOS7aa8dxEb5Y1AvGaL6Geh2zYOHDVzegrLbjeAWu1DDVGc5_wkwy</con:accessToken>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1684938386</con:accessTokenIssuedTime>
-      <con:manualAccessTokenExpirationTime>15</con:manualAccessTokenExpirationTime>
-      <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
-      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
-      <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
-      <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:refreshToken>AQAmgNH2_qIGUoGmaKYnFgBt68yXW4qbrW3aM6umKZIgPK3SkE4XQd0VfZDK9BBcYKU39nDNSKgFaVJvLv1NTJnB3lvlDRY8omANghKGUiTCkOy6zrO2tXwzj4RJL2FF070</con:refreshToken>
-      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
-      <con:javaScripts>
-        <con:entry>document.getElementById("login-username").value = "sarah.angela.souza@gmail.com";
-document.getElementById("login-password").value = "Tessie45535";
-document.getElementById("login-button").click();</con:entry>
-        <con:entry/>
-      </con:javaScripts>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth2Profile>
-    <con:oAuth2Profile>
       <con:name>New Spotify July 23</con:name>
       <con:type>OAuth 2.0</con:type>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQArX-BLKJRpiqwNAjDFD5CUjLyr884ugZBe2-7THcg0R9QwKrlFPFgMr-a0d1ccDtvnqRmOVBu8GAcz0w21KRWZo5arP8U46EpHqoCoeAAKJ5HwgU1COHNNkCcNBhxPwaxS8hQhqdGR9ZHsZar27MIlDj3nTk1cOFARtsMwTY5IcI4Wu66UQxs_M5aavj_vYF7-FD677EUsopCKvNwMntZRQz3Kg_YkP1bZhEGTiOg5HDDO_xOHnqbHYELrdN2okacbJ3GW9773UiC943M7hpbOKj92_glyE05w4b0RvUzMCI7Q7j_kxpzfrpwnWu2X70MQBLFK0zSKwadxkqjO</con:accessToken>
+      <con:accessToken>BQBGHO4KkUwQajM4Gtp0E0DmAcqsO56bUwOW7VhIZIVnIpUpaVu6HeIORLxSijOeVzX0-xKYv6KJM5E6XEuG2AZDd98xVuId8aqApBjCKdGd9_xT8rTBqmIrr3Yfa9KMVWcQVLHSBWgaGU764wV8oMRl4DJB-_Va7ZaI4kKRqecHR_wuOR0yP1k280DBGfCZcwMusz_yHWhY-XtgVvHhvb4cE5wRn5aP-uTk_oI3FbZbIvcHDmjg1KMJII1dhEqsYFX8tKeUjzZY_tLqGoxzdctV4TdKvt4M7FF2fBy9OuRW3J9aiTOWVZSyMFwBqkAVIP0FP1QO8m5n9eGOo3IV</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1701203247</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1706112685</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -105,17 +66,6 @@ document.getElementById("login-button").click();</con:entry>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth2Profile>
-    <con:oAuth2Profile>
-      <con:name>sample profile oct19</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:accessToken/>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
@@ -152,55 +102,16 @@ document.getElementById("login-button").click();</con:entry>
   </con:eventHandlers>
   <con:authRepository>
     <con:oAuth20AuthEntry>
-      <con:name>oauth_2_0 AUTHORIZATION</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:authorizationURI>https://accounts.spotify.com/authorize</con:authorizationURI>
-      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:scope>app-remote-control playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-library-read user-library-modify user-read-private user-read-email user-follow-read user-follow-modify user-top-read user-read-playback-position user-read-playback-state user-read-recently-played user-read-currently-playing user-modify-playback-state ugc-image-upload streaming</con:scope>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth20AuthEntry>
-    <con:oAuth20AuthEntry>
-      <con:name>SpotifyOauth2_JWT</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
-      <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
-      <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBdD9KfBNPUGmuUTlPZrnKwAgIHDxfPCnD9DopXALQKgVXG6wbVo8QslkAF8TJeE5ebDTp9PqzeGEU6GMJmzeiUoNXkLdY-9UF4T_nYRfLYEB1ZoUNDKth2mfoWSx6MiKXl4BKEZgaAEkTYJSKXe-EHAnznofaX2Oo0JiC1Pph1tQU7sSPCisve8LZ7DvmcKafA4mUxdoIJGO6wkUVQReT3qgvHra682LhbuDhcw9Kn2IaGSc-_G1ezU0V_ACjMEzRVQkNVs3u_hX_SNF75rLTg3R8GMmSxOS7aa8dxEb5Y1AvGaL6Geh2zYOHDVzegrLbjeAWu1DDVGc5_wkwy</con:accessToken>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1684938386</con:accessTokenIssuedTime>
-      <con:manualAccessTokenExpirationTime>15</con:manualAccessTokenExpirationTime>
-      <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
-      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
-      <con:clientID>610b910ba0474dccbc33ef547c1600cd</con:clientID>
-      <con:clientSecret>88784898023d4526b1b29b93c09bafad</con:clientSecret>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:refreshToken>AQAmgNH2_qIGUoGmaKYnFgBt68yXW4qbrW3aM6umKZIgPK3SkE4XQd0VfZDK9BBcYKU39nDNSKgFaVJvLv1NTJnB3lvlDRY8omANghKGUiTCkOy6zrO2tXwzj4RJL2FF070</con:refreshToken>
-      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
-      <con:javaScripts>
-        <con:entry>document.getElementById("login-username").value = "sarah.angela.souza@gmail.com";
-document.getElementById("login-password").value = "Tessie45535";
-document.getElementById("login-button").click();</con:entry>
-        <con:entry/>
-      </con:javaScripts>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth20AuthEntry>
-    <con:oAuth20AuthEntry>
       <con:name>New Spotify July 23</con:name>
       <con:type>OAuth 2.0</con:type>
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQArX-BLKJRpiqwNAjDFD5CUjLyr884ugZBe2-7THcg0R9QwKrlFPFgMr-a0d1ccDtvnqRmOVBu8GAcz0w21KRWZo5arP8U46EpHqoCoeAAKJ5HwgU1COHNNkCcNBhxPwaxS8hQhqdGR9ZHsZar27MIlDj3nTk1cOFARtsMwTY5IcI4Wu66UQxs_M5aavj_vYF7-FD677EUsopCKvNwMntZRQz3Kg_YkP1bZhEGTiOg5HDDO_xOHnqbHYELrdN2okacbJ3GW9773UiC943M7hpbOKj92_glyE05w4b0RvUzMCI7Q7j_kxpzfrpwnWu2X70MQBLFK0zSKwadxkqjO</con:accessToken>
+      <con:accessToken>BQBGHO4KkUwQajM4Gtp0E0DmAcqsO56bUwOW7VhIZIVnIpUpaVu6HeIORLxSijOeVzX0-xKYv6KJM5E6XEuG2AZDd98xVuId8aqApBjCKdGd9_xT8rTBqmIrr3Yfa9KMVWcQVLHSBWgaGU764wV8oMRl4DJB-_Va7ZaI4kKRqecHR_wuOR0yP1k280DBGfCZcwMusz_yHWhY-XtgVvHhvb4cE5wRn5aP-uTk_oI3FbZbIvcHDmjg1KMJII1dhEqsYFX8tKeUjzZY_tLqGoxzdctV4TdKvt4M7FF2fBy9OuRW3J9aiTOWVZSyMFwBqkAVIP0FP1QO8m5n9eGOo3IV</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1701203247</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1706112685</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -210,17 +121,6 @@ document.getElementById("login-button").click();</con:entry>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth20AuthEntry>
-    <con:oAuth20AuthEntry>
-      <con:name>sample profile oct19</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:accessToken/>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth20AuthEntry>

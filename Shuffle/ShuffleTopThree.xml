@@ -365,7 +365,7 @@
   <con:testStep id="5afee376-07a1-4adf-814d-86ebce22e176" name="Delay 3" type="delay">
     <con:settings/>
     <con:config>
-      <delay>500</delay>
+      <delay>2000</delay>
     </con:config>
   </con:testStep>
   <con:testStep id="1d1b561a-4507-4867-a10a-724970bae18a" name="Play Next 1" type="restrequest">
@@ -420,7 +420,7 @@
   <con:testStep id="ca5cd463-84cd-4aec-8070-541c82492d01" name="Delay" type="delay">
     <con:settings/>
     <con:config>
-      <delay>500</delay>
+      <delay>5000</delay>
     </con:config>
   </con:testStep>
   <con:testStep id="971fe205-f705-4201-aa1b-ba2c45e8207b" name="Play Next 2" type="restrequest">
@@ -475,7 +475,7 @@
   <con:testStep id="db26a29c-1f6d-44bd-af75-331a5c4e345e" name="Delay 2" type="delay">
     <con:settings/>
     <con:config>
-      <delay>500</delay>
+      <delay>5000</delay>
     </con:config>
   </con:testStep>
   <con:testStep id="c73c275c-d8a6-4fe0-80a1-0235f3a9e957" name="Play Next 3" type="restrequest">
