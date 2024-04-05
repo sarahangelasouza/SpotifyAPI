@@ -64,3 +64,9 @@ Test-Suite-1\Get-Artist-By-ID.xml
 Shuffle\ShuffleTopThree.xml
 GetArtistsData\GetArtists.xml
 data\Test-Case-1.xml
+Spotify-Web-API-Test-Suite-1\%2Fartists%2F%7Bid%7D%2Ftop-tracks-Test-Case.xml
+Spotify-Web-API-Test-Suite-1\%2Falbums%2F%7Bid%7D-Test-Case.xml
+Spotify-Web-API-Test-Suite-1\%2Falbums-Test-Case.xml
+Spotify-Web-API-Test-Suite-1\%2Fartists%2F%7Bid%7D-Test-Case.xml
+Spotify-Web-API-Test-Suite-1\%2Fartists-Test-Case.xml
+Test-Suite-2\Test-Case-1.xml

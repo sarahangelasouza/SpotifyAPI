@@ -162,6 +162,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:settings>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
+      <con:originalUri>https://api.spotify.com/v1/albums</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>New Spotify July 23</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>

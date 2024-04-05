@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" updated="3.49.0" resourceRoot="" encryptionMode="Not encrypted" authProfile="New Spotify July 23">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" updated="3.49.0" resourceRoot="" encryptionMode="Selected properties" authProfile="New Spotify July 23">
   <con:settings>
     <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -41,7 +41,33 @@
 </xml-fragment>]]></con:setting>
   </con:settings>
   <con:requirements/>
-  <con:properties/>
+  <con:properties>
+    <con:property encrypted="true">
+      <con:name>clientID</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hPeg0KdkFicjFESWlBeVVTMzhqUWJ2c0hjWFdJYTZkYmpBd1dWcFdzSzJrVC9pVnBuM2NQenJROGF3TlhuTlBOd1RFS3lmUDlZQUpHMUE9PQ0K</con:encryptedContent>
+    </con:property>
+    <con:property encrypted="true">
+      <con:name>clientSecret</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hQYw0KcWQ4UHFwcnA1bVBVVVdKb05lL1ZNMTErc1NqaGx6WjErWkZRL1MraStIU0xYalNyL0tzYmU0SlVzVVBlN3JFZ045NWFXazVacUE9PQ0K</con:encryptedContent>
+    </con:property>
+    <con:property encrypted="true">
+      <con:name>authURL</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hPdg0KMDdKQ2NKVENVVDljTExwWUN4ZWNOT1JrM2YyV1NCd1RwWW4xb09pWFB4QnFVWDRiOFA5NVVOZ01iMFQ0QW11eHMzMGF2aGVaNjkzOA0KanZwQlZUY1E=</con:encryptedContent>
+    </con:property>
+    <con:property encrypted="true">
+      <con:name>accessTokenURL</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hPdg0KMDdKQ2NKVENVVDljTExwWUN4ZWNOT1JrM2YyV1NCd1RwWW4xb09pWFB3WGJrSEQrSzEvcUFPd2pGczIvMmNjWlkwYXZRVkhSTmNudA0KTC9RZk9SdFI=</con:encryptedContent>
+    </con:property>
+    <con:property encrypted="true">
+      <con:name>redirectURL</con:name>
+      <con:value xsi:nil="true"/>
+      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hNOA0KcWdpOTRuMGkybjNRNFZOMi9BWHYzWDRFUFpTN2E3UDdVZzZpVUZkT3ZrOVJzWjZuZHduL0hiWVdvSlNOeEF2VVZuRE5Qc21scmc9PQ0K</con:encryptedContent>
+    </con:property>
+  </con:properties>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
@@ -52,11 +78,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQCbaYQpLVuVmwbds2iWS9bTqbBvoVaAw3veD50iT5VFmT9WCmMjV-EaEuRLqw5DijAv8QGVC9JpYEITcUUMHfHibir2eTLmz-e-tDy5homQsMDADhUK2grAiC36iLIKABaNITFA788FuZtRzo3yHMtbXwDXug0LQHjO5KF1nhtwXHBemU3rfAaZesR46mdtcDvFcZ8bpALr-aBr7dogxrDlrK26qmqSwjW6pvWx3na1VHauxA5vWqND5NOL1FJmni4i7JWNSpzdJSw9x7lqes_TAEUETk9grv76L27cYvlr_JGyNHN86mHLMbRVIqTuwHkkhqbUAqcWmHjl7HOJ</con:accessToken>
+      <con:accessToken>BQC8VgEbEg-hMC-1-JbVjpXLqR5VsdLur6Aw43tnhSFwQhpIaJQr46WDPO_192oKp66dU4a1E01uER3g5nljVqHalrNIdKtnPtN8zsCyOaaeLNhMXP2CW65E7RY5SJDywUNvZWLuMT332qZHlSfjLqhzfepaADtK80HXgWAv9KWXU4Ddsg-o7IwqU_NQ_alQbclmNC4qG9yjYHh_w2TJpTIHT3stEwWs2Zo6uSrMsBAdvnAEEKKYUl0Ywm87pjh8rVNulsFRDlyZBdcxyvIqg2L5HYy8xpTzq8iTiCErFkoCEAl5Uq-l9mTfnMJHTIpoMFT0KI-tWjFAUUihYhjB</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1706280883</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1711569063</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -66,6 +92,24 @@
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:refreshToken>AQDqeVbs5xdAXX5VJjx41_T-hhtB74JxGOMAU508UjxweKMaRLBQtN3EP43bYCMXfguK-xkBIRgrU-64lwCrdHokGqng2bQ4JTkIFSek9Mj2n_iAFIfTLBmCQylnh91HHcg</con:refreshToken>
       <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>asdasd</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>auth_properties</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
@@ -107,11 +151,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQCbaYQpLVuVmwbds2iWS9bTqbBvoVaAw3veD50iT5VFmT9WCmMjV-EaEuRLqw5DijAv8QGVC9JpYEITcUUMHfHibir2eTLmz-e-tDy5homQsMDADhUK2grAiC36iLIKABaNITFA788FuZtRzo3yHMtbXwDXug0LQHjO5KF1nhtwXHBemU3rfAaZesR46mdtcDvFcZ8bpALr-aBr7dogxrDlrK26qmqSwjW6pvWx3na1VHauxA5vWqND5NOL1FJmni4i7JWNSpzdJSw9x7lqes_TAEUETk9grv76L27cYvlr_JGyNHN86mHLMbRVIqTuwHkkhqbUAqcWmHjl7HOJ</con:accessToken>
+      <con:accessToken>BQC8VgEbEg-hMC-1-JbVjpXLqR5VsdLur6Aw43tnhSFwQhpIaJQr46WDPO_192oKp66dU4a1E01uER3g5nljVqHalrNIdKtnPtN8zsCyOaaeLNhMXP2CW65E7RY5SJDywUNvZWLuMT332qZHlSfjLqhzfepaADtK80HXgWAv9KWXU4Ddsg-o7IwqU_NQ_alQbclmNC4qG9yjYHh_w2TJpTIHT3stEwWs2Zo6uSrMsBAdvnAEEKKYUl0Ywm87pjh8rVNulsFRDlyZBdcxyvIqg2L5HYy8xpTzq8iTiCErFkoCEAl5Uq-l9mTfnMJHTIpoMFT0KI-tWjFAUUihYhjB</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
       <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1706280883</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1711569063</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -124,6 +168,44 @@
       <con:jwtConfiguration/>
       <con:responseType>id_token</con:responseType>
     </con:oAuth20AuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>asdasd</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>auth_properties</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>${#Project#authURL}</con:authorizationURI>
+      <con:accessTokenURI>${#Project#accessTokenURL}</con:accessTokenURI>
+      <con:redirectURI>${#Project#redirectURL}</con:redirectURI>
+      <con:accessToken>BQCRQeRkn5HcjHidJom82gHTwucEXdAKlDVP36Zp6aYI8V6balHqvL6CqMZRyXdvsvlwxONX5BZyxJzQ2v-RRob_A97B9LbhHtrU7Ope0ya-3pMjpO-2fBV2--UtzbVBHVLEvMXUrwvqLFPfeyRsicMVEN0OgEhGobL2-yzjYp55fOC_xgMl6XzV7QGLZZuZA5nmTA</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
+      <con:accessTokenIssuedTime>1712332440</con:accessTokenIssuedTime>
+      <con:clientID>${#Project#clientID}</con:clientID>
+      <con:clientSecret>${#Project#clientSecret}</con:clientSecret>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>AQCQcM5VT9wMhtnLSEbLDGy0A35d7YlbICtnK9VKepbVEcMiHRro9Amk9DWwYwafsLR6VC-IJ9wi6dr9CURHrdEd8es40BsuuV6Zx_2bJ7EbX2Prjz7TNivqJC2-geM8jiQ</con:refreshToken>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
   </con:authRepository>
-  <con:tags/>
+  <con:tags>
+    <con:tag>
+      <con:id>1651f3ea-e09c-4f78-bdf4-ae34962480ce</con:id>
+      <con:name>tag1</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>4b41bb44-9ebf-4819-987e-fdeff3ce4afa</con:id>
+      <con:name>tag2</con:name>
+    </con:tag>
+  </con:tags>
 </con:soapui-project>

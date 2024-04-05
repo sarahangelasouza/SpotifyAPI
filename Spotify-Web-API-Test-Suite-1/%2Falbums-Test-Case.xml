@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="7fd04d0f-57fc-4e95-83f9-a35629284f59" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/albums Test Case" searchProperties="true" timeout="0">
+  <con:description id="e2eb6ef6-b655-4744-babb-57f321b5ec70">The test case generated for the REST resource [/albums] located at [/albums]</con:description>
+  <con:settings>
+    <con:setting id="7fd04d0f-57fc-4e95-83f9-a35629284f59fileName">%2Falbums-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="d606345a-01f6-4573-93dc-df79122e11df">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/albums" methodName="get-multiple-albums" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="9ec3cea4-c1e9-45f1-ba97-6ed6a3cc5e00" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
