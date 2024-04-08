@@ -3,10 +3,10 @@
   <con:settings id="a0819d30-72a3-45b9-b35d-63a7a501fa66">
     <con:setting id="bdc253c1-7c99-43cf-9efa-90adcd7b23acfileName">Get-Artist-By-ID</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="GetArtistByID" id="8b232bfc-881e-4bd7-866f-5e7e7e23f827">
+  <con:testStep type="restrequest" name="GetArtistByID - Billy Joel" id="8b232bfc-881e-4bd7-866f-5e7e7e23f827">
     <con:settings/>
     <con:config service="Spotify Web API" resourcePath="/artists/{id}/albums" methodName="get-an-artists-albums" xsi:type="con:RestRequestStep">
-      <con:restRequest name="GetArtistByID" id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json">
+      <con:restRequest name="GetArtistByID - Billy Joel" id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
