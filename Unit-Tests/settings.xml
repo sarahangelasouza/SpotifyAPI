@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0283a864-3771-4bc1-ad23-e3502f052cbb" name="Unit Tests">
+  <con:settings id="a8ee8eca-c750-4526-82a9-d94ff888d130">
+    <con:setting id="0283a864-3771-4bc1-ad23-e3502f052cbbfileName">Unit-Tests</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

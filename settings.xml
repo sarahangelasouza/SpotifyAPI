@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" updated="3.49.0" resourceRoot="" encryptionMode="Selected properties" authProfile="New Spotify July 23">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="41f2263d-6b3c-4289-a97e-31520775f985" created="3.42.2" activeEnvironment="Default environment" name="SpotifyAPI" projectVersion="" updated="3.51.0" resourceRoot="" encryptionMode="Not encrypted" authProfile="New Spotify July 23">
   <con:settings>
     <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -39,33 +39,34 @@
   <con:entry key="Tool Args" value=""/>
   <con:entry key="Save Project" value="false"/>
 </xml-fragment>]]></con:setting>
+    <con:setting id="ProjectSettings@shadowPassword">password</con:setting>
   </con:settings>
   <con:requirements/>
   <con:properties>
-    <con:property encrypted="true">
+    <con:property encrypted="false">
       <con:name>clientID</con:name>
-      <con:value xsi:nil="true"/>
-      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hNNw0KVEJRcWUzU2NQM2V4WjZkelN3Njh0b0dxbktnUkFuVTQzNjl3Zm84SFF4aWNhRjlqV2tNcldmOC9NSFFZVXU3SmorTHJrR1BYb05kWg0KRldFMUNWVUpBMytSNmtEYzhIaW5CaUM3TTdUajNWRVM3a3JQMUN3SHlCaEZkWHJ0NU5aazl5aTVucHR4MTVqZ1d4a0c5SXVX</con:encryptedContent>
+      <con:value>610b910ba0474dccbc33ef547c1600cd</con:value>
+      <con:encryptedContent xsi:nil="true"/>
     </con:property>
-    <con:property encrypted="true">
+    <con:property encrypted="false">
       <con:name>clientSecret</con:name>
-      <con:value xsi:nil="true"/>
-      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hNNw0KVEJRcWUzU2NQM2V4WjZkelN3Njh0b0dxbktnUkFuVTQzNjl3Zm84SFF4aWNhRjlqV2tNcldmOC9NSFFZVXU3SmorTHJrR1BYb0Ridw0KWkt5UUp0Vmk5dTFsckRPejZ0cUhpdVlOTUlKVGhQSk91dEdldmx6WGNZQlI5YjFsM1NKQzg4Mm5kS1VCQXRHTTBkR2xiMEwr</con:encryptedContent>
+      <con:value>88784898023d4526b1b29b93c09bafad</con:value>
+      <con:encryptedContent xsi:nil="true"/>
     </con:property>
-    <con:property encrypted="true">
+    <con:property encrypted="false">
       <con:name>authURL</con:name>
-      <con:value xsi:nil="true"/>
-      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hNNw0KVEJRcWUzU2NQM2V4WjZkelN3Njh0b0dxbktnUkFuVTQzNjl3Zm84SFF4aWNhRjlqV2tNcldmOC9NSFFZVXU3SmorTHJrR1BYb0xzYw0KNmZUVDI0WmsrYWlHNk0xcnFPem9MQ05lQzZxcEJmbUVueHozOEdMWmdQV1dGekZkcWFBNG9KeDA0ZTJmVGZyLzlycXRHekl1</con:encryptedContent>
+      <con:value>https://accounts.spotify.com/authorize?</con:value>
+      <con:encryptedContent xsi:nil="true"/>
     </con:property>
-    <con:property encrypted="true">
+    <con:property encrypted="false">
       <con:name>accessTokenURL</con:name>
-      <con:value xsi:nil="true"/>
-      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hNNw0KVEJRcWUzU2NQM2V4WjZkelN3Njh0b0dxbktnUkFuVTQzNjl3Zm84SFF4aWNhRjlqV2tNcldmOC9NSFFZVXU3SmorTHJrR1BYb0xzYw0KNmZUVDI0WmsrYWlHNk0xcnFPem9MQ05lQzZxcEJRREo3YzA4My8vWDdnZU56ek40c0dxR3FlbU4zUW9VcWpwTkZMR0wrZ2pG</con:encryptedContent>
+      <con:value>https://accounts.spotify.com/api/token</con:value>
+      <con:encryptedContent xsi:nil="true"/>
     </con:property>
-    <con:property encrypted="true">
+    <con:property encrypted="false">
       <con:name>redirectURL</con:name>
-      <con:value xsi:nil="true"/>
-      <con:encryptedContent>RENXbEZBU1pjRzZJUGpySXpGU09XVWdQVGhuMDRxQVducUxhT3VCQmtybjU4dXIwZC9IS29QbFB3Z1M5aUdqRnFjbTVhbWpOb2hNNw0KVEJRcWUzU2NQM2V4WjZkelN3Njh0b0dxbktnUkFuVTQzNjl3Zm84SFF4aWNhRjlqV2tNcldmOC9NSFFZVXU3SmorTHJrR1BYb1Bqbw0Kd0s0S21mRUJjeHljSU5qZENKODZReVAreGw2NWlXeTNDN0lIbGJjNDkveDhZdzRMWVZoQ0JLb05WOHdvWkE9PQ0K</con:encryptedContent>
+      <con:value>http://localhost:8081/callback</con:value>
+      <con:encryptedContent xsi:nil="true"/>
     </con:property>
   </con:properties>
   <con:wssContainer/>
@@ -78,10 +79,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQC8VgEbEg-hMC-1-JbVjpXLqR5VsdLur6Aw43tnhSFwQhpIaJQr46WDPO_192oKp66dU4a1E01uER3g5nljVqHalrNIdKtnPtN8zsCyOaaeLNhMXP2CW65E7RY5SJDywUNvZWLuMT332qZHlSfjLqhzfepaADtK80HXgWAv9KWXU4Ddsg-o7IwqU_NQ_alQbclmNC4qG9yjYHh_w2TJpTIHT3stEwWs2Zo6uSrMsBAdvnAEEKKYUl0Ywm87pjh8rVNulsFRDlyZBdcxyvIqg2L5HYy8xpTzq8iTiCErFkoCEAl5Uq-l9mTfnMJHTIpoMFT0KI-tWjFAUUihYhjB</con:accessToken>
+      <con:accessToken>BQCh4HtnVtFAZI_IL8iEDg07tFnWI50eYGnK6W_rn3R_k3H9YJKXHN7eDqyHQquD1xKfU1W7srZ7Ky9THpR00XO5SIRcTnRUR_uINdn0y81eP3nfyXA5XEgj8tB-KE9Qe-OuQ_UEpwCISIwBOFchLYQ0hZ_jgDYgjD6g5Z_eZwsBNJjKgbPTUAuzWWlCQN_joC9t86qdbkA5QrZLvqY4tyE2m0odWuQdz28fH7pY23c8ZOa7yIZ0WPoKUkbMSRiYceN4neny2ABY1YXgF26KYzhuhlf21gDX4rAThZsehM-Iv7SzOYLX645VxLdVJbMPkT3th_fs_amQrYYmJ4Co</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1711569063</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1712546745</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -160,10 +162,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQC8VgEbEg-hMC-1-JbVjpXLqR5VsdLur6Aw43tnhSFwQhpIaJQr46WDPO_192oKp66dU4a1E01uER3g5nljVqHalrNIdKtnPtN8zsCyOaaeLNhMXP2CW65E7RY5SJDywUNvZWLuMT332qZHlSfjLqhzfepaADtK80HXgWAv9KWXU4Ddsg-o7IwqU_NQ_alQbclmNC4qG9yjYHh_w2TJpTIHT3stEwWs2Zo6uSrMsBAdvnAEEKKYUl0Ywm87pjh8rVNulsFRDlyZBdcxyvIqg2L5HYy8xpTzq8iTiCErFkoCEAl5Uq-l9mTfnMJHTIpoMFT0KI-tWjFAUUihYhjB</con:accessToken>
+      <con:accessToken>BQCh4HtnVtFAZI_IL8iEDg07tFnWI50eYGnK6W_rn3R_k3H9YJKXHN7eDqyHQquD1xKfU1W7srZ7Ky9THpR00XO5SIRcTnRUR_uINdn0y81eP3nfyXA5XEgj8tB-KE9Qe-OuQ_UEpwCISIwBOFchLYQ0hZ_jgDYgjD6g5Z_eZwsBNJjKgbPTUAuzWWlCQN_joC9t86qdbkA5QrZLvqY4tyE2m0odWuQdz28fH7pY23c8ZOa7yIZ0WPoKUkbMSRiYceN4neny2ABY1YXgF26KYzhuhlf21gDX4rAThZsehM-Iv7SzOYLX645VxLdVJbMPkT3th_fs_amQrYYmJ4Co</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1711569063</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1712546745</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>

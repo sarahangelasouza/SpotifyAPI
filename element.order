@@ -1,7 +1,5 @@
 Spotify-Web-API
-Test-Suite-1
+General-Tests
 Shuffle
 GetArtistsData
-data
-Spotify-Web-API-Test-Suite-1
-Test-Suite-2
+Unit-Tests
