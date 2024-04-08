@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="b3b33a8f-fe50-4b9a-b07e-0109a2390de6" keepSession="false" name="ShuffleTopThree" searchProperties="true" timeout="0" wsrmAckTo="" wsrmEnabled="false" wsrmVersion="1.0" zephyrTestId="" zephyrTestName="">
-  <con:settings id="12480135-d726-47f9-b114-611b3ebe2d6e">
+  <con:settings id="e98be4e7-04c5-41b8-80dd-08bbe666590a">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">true</con:setting>

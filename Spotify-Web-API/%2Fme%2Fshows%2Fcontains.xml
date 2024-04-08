@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="8f3eff9f-84fa-4b3a-9c95-20342198678b" name="/me/shows/contains" path="/me/shows/contains">
-  <con:settings id="8ec378bf-9589-44e2-9a76-4892da6b9e09">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="8f3eff9f-84fa-4b3a-9c95-20342198678b" name="/me/shows/contains" path="/me/shows/contains">
+  <con:settings id="2fa79663-e5a1-43a5-9378-6fb6c753d703">
     <con:setting id="8f3eff9f-84fa-4b3a-9c95-20342198678bfileName">%2Fme%2Fshows%2Fcontains</con:setting>
   </con:settings>
   <con:parameters/>

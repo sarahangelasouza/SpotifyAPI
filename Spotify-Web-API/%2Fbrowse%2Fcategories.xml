@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="e7fda433-55b3-4817-8803-06ddda55ca15" name="/browse/categories" path="/browse/categories">
-  <con:settings id="1ad1c2db-3c8a-4a2f-a6a1-1e8e18fec721">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e7fda433-55b3-4817-8803-06ddda55ca15" name="/browse/categories" path="/browse/categories">
+  <con:settings id="60fb9a83-e275-4e2c-83c9-d140bb5a447e">
     <con:setting id="e7fda433-55b3-4817-8803-06ddda55ca15fileName">%2Fbrowse%2Fcategories</con:setting>
   </con:settings>
   <con:parameters/>

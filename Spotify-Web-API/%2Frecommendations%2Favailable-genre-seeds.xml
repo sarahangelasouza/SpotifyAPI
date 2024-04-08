@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="09b45808-e6bd-4b9e-9013-4892b488999c" name="/recommendations/available-genre-seeds" path="/recommendations/available-genre-seeds">
-  <con:settings id="a28508ec-f265-4db3-8528-17643ffbc8c1">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="09b45808-e6bd-4b9e-9013-4892b488999c" name="/recommendations/available-genre-seeds" path="/recommendations/available-genre-seeds">
+  <con:settings id="79c58032-a578-434c-8c68-2708205a0e72">
     <con:setting id="09b45808-e6bd-4b9e-9013-4892b488999cfileName">%2Frecommendations%2Favailable-genre-seeds</con:setting>
   </con:settings>
   <con:parameters/>
