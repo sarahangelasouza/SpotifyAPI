@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e3b7ec1c-5876-45a6-bc0e-f25f13ea0f6e" name="/me/episodes" path="/me/episodes">
+  <con:settings id="21a2a2f0-ddbd-49ef-8077-ac73a9a31586">
+    <con:setting id="e3b7ec1c-5876-45a6-bc0e-f25f13ea0f6efileName">%2Fme%2Fepisodes</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method id="0e368dfd-1f48-43f5-b451-fe61a6199866" method="GET" name="get-users-saved-episodes">
+    <con:description>Get a list of the episodes saved in the current Spotify user's library.&lt;br>
+This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>market</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>limit</con:name>
+        <con:value>20</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>20</con:default>
+      </con:parameter>
+      <con:parameter>
+        <con:name>offset</con:name>
+        <con:value>0</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>0</con:default>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Pages of saved episodes</con:description>
+      <con:sampleContent>{
+  "href" : "https://api.spotify.com/v1/me/shows?offset=0&amp;limit=20\n",
+  "items" : [ {
+    "added_at" : "2015-07-20T15:49:04-07:00",
+    "episode" : {
+      "audio_preview_url" : "https://p.scdn.co/mp3-preview/2f37da1d4221f40b9d1a98cd191f4d6f1646ad17",
+      "description" : "A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.\n",
+      "html_description" : "&lt;p>A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.&lt;/p>\n",
+      "duration_ms" : 1686230,
+      "explicit" : true,
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ",
+      "id" : "5Xt5DXGzch68nYYamXrNxZ",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "is_externally_hosted" : true,
+      "is_playable" : true,
+      "language" : "en",
+      "languages" : [ "fr", "en" ],
+      "name" : "Starting Your Own Podcast: Tips, Tricks, and Advice From Anchor Creators\n",
+      "release_date" : "1981-12-15",
+      "release_date_precision" : "day",
+      "resume_point" : {
+        "fully_played" : true,
+        "resume_position_ms" : 0
+      },
+      "type" : "episode",
+      "uri" : "spotify:episode:0zLhl3WsOCQHbe1BPTiHgr",
+      "restrictions" : {
+        "reason" : "string"
+      },
+      "show" : {
+        "available_markets" : [ "string" ],
+        "copyrights" : [ {
+          "text" : "string",
+          "type" : "string"
+        } ],
+        "description" : "string",
+        "html_description" : "string",
+        "explicit" : true,
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "images" : [ {
+          "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+          "height" : 300,
+          "width" : 300
+        } ],
+        "is_externally_hosted" : true,
+        "languages" : [ "string" ],
+        "media_type" : "string",
+        "name" : "string",
+        "publisher" : "string",
+        "type" : "show",
+        "uri" : "string"
+      }
+    }
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "offset" : 0,
+  "previous" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+  "total" : 4
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request id="cf791007-29d0-4805-be3b-be019144bdac" mediaType="application/json" name="Request 1">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method id="e32ff1cb-83c9-4ef5-820e-f4372a0d24b6" method="DELETE" name="remove-episodes-user">
+    <con:description>Remove one or more episodes from the current user's library.&lt;br>
+This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ids</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ids" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request id="7657418c-3aee-40e3-8e42-a04552eae956" mediaType="application/json" name="Request 1">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "ids" : [ "string" ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method id="8d4ac37f-a209-4203-9619-dd726605d1f7" method="PUT" name="save-episodes-user">
+    <con:description>Save one or more episodes to the current user's library.&lt;br>
+This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ids</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ids" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request id="91367387-0d33-4198-8866-3928aac7c94d" mediaType="application/json" name="Request 1">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request>{\r
+  "ids" : [ "string" ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

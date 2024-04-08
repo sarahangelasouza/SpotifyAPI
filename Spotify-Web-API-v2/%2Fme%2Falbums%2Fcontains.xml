@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="f0ea0534-ad99-4ef9-b216-11a72f2dc826" name="/me/albums/contains" path="/me/albums/contains">
+  <con:settings id="6319ee1a-4988-48f2-8125-618c9a4d5ded">
+    <con:setting id="f0ea0534-ad99-4ef9-b216-11a72f2dc826fileName">%2Fme%2Falbums%2Fcontains</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method id="a4c873a4-2e13-4992-9685-aae83e0dcde7" method="GET" name="check-users-saved-albums">
+    <con:description>Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ids</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Array of booleans</con:description>
+      <con:sampleContent>[ false, true ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request id="7d75ea29-5be7-48c4-a171-41352fc6a1bd" mediaType="application/json" name="Request 1">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="88cc777f-3b51-4809-bdc5-4886ae6bd2e2" keepSession="false" name="Get Album by ID" searchProperties="true" timeout="0">
-  <con:settings id="cf337fa0-1d8c-4e3d-89d6-92293d910e31">
+  <con:settings id="8ce0c818-756d-4127-90e3-d434280965f2">
     <con:setting id="88cc777f-3b51-4809-bdc5-4886ae6bd2e2fileName">Get-Album-by-ID</con:setting>
   </con:settings>
   <con:testStep id="d868df17-1bfa-496d-9059-cb5c7c6e9487" name="Get Album by ID- Morning View" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-album" resourcePath="/albums/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-album" resourcePath="/albums/{id}" service="Spotify Web API v2">
       <con:restRequest id="e8c8fdb8-6e2e-4b3b-bffa-0a05faab70bf" mediaType="application/json" name="Get Album by ID- Morning View">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

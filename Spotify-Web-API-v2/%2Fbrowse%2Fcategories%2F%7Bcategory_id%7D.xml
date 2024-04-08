@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e3db7075-2fc0-4555-9115-df1f0c7b8e0f" name="/browse/categories/{category_id}" path="/browse/categories/{category_id}">
+  <con:settings id="e9be6013-7695-4698-9261-e0b3ff553e21">
+    <con:setting id="e3db7075-2fc0-4555-9115-df1f0c7b8e0ffileName">%2Fbrowse%2Fcategories%2F%7Bcategory_id%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method id="198eecca-c7a4-40b4-bed8-7ee1eff647b3" method="GET" name="get-a-category">
+    <con:description>Get a single category used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>category_id</con:name>
+        <con:style>TEMPLATE</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>country</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>locale</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>A category</con:description>
+      <con:sampleContent>{
+  "href" : "string",
+  "icons" : [ {
+    "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+    "height" : 300,
+    "width" : 300
+  } ],
+  "id" : "equal",
+  "name" : "EQUAL"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request id="51b37b57-7fe0-49d7-890a-54759b94b22b" mediaType="application/json" name="Request 1">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

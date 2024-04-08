@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="17a6e379-3ac6-48dd-83e5-105c54e805c2" keepSession="false" name="Auth Token Refresh" searchProperties="true" timeout="0">
-  <con:settings id="f833927e-af75-4408-b145-c542d7ec9495">
+  <con:settings id="e22af7fe-69e7-4cea-9b1e-ce13e35c1779">
     <con:setting id="17a6e379-3ac6-48dd-83e5-105c54e805c2fileName">Auth-Token-Refresh</con:setting>
   </con:settings>
   <con:testStep id="cd2443de-35bf-4776-b07d-d60e1916f8c4" name="Get Artist" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API v2">
       <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="Get Artist">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -40,7 +40,7 @@
   </con:testStep>
   <con:testStep id="f7d3b6e2-a345-40ab-9b90-5909fa9fc092" name="Get Artist 2" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API v2">
       <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="Get Artist 2">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -81,7 +81,7 @@
   </con:testStep>
   <con:testStep id="ea501638-10b7-470a-be04-876083315624" name="Get Artist 3" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API v2">
       <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="Get Artist 3">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="08b9a7af-1385-4403-a0e8-fc117645938f" keepSession="false" name="Get Playlist By ID" searchProperties="true" timeout="0">
-  <con:settings id="9a3c46c8-356d-480a-b131-7205dc43d001">
+  <con:settings id="545b3578-bd1c-4039-b1d7-85f2ebc7b409">
     <con:setting id="08b9a7af-1385-4403-a0e8-fc117645938ffileName">Get-Playlist-By-ID</con:setting>
   </con:settings>
   <con:testStep id="7e8f62ce-de2c-49ae-b852-904ec93d46f0" name="Get Artist By ID - Beat Saber - BTS" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-playlist" resourcePath="/playlists/{playlist_id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-playlist" resourcePath="/playlists/{playlist_id}" service="Spotify Web API v2">
       <con:restRequest id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json" name="Get Artist By ID - Beat Saber - BTS">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

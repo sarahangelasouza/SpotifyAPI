@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="fc04bc84-6f29-4c2b-8164-167a4eaaec29" name="/me/player/seek" path="/me/player/seek">
+  <con:settings id="a7d06c5f-30ff-4352-862c-db59a60b9512">
+    <con:setting id="fc04bc84-6f29-4c2b-8164-167a4eaaec29fileName">%2Fme%2Fplayer%2Fseek</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method id="83803ea6-103e-40b3-a9c8-0d49daa0e232" method="PUT" name="seek-to-position-in-currently-playing-track">
+    <con:description>Seeks to the given position in the user’s currently playing track.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>position_ms</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>device_id</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Bad or expired token. This can happen if the user revoked a token or
+the access token has expired. You should re-authenticate the user.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Bad OAuth request (wrong consumer key, bad nonce, expired
+timestamp...). Unfortunately, re-authenticating the user won't help here.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+      <con:description>The app has exceeded its rate limits.</con:description>
+      <con:sampleContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request id="3c5b107e-6f35-40f8-b1e0-089a2cd65c98" mediaType="application/json" name="Request 1">
+      <con:settings/>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

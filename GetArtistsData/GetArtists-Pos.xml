@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="8888f999-e5ed-447c-aeab-f0d67d58c306" keepSession="false" name="GetArtists-Pos" searchProperties="true" timeout="0">
-  <con:settings id="125c0525-ae20-4d14-be4c-d3696421e0bb">
+  <con:settings id="68e55ab9-80f8-42d1-b959-6c34552f17e3">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>
@@ -32,7 +32,7 @@
   </con:testStep>
   <con:testStep id="29528284-42f0-46b4-9d5b-0eed9950a131" name="GetArtistByID" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API v2">
       <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="GetArtistByID">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
