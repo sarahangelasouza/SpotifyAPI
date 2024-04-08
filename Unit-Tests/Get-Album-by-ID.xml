@@ -5,7 +5,7 @@
   </con:settings>
   <con:testStep id="d868df17-1bfa-496d-9059-cb5c7c6e9487" name="Get Album by ID- Morning View" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-album" resourcePath="/albums/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-album" resourcePath="/albums/{id}" service="Spotify Web API v2">
       <con:restRequest id="e8c8fdb8-6e2e-4b3b-bffa-0a05faab70bf" mediaType="application/json" name="Get Album by ID- Morning View">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

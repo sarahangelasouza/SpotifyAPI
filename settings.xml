@@ -81,7 +81,6 @@
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
       <con:accessToken>BQBHi0yMOFSviBeDoFXs2ZL4Ghz5gQ_gsNF3WqHYWBQtO_3E_ujXU6yNmrTMXtw7xRUjV-1z2-2_Ycdy8xy_e8EpA7QHww28Cx-d9Qz12y7TGb0QPL9JvkyHAA7-R9UjGNXQkzTsFM4NBcj4QMnPvUGyGDTOxhZCuS28gYs7ptxwbxxiNvCrqeTUxp5ftQb__SBqKhB_oUXuwL8XlrzvJqryIVi7PrgOLbMNFkU-msvUSej27kXKiel8uef2iNVt9ngsEPsPrS1J5ziGPvcbCLrgjb9Tu6tGrXXHNLY3uHkfRNxLZU-sVJ7aHEkErdPcM0AIjOMIHx-ZKoeDu_Wd</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
       <con:accessTokenIssuedTime>1712592404</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
@@ -164,7 +163,6 @@
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
       <con:accessToken>BQBHi0yMOFSviBeDoFXs2ZL4Ghz5gQ_gsNF3WqHYWBQtO_3E_ujXU6yNmrTMXtw7xRUjV-1z2-2_Ycdy8xy_e8EpA7QHww28Cx-d9Qz12y7TGb0QPL9JvkyHAA7-R9UjGNXQkzTsFM4NBcj4QMnPvUGyGDTOxhZCuS28gYs7ptxwbxxiNvCrqeTUxp5ftQb__SBqKhB_oUXuwL8XlrzvJqryIVi7PrgOLbMNFkU-msvUSej27kXKiel8uef2iNVt9ngsEPsPrS1J5ziGPvcbCLrgjb9Tu6tGrXXHNLY3uHkfRNxLZU-sVJ7aHEkErdPcM0AIjOMIHx-ZKoeDu_Wd</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
       <con:accessTokenIssuedTime>1712592404</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>

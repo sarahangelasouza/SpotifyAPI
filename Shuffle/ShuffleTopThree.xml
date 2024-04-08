@@ -10,7 +10,7 @@
   </con:settings>
   <con:testStep id="b5e08704-245c-43ee-9617-7a3f99444a5b" name="CurrentTrack" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-the-users-currently-playing-track" resourcePath="/me/player/currently-playing" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-the-users-currently-playing-track" resourcePath="/me/player/currently-playing" service="Spotify Web API v2">
       <con:restRequest id="fd189ba7-3634-4b27-ba0e-776e9cf86fdf" mediaType="application/json" name="CurrentTrack">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Header" value="${#Project#Value}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -57,7 +57,7 @@
   </con:testStep>
   <con:testStep id="f6f7cc1d-3f6c-47a0-85f3-1b1ac2c27486" name="ArtistInfo" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API v2">
       <con:restRequest id="e0eed669-1ad7-4091-9046-44b433691e5e" mediaType="application/json" name="ArtistInfo">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -125,7 +125,7 @@
   </con:testStep>
   <con:testStep id="4826f1b3-1566-4e35-9b73-65d706ff8d58" name="DeviceList" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-a-users-available-devices" resourcePath="/me/player/devices" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-a-users-available-devices" resourcePath="/me/player/devices" service="Spotify Web API v2">
       <con:restRequest id="e2c5bfb8-43bf-4e37-aad7-4b757cb70587" mediaType="application/json" name="DeviceList">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Basic ${DeviceList#Response#$['error']['status']}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -166,7 +166,7 @@
   </con:testStep>
   <con:testStep id="2d9ffc67-fbec-4d7c-9089-c42422a8337b" name="ArtistTopTracks" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artists-top-tracks" resourcePath="/artists/{id}/top-tracks" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artists-top-tracks" resourcePath="/artists/{id}/top-tracks" service="Spotify Web API v2">
       <con:restRequest id="d20d1bee-63c9-4b90-8092-3f2293bb0df3" mediaType="application/json" name="ArtistTopTracks">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -225,7 +225,7 @@
   </con:testStep>
   <con:testStep id="d3fe8f40-5567-4619-878d-1d67319053e6" name="Queue 1" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API v2">
       <con:restRequest id="4efd5628-abdf-477a-9bb7-154551518630" mediaType="application/json" name="Queue 1" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -269,7 +269,7 @@
   </con:testStep>
   <con:testStep id="f2e4d471-351e-41fa-acff-a03ff4d4dd54" name="Queue 2" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API v2">
       <con:restRequest id="4efd5628-abdf-477a-9bb7-154551518630" mediaType="application/json" name="Queue 2" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -319,7 +319,7 @@
   </con:testStep>
   <con:testStep id="39939234-c70e-45e6-9ac7-9a7cbe74935d" name="Queue 3" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API v2">
       <con:restRequest id="4efd5628-abdf-477a-9bb7-154551518630" mediaType="application/json" name="Queue 3" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -370,7 +370,7 @@
   </con:testStep>
   <con:testStep id="1d1b561a-4507-4867-a10a-724970bae18a" name="Play Next 1" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API v2">
       <con:restRequest id="5ae581cf-aac5-4e81-8ed1-cc6814e886c1" mediaType="application/json" name="Play Next 1" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -425,7 +425,7 @@
   </con:testStep>
   <con:testStep id="971fe205-f705-4201-aa1b-ba2c45e8207b" name="Play Next 2" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API v2">
       <con:restRequest id="5ae581cf-aac5-4e81-8ed1-cc6814e886c1" mediaType="application/json" name="Play Next 2" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -480,7 +480,7 @@
   </con:testStep>
   <con:testStep id="c73c275c-d8a6-4fe0-80a1-0235f3a9e957" name="Play Next 3" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API v2">
       <con:restRequest id="5ae581cf-aac5-4e81-8ed1-cc6814e886c1" mediaType="application/json" name="Play Next 3" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

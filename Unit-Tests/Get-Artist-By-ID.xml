@@ -5,7 +5,7 @@
   </con:settings>
   <con:testStep id="8b232bfc-881e-4bd7-866f-5e7e7e23f827" name="GetArtistByID - Billy Joel" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artists-albums" resourcePath="/artists/{id}/albums" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artists-albums" resourcePath="/artists/{id}/albums" service="Spotify Web API v2">
       <con:restRequest id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json" name="GetArtistByID - Billy Joel">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

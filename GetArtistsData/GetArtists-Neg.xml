@@ -32,7 +32,7 @@
   </con:testStep>
   <con:testStep id="37e44e69-77c5-4103-be86-a4fde763c62b" name="GetArtistByID" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artist" resourcePath="/artists/{id}" service="Spotify Web API v2">
       <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="GetArtistByID">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
