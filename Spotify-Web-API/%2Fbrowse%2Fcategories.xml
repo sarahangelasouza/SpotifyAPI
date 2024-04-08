@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/browse/categories" path="/browse/categories" id="e7fda433-55b3-4817-8803-06ddda55ca15">
-  <con:settings id="c7d97b3c-55aa-4d4a-a88c-6ccfcdb48bda">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e7fda433-55b3-4817-8803-06ddda55ca15" name="/browse/categories" path="/browse/categories">
+  <con:settings id="1ad1c2db-3c8a-4a2f-a6a1-1e8e18fec721">
     <con:setting id="e7fda433-55b3-4817-8803-06ddda55ca15fileName">%2Fbrowse%2Fcategories</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-categories" id="4b7c32aa-2452-434e-b785-06993f3baa1e" method="GET">
+  <con:method id="4b7c32aa-2452-434e-b785-06993f3baa1e" method="GET" name="get-categories">
     <con:description>Get a list of categories used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).</con:description>
     <con:settings/>
     <con:parameters>
@@ -93,7 +93,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="8896402b-8103-4267-b00a-403576d985be" mediaType="application/json">
+    <con:request id="8896402b-8103-4267-b00a-403576d985be" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

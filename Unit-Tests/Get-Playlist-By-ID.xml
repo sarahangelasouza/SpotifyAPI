@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="08b9a7af-1385-4403-a0e8-fc117645938f" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Playlist By ID" searchProperties="true" timeout="0">
-  <con:settings id="e96a36c7-d96c-4fdf-9c8a-abfc4cad4a95">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="08b9a7af-1385-4403-a0e8-fc117645938f" keepSession="false" name="Get Playlist By ID" searchProperties="true" timeout="0">
+  <con:settings id="5321d14c-b7e0-4012-a308-de96af5ac9de">
     <con:setting id="08b9a7af-1385-4403-a0e8-fc117645938ffileName">Get-Playlist-By-ID</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="Get Artist By ID - Beat Saber - BTS" id="7e8f62ce-de2c-49ae-b852-904ec93d46f0">
+  <con:testStep id="7e8f62ce-de2c-49ae-b852-904ec93d46f0" name="Get Artist By ID - Beat Saber - BTS" type="restrequest">
     <con:settings/>
-    <con:config service="Spotify Web API" resourcePath="/playlists/{playlist_id}" methodName="get-playlist" xsi:type="con:RestRequestStep">
-      <con:restRequest name="Get Artist By ID - Beat Saber - BTS" id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-playlist" resourcePath="/playlists/{playlist_id}" service="Spotify Web API">
+      <con:restRequest id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json" name="Get Artist By ID - Beat Saber - BTS">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>https://api.spotify.com/v1</con:endpoint>
         <con:request/>
         <con:originalUri>https://api.spotify.com/v1/playlists/4tZwfgrHOc3mvqYlEYSvVi</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="8aba1795-97fc-4a94-8f39-5af7511d5379" name="Valid HTTP Status Codes">
+        <con:assertion id="8aba1795-97fc-4a94-8f39-5af7511d5379" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="d5cb2ab0-ff15-4fa1-9d26-1db53846698d" name="Response SLA">
+        <con:assertion id="d5cb2ab0-ff15-4fa1-9d26-1db53846698d" name="Response SLA" type="Response SLA Assertion">
           <con:configuration>
             <SLA>200</SLA>
           </con:configuration>

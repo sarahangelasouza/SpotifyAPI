@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player/recently-played" path="/me/player/recently-played" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e">
-  <con:settings id="00742a6f-156d-4653-9660-07e15b419096">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e" name="/me/player/recently-played" path="/me/player/recently-played">
+  <con:settings id="8c55734c-1337-4041-85b2-8fc8399efa6b">
     <con:setting id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8efileName">%2Fme%2Fplayer%2Frecently-played</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-recently-played" id="730b8f45-caaa-4c02-8244-39a6bf1cbbd2" method="GET">
+  <con:method id="730b8f45-caaa-4c02-8244-39a6bf1cbbd2" method="GET" name="get-recently-played">
     <con:description>Get tracks from the current user's recently played tracks.
 _**Note**: Currently doesn't support podcast episodes._</con:description>
     <con:settings/>
@@ -128,7 +128,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="70aa0c6a-b724-4f62-b076-e87d00056ff4" mediaType="application/json">
+    <con:request id="70aa0c6a-b724-4f62-b076-e87d00056ff4" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

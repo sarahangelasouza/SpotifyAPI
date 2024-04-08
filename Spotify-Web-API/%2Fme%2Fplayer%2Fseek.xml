@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player/seek" path="/me/player/seek" id="fc04bc84-6f29-4c2b-8164-167a4eaaec29">
-  <con:settings id="4ef7e3e4-09a6-4553-817b-82fe3e31ce6b">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="fc04bc84-6f29-4c2b-8164-167a4eaaec29" name="/me/player/seek" path="/me/player/seek">
+  <con:settings id="ed10eec2-be74-4b84-9478-9c6cb96aecca">
     <con:setting id="fc04bc84-6f29-4c2b-8164-167a4eaaec29fileName">%2Fme%2Fplayer%2Fseek</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="seek-to-position-in-currently-playing-track" id="83803ea6-103e-40b3-a9c8-0d49daa0e232" method="PUT">
+  <con:method id="83803ea6-103e-40b3-a9c8-0d49daa0e232" method="PUT" name="seek-to-position-in-currently-playing-track">
     <con:description>Seeks to the given position in the user’s currently playing track.</con:description>
     <con:settings/>
     <con:parameters>
@@ -55,7 +55,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="3c5b107e-6f35-40f8-b1e0-089a2cd65c98" mediaType="application/json">
+    <con:request id="3c5b107e-6f35-40f8-b1e0-089a2cd65c98" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

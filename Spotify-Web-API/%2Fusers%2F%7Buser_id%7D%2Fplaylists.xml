@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/users/{user_id}/playlists" path="/users/{user_id}/playlists" id="bdac6fd8-ea8e-4956-9371-7b821920c80b">
-  <con:settings id="3b9ddb16-ce1d-47c8-889c-086774a15188">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="bdac6fd8-ea8e-4956-9371-7b821920c80b" name="/users/{user_id}/playlists" path="/users/{user_id}/playlists">
+  <con:settings id="f0eabc79-5ca9-4b82-91da-57ece43b88c3">
     <con:setting id="bdac6fd8-ea8e-4956-9371-7b821920c80bfileName">%2Fusers%2F%7Buser_id%7D%2Fplaylists</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-list-users-playlists" id="870d9992-0453-4f98-bcc1-273d9e74332e" method="GET">
+  <con:method id="870d9992-0453-4f98-bcc1-273d9e74332e" method="GET" name="get-list-users-playlists">
     <con:description>Get a list of the playlists owned or followed by a Spotify user.</con:description>
     <con:settings/>
     <con:parameters>
@@ -114,7 +114,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="afcb8c54-ca54-4653-8236-19545120a8d1" mediaType="application/json">
+    <con:request id="afcb8c54-ca54-4653-8236-19545120a8d1" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -126,7 +126,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="create-playlist" id="0f093c2a-c187-4fcb-a2d0-b70c308da86b" method="POST">
+  <con:method id="0f093c2a-c187-4fcb-a2d0-b70c308da86b" method="POST" name="create-playlist">
     <con:description>Create a playlist for a Spotify user. (The playlist will be empty until
 you [add tracks](/documentation/web-api/reference/#/operations/add-tracks-to-playlist).)</con:description>
     <con:settings/>
@@ -342,7 +342,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "public" : false
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="f2c72572-1ecb-432f-8aa6-776bba86e7e6" mediaType="application/json">
+    <con:request id="f2c72572-1ecb-432f-8aa6-776bba86e7e6" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

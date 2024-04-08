@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/audio-features/{id}" path="/audio-features/{id}" id="f4b07c4a-8873-4acc-98b3-1797235331df">
-  <con:settings id="7c0e5107-30f4-4067-bbaf-7da1d5f26896">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="f4b07c4a-8873-4acc-98b3-1797235331df" name="/audio-features/{id}" path="/audio-features/{id}">
+  <con:settings id="42902c1a-d01c-4bf4-aa46-d837b3cfe42b">
     <con:setting id="f4b07c4a-8873-4acc-98b3-1797235331dffileName">%2Faudio-features%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-audio-features" id="25f8b8d5-af37-4013-865e-ee94537f0b58" method="GET">
+  <con:method id="25f8b8d5-af37-4013-865e-ee94537f0b58" method="GET" name="get-audio-features">
     <con:description>Get audio feature information for a single track identified by its unique
 Spotify ID.</con:description>
     <con:settings/>
@@ -78,7 +78,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="8f3ddb6b-30d8-4cdc-850a-a5466b64588c" mediaType="application/json">
+    <con:request id="8f3ddb6b-30d8-4cdc-850a-a5466b64588c" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

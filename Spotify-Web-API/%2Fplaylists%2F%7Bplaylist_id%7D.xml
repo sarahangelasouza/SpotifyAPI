@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/playlists/{playlist_id}" path="/playlists/{playlist_id}" id="53086958-be70-4ec4-af60-145b9a995467">
-  <con:settings id="098b7090-6ff7-4aaf-b8ea-63bda001ea62">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="53086958-be70-4ec4-af60-145b9a995467" name="/playlists/{playlist_id}" path="/playlists/{playlist_id}">
+  <con:settings id="0676bc16-6c59-4988-a657-46008a76756a">
     <con:setting id="53086958-be70-4ec4-af60-145b9a995467fileName">%2Fplaylists%2F%7Bplaylist_id%7D</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-playlist" id="a837c98d-95f7-41eb-a928-2cc6be0c43cb" method="GET">
+  <con:method id="a837c98d-95f7-41eb-a928-2cc6be0c43cb" method="GET" name="get-playlist">
     <con:description>Get a playlist owned by a Spotify user.</con:description>
     <con:settings/>
     <con:parameters>
@@ -222,7 +222,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json">
+    <con:request id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -234,7 +234,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="change-playlist-details" id="93a8da05-e917-4bbb-97d9-0bae974bfdf3" method="PUT">
+  <con:method id="93a8da05-e917-4bbb-97d9-0bae974bfdf3" method="PUT" name="change-playlist-details">
     <con:description>Change a playlist's name and public/private state. (The user must, of
 course, own the playlist.)</con:description>
     <con:settings/>
@@ -291,7 +291,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "public" : false
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="ffcff883-c90f-4f56-811e-c8adc570be46" mediaType="application/json">
+    <con:request id="ffcff883-c90f-4f56-811e-c8adc570be46" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

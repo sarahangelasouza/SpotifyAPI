@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/episodes/contains" path="/me/episodes/contains" id="82161ea7-961a-47ec-af60-8d20f0659e22">
-  <con:settings id="49e5debb-c5b1-40ed-8235-f4a590002c16">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="82161ea7-961a-47ec-af60-8d20f0659e22" name="/me/episodes/contains" path="/me/episodes/contains">
+  <con:settings id="2d8a1e2e-40d4-4f93-8dba-66f16f8a6c9f">
     <con:setting id="82161ea7-961a-47ec-af60-8d20f0659e22fileName">%2Fme%2Fepisodes%2Fcontains</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="check-users-saved-episodes" id="48a8a1b9-b518-4876-9ca1-945ea0251e3a" method="GET">
+  <con:method id="48a8a1b9-b518-4876-9ca1-945ea0251e3a" method="GET" name="check-users-saved-episodes">
     <con:description>Check if one or more episodes is already saved in the current Spotify user's 'Your Episodes' library.&lt;br>
 This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer)..</con:description>
     <con:settings/>
@@ -59,7 +59,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="6bca53fc-5c6c-4fe9-9ced-272a6bfccec3" mediaType="application/json">
+    <con:request id="6bca53fc-5c6c-4fe9-9ced-272a6bfccec3" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

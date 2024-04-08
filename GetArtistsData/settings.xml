@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0f2c8155-c463-4d20-bb4e-84abcc5172df" name="GetArtistsData">
-  <con:settings id="588b32e2-5899-4aec-b04d-f1f6f51059c8">
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="0f2c8155-c463-4d20-bb4e-84abcc5172df" name="GetArtistsData">
+  <con:settings id="f1227663-d347-49bd-a2f7-2c2582c21db3">
     <con:setting id="0f2c8155-c463-4d20-bb4e-84abcc5172dffileName">GetArtistsData</con:setting>
   </con:settings>
   <con:runType>SEQUENTIAL</con:runType>

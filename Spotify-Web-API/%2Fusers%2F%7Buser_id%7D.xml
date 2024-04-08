@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/users/{user_id}" path="/users/{user_id}" id="65a552a6-e64e-4851-866b-eb3cc4ad40b1">
-  <con:settings id="16ec0077-65be-4080-bda4-82d5aef72242">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="65a552a6-e64e-4851-866b-eb3cc4ad40b1" name="/users/{user_id}" path="/users/{user_id}">
+  <con:settings id="aaebd8d5-ea91-4ca8-9b30-0fd5bd25fda5">
     <con:setting id="65a552a6-e64e-4851-866b-eb3cc4ad40b1fileName">%2Fusers%2F%7Buser_id%7D</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-users-profile" id="5a6a278e-123d-4363-93fa-479d779b756f" method="GET">
+  <con:method id="5a6a278e-123d-4363-93fa-479d779b756f" method="GET" name="get-users-profile">
     <con:description>Get public profile information about a Spotify user.</con:description>
     <con:settings/>
     <con:parameters>
@@ -76,7 +76,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="f2c427fb-b70f-4e6e-bd4b-d32f37a83063" mediaType="application/json">
+    <con:request id="f2c427fb-b70f-4e6e-bd4b-d32f37a83063" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

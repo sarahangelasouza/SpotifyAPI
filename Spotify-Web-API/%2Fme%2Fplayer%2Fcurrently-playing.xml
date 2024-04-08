@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player/currently-playing" path="/me/player/currently-playing" id="d6c246ce-bc4c-47e3-96a3-d8becedd6945">
-  <con:settings id="a0bcc8a3-8ff6-4c37-a11c-84b6c76268eb">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="d6c246ce-bc4c-47e3-96a3-d8becedd6945" name="/me/player/currently-playing" path="/me/player/currently-playing">
+  <con:settings id="c076fe48-146a-47d2-8b1a-d0e38fa575ea">
     <con:setting id="d6c246ce-bc4c-47e3-96a3-d8becedd6945fileName">%2Fme%2Fplayer%2Fcurrently-playing</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-the-users-currently-playing-track" id="9a1a5f3c-76cc-4e98-9e27-2e5b41723103" method="GET">
+  <con:method id="9a1a5f3c-76cc-4e98-9e27-2e5b41723103" method="GET" name="get-the-users-currently-playing-track">
     <con:description>Get the object currently being played on the user's Spotify account.</con:description>
     <con:settings/>
     <con:parameters>
@@ -166,7 +166,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="c9dbda4b-0388-4262-8086-527ea931719b" mediaType="application/json">
+    <con:request id="c9dbda4b-0388-4262-8086-527ea931719b" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

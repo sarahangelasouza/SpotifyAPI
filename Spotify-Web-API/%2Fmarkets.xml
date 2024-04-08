@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/markets" path="/markets" id="74db7a9c-ff62-465c-a463-d12cf4953c67">
-  <con:settings id="657ffa9e-f8bc-4b83-84ad-807b94d8c84c">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="74db7a9c-ff62-465c-a463-d12cf4953c67" name="/markets" path="/markets">
+  <con:settings id="ee8a2c7c-7f5c-42f1-bb14-823fc3b45819">
     <con:setting id="74db7a9c-ff62-465c-a463-d12cf4953c67fileName">%2Fmarkets</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-available-markets" id="a90826a3-927b-4644-a730-c82370b7bf3e" method="GET">
+  <con:method id="a90826a3-927b-4644-a730-c82370b7bf3e" method="GET" name="get-available-markets">
     <con:description>Get the list of markets where Spotify is available.</con:description>
     <con:settings/>
     <con:parameters/>
@@ -55,7 +55,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="c732b4c4-aa4d-4f21-8651-5a8be2420796" mediaType="application/json">
+    <con:request id="c732b4c4-aa4d-4f21-8651-5a8be2420796" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

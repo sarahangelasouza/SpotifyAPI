@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bdc253c1-7c99-43cf-9efa-90adcd7b23ac" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Artist By ID" searchProperties="true" timeout="0">
-  <con:settings id="a0819d30-72a3-45b9-b35d-63a7a501fa66">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="bdc253c1-7c99-43cf-9efa-90adcd7b23ac" keepSession="false" name="Get Artist By ID" searchProperties="true" timeout="0">
+  <con:settings id="a886a079-d751-4f82-bcb3-633153d1e2b5">
     <con:setting id="bdc253c1-7c99-43cf-9efa-90adcd7b23acfileName">Get-Artist-By-ID</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="GetArtistByID - Billy Joel" id="8b232bfc-881e-4bd7-866f-5e7e7e23f827">
+  <con:testStep id="8b232bfc-881e-4bd7-866f-5e7e7e23f827" name="GetArtistByID - Billy Joel" type="restrequest">
     <con:settings/>
-    <con:config service="Spotify Web API" resourcePath="/artists/{id}/albums" methodName="get-an-artists-albums" xsi:type="con:RestRequestStep">
-      <con:restRequest name="GetArtistByID - Billy Joel" id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artists-albums" resourcePath="/artists/{id}/albums" service="Spotify Web API">
+      <con:restRequest id="b32d8304-8487-47af-8f0f-89304c51ad69" mediaType="application/json" name="GetArtistByID - Billy Joel">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>https://api.spotify.com/v1</con:endpoint>
         <con:request/>
         <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR/albums</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="fe313387-5f68-4853-91b2-9f7052c7ba56" name="Valid HTTP Status Codes">
+        <con:assertion id="fe313387-5f68-4853-91b2-9f7052c7ba56" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="22b17415-e216-4081-a582-7053886af789" name="Response SLA">
+        <con:assertion id="22b17415-e216-4081-a582-7053886af789" name="Response SLA" type="Response SLA Assertion">
           <con:configuration>
             <SLA>300</SLA>
           </con:configuration>

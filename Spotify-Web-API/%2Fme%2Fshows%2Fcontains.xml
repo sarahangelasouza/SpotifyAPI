@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/shows/contains" path="/me/shows/contains" id="8f3eff9f-84fa-4b3a-9c95-20342198678b">
-  <con:settings id="8d121e9f-85b9-455f-b1f8-8971f5f3d224">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="8f3eff9f-84fa-4b3a-9c95-20342198678b" name="/me/shows/contains" path="/me/shows/contains">
+  <con:settings id="8ec378bf-9589-44e2-9a76-4892da6b9e09">
     <con:setting id="8f3eff9f-84fa-4b3a-9c95-20342198678bfileName">%2Fme%2Fshows%2Fcontains</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="check-users-saved-shows" id="d103ee20-e553-42ee-b835-1effc14ce286" method="GET">
+  <con:method id="d103ee20-e553-42ee-b835-1effc14ce286" method="GET" name="check-users-saved-shows">
     <con:description>Check if one or more shows is already saved in the current Spotify user's library.</con:description>
     <con:settings/>
     <con:parameters>
@@ -58,7 +58,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="3a7c00de-25aa-49bd-833f-858756f257f5" mediaType="application/json">
+    <con:request id="3a7c00de-25aa-49bd-833f-858756f257f5" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

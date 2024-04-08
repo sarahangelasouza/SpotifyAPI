@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/top/tracks" path="/me/top/tracks" id="af3a2d9f-8995-407a-b958-b682987ad307">
-  <con:settings id="da5b8a77-0ecd-488d-9b8a-66f76e9ed271">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="af3a2d9f-8995-407a-b958-b682987ad307" name="/me/top/tracks" path="/me/top/tracks">
+  <con:settings id="cb1698e5-0b52-45f6-93c1-fc18a8297695">
     <con:setting id="af3a2d9f-8995-407a-b958-b682987ad307fileName">%2Fme%2Ftop%2Ftracks</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-users-top-tracks" id="a15a7c36-d65d-4061-826d-a916003cfba4" method="GET">
+  <con:method id="a15a7c36-d65d-4061-826d-a916003cfba4" method="GET" name="get-users-top-tracks">
     <con:description>Get the current user's top tracks based on calculated affinity.</con:description>
     <con:settings/>
     <con:parameters>
@@ -170,7 +170,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="22d93eda-42eb-4db1-b3d6-085ea4e53f84" mediaType="application/json">
+    <con:request id="22d93eda-42eb-4db1-b3d6-085ea4e53f84" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

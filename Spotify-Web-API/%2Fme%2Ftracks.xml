@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/tracks" path="/me/tracks" id="f2074b06-fe63-436f-aafa-ea7148ceb8bf">
-  <con:settings id="07cd1de4-4703-416b-932a-af986d54ef70">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="f2074b06-fe63-436f-aafa-ea7148ceb8bf" name="/me/tracks" path="/me/tracks">
+  <con:settings id="e3b03fb4-9cfd-4a68-b82b-0ba1c80961ad">
     <con:setting id="f2074b06-fe63-436f-aafa-ea7148ceb8bffileName">%2Fme%2Ftracks</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-users-saved-tracks" id="249a5a63-c0e4-44e9-b8b2-55799617e56b" method="GET">
+  <con:method id="249a5a63-c0e4-44e9-b8b2-55799617e56b" method="GET" name="get-users-saved-tracks">
     <con:description>Get a list of the songs saved in the current Spotify user's 'Your Music' library.</con:description>
     <con:settings/>
     <con:parameters>
@@ -171,7 +171,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="015fa62c-071f-4a72-b64e-50d743d39b8e" mediaType="application/json">
+    <con:request id="015fa62c-071f-4a72-b64e-50d743d39b8e" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -183,7 +183,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="remove-tracks-user" id="9a0934e4-6598-4a9d-8d77-8939b27800f6" method="DELETE">
+  <con:method id="9a0934e4-6598-4a9d-8d77-8939b27800f6" method="DELETE" name="remove-tracks-user">
     <con:description>Remove one or more tracks from the current user's 'Your Music' library.</con:description>
     <con:settings/>
     <con:parameters>
@@ -237,7 +237,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "ids" : [ "string" ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="c2c9a3e9-f147-4199-832f-ff5e09321d70" mediaType="application/json">
+    <con:request id="c2c9a3e9-f147-4199-832f-ff5e09321d70" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r
@@ -251,7 +251,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="save-tracks-user" id="286026f8-64ae-4607-a7d3-b9b2f6cd22be" method="PUT">
+  <con:method id="286026f8-64ae-4607-a7d3-b9b2f6cd22be" method="PUT" name="save-tracks-user">
     <con:description>Save one or more tracks to the current user's 'Your Music' library.</con:description>
     <con:settings/>
     <con:parameters>
@@ -305,7 +305,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "ids" : [ "string" ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="df964e27-b9bb-4c5e-9915-0a5cc516b47d" mediaType="application/json">
+    <con:request id="df964e27-b9bb-4c5e-9915-0a5cc516b47d" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

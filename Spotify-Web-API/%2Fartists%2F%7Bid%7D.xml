@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/artists/{id}" path="/artists/{id}" id="eeb5f4e3-d3e1-48a5-9818-358f50a1357f">
-  <con:settings id="ee002532-94ea-47f8-a54c-de4da21732bf">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="eeb5f4e3-d3e1-48a5-9818-358f50a1357f" name="/artists/{id}" path="/artists/{id}">
+  <con:settings id="2a3824a7-d54c-46ac-9c37-0e681a0f7b8a">
     <con:setting id="eeb5f4e3-d3e1-48a5-9818-358f50a1357ffileName">%2Fartists%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters>
@@ -9,7 +9,7 @@
       <con:style>QUERY</con:style>
     </con:parameter>
   </con:parameters>
-  <con:method name="get-an-artist" id="91554091-43ee-4c27-b565-860991f2fdae" method="GET">
+  <con:method id="91554091-43ee-4c27-b565-860991f2fdae" method="GET" name="get-an-artist">
     <con:description>Get Spotify catalog information for a single artist identified by their unique Spotify ID.</con:description>
     <con:settings/>
     <con:parameters>
@@ -83,7 +83,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json">
+    <con:request id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>

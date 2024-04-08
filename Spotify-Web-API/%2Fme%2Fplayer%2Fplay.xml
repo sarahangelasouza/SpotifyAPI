@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player/play" path="/me/player/play" id="c7d01863-69f5-4e6e-b206-57eb07c78c75">
-  <con:settings id="1ad7947b-bb38-44a7-a14f-17b5f398617c">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="c7d01863-69f5-4e6e-b206-57eb07c78c75" name="/me/player/play" path="/me/player/play">
+  <con:settings id="74c8a295-f965-469b-a3ab-23f5b4cacbd4">
     <con:setting id="c7d01863-69f5-4e6e-b206-57eb07c78c75fileName">%2Fme%2Fplayer%2Fplay</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="start-a-users-playback" id="37244d6e-95d7-4b65-aa98-050aad080039" method="PUT">
+  <con:method id="37244d6e-95d7-4b65-aa98-050aad080039" method="PUT" name="start-a-users-playback">
     <con:description>Start a new context or resume current playback on the user's active device.</con:description>
     <con:settings/>
     <con:parameters>
@@ -62,7 +62,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "position_ms" : 0
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="a07d6a8e-43db-4780-a658-8b314e342360" mediaType="application/json">
+    <con:request id="a07d6a8e-43db-4780-a658-8b314e342360" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

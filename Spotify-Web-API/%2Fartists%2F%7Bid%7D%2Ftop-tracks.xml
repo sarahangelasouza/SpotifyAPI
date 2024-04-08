@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/artists/{id}/top-tracks" path="/artists/{id}/top-tracks" id="824b4ce2-67c8-4288-b880-104fbeaf0839">
-  <con:settings id="e79b0adb-2b09-470e-8061-be6c87798432">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="824b4ce2-67c8-4288-b880-104fbeaf0839" name="/artists/{id}/top-tracks" path="/artists/{id}/top-tracks">
+  <con:settings id="e6faed85-6f5c-4487-a87f-b0c2178d8e2b">
     <con:setting id="824b4ce2-67c8-4288-b880-104fbeaf0839fileName">%2Fartists%2F%7Bid%7D%2Ftop-tracks</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-an-artists-top-tracks" id="b64d150f-88c0-4980-a1fc-ecc8859f627d" method="GET">
+  <con:method id="b64d150f-88c0-4980-a1fc-ecc8859f627d" method="GET" name="get-an-artists-top-tracks">
     <con:description>Get Spotify catalog information about an artist's top tracks by country.</con:description>
     <con:settings/>
     <con:parameters>
@@ -154,7 +154,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="87cbc05b-7426-4fda-b95c-7275024d7e6b" mediaType="application/json">
+    <con:request id="87cbc05b-7426-4fda-b95c-7275024d7e6b" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>

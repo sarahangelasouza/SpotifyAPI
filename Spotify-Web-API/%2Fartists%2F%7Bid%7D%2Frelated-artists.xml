@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/artists/{id}/related-artists" path="/artists/{id}/related-artists" id="dd153238-7e43-4881-aa1f-94ce90ae0126">
-  <con:settings id="80813704-ae95-47ae-9a31-27758394f698">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="dd153238-7e43-4881-aa1f-94ce90ae0126" name="/artists/{id}/related-artists" path="/artists/{id}/related-artists">
+  <con:settings id="cd9b9c36-f559-4fc2-bcb2-b4c36b21a3f1">
     <con:setting id="dd153238-7e43-4881-aa1f-94ce90ae0126fileName">%2Fartists%2F%7Bid%7D%2Frelated-artists</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-an-artists-related-artists" id="d0972d84-3dc6-46dd-be0b-539d6ec53145" method="GET">
+  <con:method id="d0972d84-3dc6-46dd-be0b-539d6ec53145" method="GET" name="get-an-artists-related-artists">
     <con:description>Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's [listening history](http://news.spotify.com/se/2010/02/03/related-artists/).</con:description>
     <con:settings/>
     <con:parameters>
@@ -80,7 +80,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="aa44adbf-5ede-46c8-9f19-4e6ab0ca7366" mediaType="application/json">
+    <con:request id="aa44adbf-5ede-46c8-9f19-4e6ab0ca7366" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

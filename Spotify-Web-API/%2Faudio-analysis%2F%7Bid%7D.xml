@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/audio-analysis/{id}" path="/audio-analysis/{id}" id="9e8ee046-8d87-4bc4-b049-c0f2c8a4a3c0">
-  <con:settings id="a1fa6089-7d4f-408f-b09b-d4013461182c">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="9e8ee046-8d87-4bc4-b049-c0f2c8a4a3c0" name="/audio-analysis/{id}" path="/audio-analysis/{id}">
+  <con:settings id="cd45f79b-26f7-440e-a914-8cc852c88edc">
     <con:setting id="9e8ee046-8d87-4bc4-b049-c0f2c8a4a3c0fileName">%2Faudio-analysis%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-audio-analysis" id="0721db4a-057e-45d9-8f04-d99b6400f791" method="GET">
+  <con:method id="0721db4a-057e-45d9-8f04-d99b6400f791" method="GET" name="get-audio-analysis">
     <con:description>Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track’s structure and musical content, including rhythm, pitch, and timbre.</con:description>
     <con:settings/>
     <con:parameters>
@@ -136,7 +136,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="036aec60-5097-45f9-a90d-13b362bb4edc" mediaType="application/json">
+    <con:request id="036aec60-5097-45f9-a90d-13b362bb4edc" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

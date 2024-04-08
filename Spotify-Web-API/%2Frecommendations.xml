@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/recommendations" path="/recommendations" id="60bc1681-3dab-4118-9912-30abd19f66e2">
-  <con:settings id="8ce5dd6f-dace-4c1f-8ae2-6acb1054f014">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="60bc1681-3dab-4118-9912-30abd19f66e2" name="/recommendations" path="/recommendations">
+  <con:settings id="b1e52b3e-7ba8-42e6-81f4-bcd64bf6ca56">
     <con:setting id="60bc1681-3dab-4118-9912-30abd19f66e2fileName">%2Frecommendations</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-recommendations" id="c22d4571-f2b6-4875-8359-625ab348c1a1" method="GET">
+  <con:method id="c22d4571-f2b6-4875-8359-625ab348c1a1" method="GET" name="get-recommendations">
     <con:description>Recommendations are generated based on the available information for a given seed entity and matched against similar artists and tracks. If there is sufficient information about the provided seeds, a list of tracks will be returned together with pool size details.
 
 For artists and tracks that are very new or obscure there might not be enough data to generate a list of tracks.</con:description>
@@ -346,7 +346,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="ecb56050-33b2-41b3-a994-e2225ed9afd9" mediaType="application/json">
+    <con:request id="ecb56050-33b2-41b3-a994-e2225ed9afd9" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

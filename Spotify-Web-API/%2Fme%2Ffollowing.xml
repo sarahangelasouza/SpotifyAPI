@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/following" path="/me/following" id="bf819d20-f766-4220-95c3-632bbd409500">
-  <con:settings id="1ed9b3ad-372b-4f58-a96c-7331ba904247">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="bf819d20-f766-4220-95c3-632bbd409500" name="/me/following" path="/me/following">
+  <con:settings id="3f76c295-3852-40fc-9f1d-9bd917328836">
     <con:setting id="bf819d20-f766-4220-95c3-632bbd409500fileName">%2Fme%2Ffollowing</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-followed" id="9edbc6f5-5beb-4db3-b42c-0c5334107087" method="GET">
+  <con:method id="9edbc6f5-5beb-4db3-b42c-0c5334107087" method="GET" name="get-followed">
     <con:description>Get the current user's followed artists.</con:description>
     <con:settings/>
     <con:parameters>
@@ -99,7 +99,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="5612bff3-03ae-4bbd-a5ba-e21a16d4ca00" mediaType="application/json">
+    <con:request id="5612bff3-03ae-4bbd-a5ba-e21a16d4ca00" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -111,7 +111,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="unfollow-artists-users" id="abd5df3a-eb44-49be-9191-6147d52ee1c5" method="DELETE">
+  <con:method id="abd5df3a-eb44-49be-9191-6147d52ee1c5" method="DELETE" name="unfollow-artists-users">
     <con:description>Remove the current user as a follower of one or more artists or other Spotify users.</con:description>
     <con:settings/>
     <con:parameters>
@@ -169,7 +169,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "ids" : [ "string" ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="b625fcfd-85b8-4b7f-b3ce-737b3b682046" mediaType="application/json">
+    <con:request id="b625fcfd-85b8-4b7f-b3ce-737b3b682046" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r
@@ -183,7 +183,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="follow-artists-users" id="8d004b29-20bf-43d2-9e76-0cff101308d7" method="PUT">
+  <con:method id="8d004b29-20bf-43d2-9e76-0cff101308d7" method="PUT" name="follow-artists-users">
     <con:description>Add the current user as a follower of one or more artists or other Spotify users.</con:description>
     <con:settings/>
     <con:parameters>
@@ -241,7 +241,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "ids" : [ "string" ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="3048b459-4496-4de7-918f-093fc94aeabd" mediaType="application/json">
+    <con:request id="3048b459-4496-4de7-918f-093fc94aeabd" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

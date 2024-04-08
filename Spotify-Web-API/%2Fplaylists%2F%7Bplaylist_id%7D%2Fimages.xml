@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/playlists/{playlist_id}/images" path="/playlists/{playlist_id}/images" id="efa15368-78a9-4592-95de-8499c3e7e2e3">
-  <con:settings id="9b92909a-aca5-414f-87b7-75cb52526ec0">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="efa15368-78a9-4592-95de-8499c3e7e2e3" name="/playlists/{playlist_id}/images" path="/playlists/{playlist_id}/images">
+  <con:settings id="a7f4c442-244a-4628-a92a-010302eeba17">
     <con:setting id="efa15368-78a9-4592-95de-8499c3e7e2e3fileName">%2Fplaylists%2F%7Bplaylist_id%7D%2Fimages</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-playlist-cover" id="82045bfe-7f45-434d-956e-f318934c71e4" method="GET">
+  <con:method id="82045bfe-7f45-434d-956e-f318934c71e4" method="GET" name="get-playlist-cover">
     <con:description>Get the current image associated with a specific playlist.</con:description>
     <con:settings/>
     <con:parameters>
@@ -62,7 +62,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="cf479ce3-30b3-4698-a4a0-028b0a1d5df7" mediaType="application/json">
+    <con:request id="cf479ce3-30b3-4698-a4a0-028b0a1d5df7" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -74,7 +74,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="upload-custom-playlist-cover" id="b6f29fa8-22ac-4753-bcb2-a2a358433184" method="PUT">
+  <con:method id="b6f29fa8-22ac-4753-bcb2-a2a358433184" method="PUT" name="upload-custom-playlist-cover">
     <con:description>Replace the image used to represent a specific playlist.</con:description>
     <con:settings/>
     <con:parameters>
@@ -125,7 +125,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:mediaType>image/jpeg</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="6ea992d5-43f4-4b21-be93-f5e68dd5a92a" mediaType="image/jpeg">
+    <con:request id="6ea992d5-43f4-4b21-be93-f5e68dd5a92a" mediaType="image/jpeg" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

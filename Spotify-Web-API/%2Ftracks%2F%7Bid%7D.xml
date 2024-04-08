@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/tracks/{id}" path="/tracks/{id}" id="0d70ac7d-1b20-4c2d-9727-0e0bec37f3c6">
-  <con:settings id="40450d57-ac6a-47b1-87c7-1c120d973679">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="0d70ac7d-1b20-4c2d-9727-0e0bec37f3c6" name="/tracks/{id}" path="/tracks/{id}">
+  <con:settings id="bb266277-8741-4cef-baa7-7293928cd812">
     <con:setting id="0d70ac7d-1b20-4c2d-9727-0e0bec37f3c6fileName">%2Ftracks%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-track" id="8079b323-bd1e-4bc9-853a-348517a828ce" method="GET">
+  <con:method id="8079b323-bd1e-4bc9-853a-348517a828ce" method="GET" name="get-track">
     <con:description>Get Spotify catalog information for a single track identified by its
 unique Spotify ID.</con:description>
     <con:settings/>
@@ -153,7 +153,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="1196053d-2875-4b52-9c43-146adcd377b9" mediaType="application/json">
+    <con:request id="1196053d-2875-4b52-9c43-146adcd377b9" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>

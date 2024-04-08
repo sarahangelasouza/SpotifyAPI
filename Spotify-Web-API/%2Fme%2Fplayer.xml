@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/me/player" path="/me/player" id="a00bd374-4c47-4ba0-9842-3af333a4eaea">
-  <con:settings id="80a92d2a-f1cc-4d19-b934-c7f0d6505850">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="a00bd374-4c47-4ba0-9842-3af333a4eaea" name="/me/player" path="/me/player">
+  <con:settings id="93c6248b-3d4c-4e81-92bb-2c69234a117c">
     <con:setting id="a00bd374-4c47-4ba0-9842-3af333a4eaeafileName">%2Fme%2Fplayer</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-information-about-the-users-current-playback" id="bd0daf1e-f841-4365-920c-b86a606e7f3a" method="GET">
+  <con:method id="bd0daf1e-f841-4365-920c-b86a606e7f3a" method="GET" name="get-information-about-the-users-current-playback">
     <con:description>Get information about the user’s current playback state, including track or episode, progress, and active device.</con:description>
     <con:settings/>
     <con:parameters>
@@ -189,7 +189,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="d0990eb4-8d74-4c8e-84dc-ed3493750416" mediaType="application/json">
+    <con:request id="d0990eb4-8d74-4c8e-84dc-ed3493750416" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -201,7 +201,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="transfer-a-users-playback" id="7c0f0fe7-2379-48d6-a83d-27008d3a3536" method="PUT">
+  <con:method id="7c0f0fe7-2379-48d6-a83d-27008d3a3536" method="PUT" name="transfer-a-users-playback">
     <con:description>Transfer playback to a new device and determine if it should start playing.</con:description>
     <con:settings/>
     <con:parameters/>
@@ -250,7 +250,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "device_ids" : [ "74ASZWbe4lXaubB36ztrGX" ]
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="922ce492-cc6a-405e-8b50-246d9d1a967a" mediaType="application/json">
+    <con:request id="922ce492-cc6a-405e-8b50-246d9d1a967a" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

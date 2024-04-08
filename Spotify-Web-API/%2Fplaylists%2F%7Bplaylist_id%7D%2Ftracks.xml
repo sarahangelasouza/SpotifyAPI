@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/playlists/{playlist_id}/tracks" path="/playlists/{playlist_id}/tracks" id="e06ed238-da00-40a5-ba2c-a8733461f1ed">
-  <con:settings id="c4ded633-226b-469f-a4a5-b91fb39f4a1d">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e06ed238-da00-40a5-ba2c-a8733461f1ed" name="/playlists/{playlist_id}/tracks" path="/playlists/{playlist_id}/tracks">
+  <con:settings id="f8093d04-c012-4f5f-b9ce-cd48ee8d933d">
     <con:setting id="e06ed238-da00-40a5-ba2c-a8733461f1edfileName">%2Fplaylists%2F%7Bplaylist_id%7D%2Ftracks</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-playlists-tracks" id="525980e3-2109-4859-ae2f-8c31466e78eb" method="GET">
+  <con:method id="525980e3-2109-4859-ae2f-8c31466e78eb" method="GET" name="get-playlists-tracks">
     <con:description>Get full details of the items of a playlist owned by a Spotify user.</con:description>
     <con:settings/>
     <con:parameters>
@@ -197,7 +197,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="1e97580a-6f8f-415e-abeb-bfb12ed6d7cb" mediaType="application/json">
+    <con:request id="1e97580a-6f8f-415e-abeb-bfb12ed6d7cb" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
@@ -209,7 +209,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="add-tracks-to-playlist" id="8e4567a3-7483-4193-b6d7-f2fdcee544af" method="POST">
+  <con:method id="8e4567a3-7483-4193-b6d7-f2fdcee544af" method="POST" name="add-tracks-to-playlist">
     <con:description>Add one or more items to a user's playlist.</con:description>
     <con:settings/>
     <con:parameters>
@@ -281,7 +281,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "position" : 0
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="ac73c81e-efc3-49f3-919c-37bbe565a11e" mediaType="application/json">
+    <con:request id="ac73c81e-efc3-49f3-919c-37bbe565a11e" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r
@@ -296,7 +296,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="remove-tracks-playlist" id="09a17bf6-f46c-4ace-a295-5a50a90c898b" method="DELETE">
+  <con:method id="09a17bf6-f46c-4ace-a295-5a50a90c898b" method="DELETE" name="remove-tracks-playlist">
     <con:description>Remove one or more items from a user's playlist.</con:description>
     <con:settings/>
     <con:parameters>
@@ -362,7 +362,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "snapshot_id" : "string"
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="9b3fe793-0263-4d5c-8dcd-ce612d48445e" mediaType="application/json">
+    <con:request id="9b3fe793-0263-4d5c-8dcd-ce612d48445e" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r
@@ -379,7 +379,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       <con:parameters/>
     </con:request>
   </con:method>
-  <con:method name="reorder-or-replace-playlists-tracks" id="742a7cd7-172a-44da-8728-ff3b3bde2cab" method="PUT">
+  <con:method id="742a7cd7-172a-44da-8728-ff3b3bde2cab" method="PUT" name="reorder-or-replace-playlists-tracks">
     <con:description>Either reorder or replace items in a playlist depending on the request's parameters.
 To reorder items, include `range_start`, `insert_before`, `range_length` and `snapshot_id` in the request's body.
 To replace items, include `uris` as either a query parameter or in the request's body.
@@ -454,7 +454,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   "range_length" : 2
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="56639722-ff4a-4be9-a82f-5cb206b2460a" mediaType="application/json">
+    <con:request id="56639722-ff4a-4be9-a82f-5cb206b2460a" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request>{\r

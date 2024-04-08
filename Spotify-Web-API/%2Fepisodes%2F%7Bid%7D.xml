@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/episodes/{id}" path="/episodes/{id}" id="753a87d3-5e7e-4ab8-89eb-5ff8c84e38f4">
-  <con:settings id="3fd0e6e9-019d-4398-83b0-10050978e5e9">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="753a87d3-5e7e-4ab8-89eb-5ff8c84e38f4" name="/episodes/{id}" path="/episodes/{id}">
+  <con:settings id="3c9a7827-fa50-4d2b-b291-b71f4b32c1d0">
     <con:setting id="753a87d3-5e7e-4ab8-89eb-5ff8c84e38f4fileName">%2Fepisodes%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="get-an-episode" id="93ac8b12-58a6-47c6-9d2b-c2b906956d8f" method="GET">
+  <con:method id="93ac8b12-58a6-47c6-9d2b-c2b906956d8f" method="GET" name="get-an-episode">
     <con:description>Get Spotify catalog information for a single episode identified by its
 unique Spotify ID.</con:description>
     <con:settings/>
@@ -122,7 +122,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   }
 }</con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="4b94fdfb-5f16-4b5c-a62c-0433bfa527ee" mediaType="application/json">
+    <con:request id="4b94fdfb-5f16-4b5c-a62c-0433bfa527ee" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
