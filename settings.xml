@@ -79,10 +79,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQCrq8UzVXp9epIV8bLNlAsuTJuGKyxh6X5L0CdQOMYLS9gXYrmxTphvY_xAMp4jh918QbUqMZZGRBHCTwZqbHMLMjg3-TEsX8t_2cr6Hcz9S4MyEj_KonPjMjJAhvnyrqjalnHGoHtlRNVW_d2gJCjYXsmf6dtFns2E7jIAap7qtPfCuiIBTV-mEOSwxL60lX_2t5qOAVIe53mLi6v_yqmNHQbYlf7szKLEvl0YnX9P_fAPtH-_YBd_s3IaVumyXV6REiQJFgrpcPt5Yco44bq14tm1A97FHWmv4CzU9VyP3-4N4wAAp3pyac-SBWOpevLMyFSCjUrWQiYb4Clo</con:accessToken>
+      <con:accessToken>BQBfh8MMJPKPO_5kSjDs1u7ve6LMSgnLKm5cDcH-l5P0ipQBR016Ex85-8QT-pdZT3jcyn2gonx2xPyhWtKiz58MlySFIDA0yOn8U76Y1vTbFlzGelpMqn46TFBib8d90ecZPmSEtTlv8P1294APxosR8whdPO6NZjFVBxahvkSBoBQkSaR2xKaV2i1T04XJfOJJ_1QW_9lS-mDSGfN0yW8Zq9UmFuoNmDyGbQM1kFIYEZDiIig2cAzxs57yloF2NXE78tEhn8akKFapLQ9QqxhmH_Krc-OdzIOk9mpI_kntHHz3l1L6EEHYy5jAGtcS9t4v3mjNZ4Wygf3AYxab</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1712587022</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1712588525</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -161,10 +162,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQCrq8UzVXp9epIV8bLNlAsuTJuGKyxh6X5L0CdQOMYLS9gXYrmxTphvY_xAMp4jh918QbUqMZZGRBHCTwZqbHMLMjg3-TEsX8t_2cr6Hcz9S4MyEj_KonPjMjJAhvnyrqjalnHGoHtlRNVW_d2gJCjYXsmf6dtFns2E7jIAap7qtPfCuiIBTV-mEOSwxL60lX_2t5qOAVIe53mLi6v_yqmNHQbYlf7szKLEvl0YnX9P_fAPtH-_YBd_s3IaVumyXV6REiQJFgrpcPt5Yco44bq14tm1A97FHWmv4CzU9VyP3-4N4wAAp3pyac-SBWOpevLMyFSCjUrWQiYb4Clo</con:accessToken>
+      <con:accessToken>BQBfh8MMJPKPO_5kSjDs1u7ve6LMSgnLKm5cDcH-l5P0ipQBR016Ex85-8QT-pdZT3jcyn2gonx2xPyhWtKiz58MlySFIDA0yOn8U76Y1vTbFlzGelpMqn46TFBib8d90ecZPmSEtTlv8P1294APxosR8whdPO6NZjFVBxahvkSBoBQkSaR2xKaV2i1T04XJfOJJ_1QW_9lS-mDSGfN0yW8Zq9UmFuoNmDyGbQM1kFIYEZDiIig2cAzxs57yloF2NXE78tEhn8akKFapLQ9QqxhmH_Krc-OdzIOk9mpI_kntHHz3l1L6EEHYy5jAGtcS9t4v3mjNZ4Wygf3AYxab</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1712587022</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1712588525</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>

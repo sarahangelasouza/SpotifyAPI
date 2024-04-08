@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="c87deb5f-3484-4e29-a980-1ea09b679cf8" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Track" searchProperties="true" timeout="0">
+  <con:settings id="f5f3c9e8-fff3-4294-b683-b6dd0b0eb25d">
+    <con:setting id="c87deb5f-3484-4e29-a980-1ea09b679cf8fileName">Get-Track</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Get Track - Tell It To My Heart" id="be5d4216-246c-4c53-b628-e2d0e1e36dda">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/tracks/{id}" methodName="get-track" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Get Track - Tell It To My Heart" id="1196053d-2875-4b52-9c43-146adcd377b9" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/tracks/3YVPpVJvJG2EauXurPA90F</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="5e2f1c50-e67f-4bc6-966a-6b5e2f313830" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="df61346c-c167-426f-b230-a8080a8fb7f1" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="market" value="US"/>
+          <con:entry key="id" value="3YVPpVJvJG2EauXurPA90F"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
