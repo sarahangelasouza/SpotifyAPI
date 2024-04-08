@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="53086958-be70-4ec4-af60-145b9a995467" name="/playlists/{playlist_id}" path="/playlists/{playlist_id}">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="53086958-be70-4ec4-af60-145b9a995467" name="/playlists/{playlist_id}" path="/playlists/{playlist_id}">
   <con:settings id="0676bc16-6c59-4988-a657-46008a76756a">
     <con:setting id="53086958-be70-4ec4-af60-145b9a995467fileName">%2Fplaylists%2F%7Bplaylist_id%7D</con:setting>
   </con:settings>

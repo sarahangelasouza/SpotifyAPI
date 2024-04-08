@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="a8a3bc85-b59a-4a47-a124-ae1fe3804ca0" name="/albums/{id}/tracks" path="/albums/{id}/tracks">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="a8a3bc85-b59a-4a47-a124-ae1fe3804ca0" name="/albums/{id}/tracks" path="/albums/{id}/tracks">
   <con:settings id="ec7eb4fe-8c21-4404-8e9f-8585533fe02c">
     <con:setting id="a8a3bc85-b59a-4a47-a124-ae1fe3804ca0fileName">%2Falbums%2F%7Bid%7D%2Ftracks</con:setting>
   </con:settings>

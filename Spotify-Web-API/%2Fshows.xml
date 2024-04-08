@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="d23674f3-039c-4199-a9a1-4e70bd9d9dad" name="/shows" path="/shows">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="d23674f3-039c-4199-a9a1-4e70bd9d9dad" name="/shows" path="/shows">
   <con:settings id="64386808-d770-44e0-bc6a-aee3e59ad428">
     <con:setting id="d23674f3-039c-4199-a9a1-4e70bd9d9dadfileName">%2Fshows</con:setting>
   </con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="82161ea7-961a-47ec-af60-8d20f0659e22" name="/me/episodes/contains" path="/me/episodes/contains">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="82161ea7-961a-47ec-af60-8d20f0659e22" name="/me/episodes/contains" path="/me/episodes/contains">
   <con:settings id="2d8a1e2e-40d4-4f93-8dba-66f16f8a6c9f">
     <con:setting id="82161ea7-961a-47ec-af60-8d20f0659e22fileName">%2Fme%2Fepisodes%2Fcontains</con:setting>
   </con:settings>
