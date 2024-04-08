@@ -57,8 +57,6 @@ Spotify-Web-API\%2Fshows%2F%7Bid%7D.xml
 Spotify-Web-API\%2Fshows.xml
 Spotify-Web-API\%2Ftracks%2F%7Bid%7D.xml
 Spotify-Web-API\%2Ftracks.xml
-Spotify-Web-API\%2Fusers%2F%7Buser_id%7D%2Fplaylists.xml
-Spotify-Web-API\%2Fusers%2F%7Buser_id%7D.xml
 General-Tests\Auth-Token-Refresh.xml
 Shuffle\ShuffleTopThree.xml
 GetArtistsData\GetArtists-Neg.xml
@@ -67,3 +65,4 @@ Unit-Tests\Get-Artist-By-ID.xml
 Unit-Tests\Get-Playlist-By-ID.xml
 Unit-Tests\Get-Album-by-ID.xml
 Unit-Tests\Get-Track.xml
+Artist-By-ID.xml
