@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="d2db0e37-ac59-4adb-9d9e-3a91c7927393" keepSession="false" name="GetArtists-Neg" searchProperties="true" timeout="0">
-  <con:settings id="d45fb302-8629-4c36-bb34-8707b330f59a">
+  <con:settings id="d64b59c2-5211-49fb-9fc4-93a8e29b5f76">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>

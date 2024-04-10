@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="8889e3f8-cfd5-4805-841c-b3ce3c4b1325" name="/me/tracks/contains" path="/me/tracks/contains">
-  <con:settings id="932acc44-7eb6-44c4-9fe4-8ff5a545f049">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="8889e3f8-cfd5-4805-841c-b3ce3c4b1325" name="/me/tracks/contains" path="/me/tracks/contains">
+  <con:settings id="aec72794-4b39-42f0-9912-b3cc559bd43f">
     <con:setting id="8889e3f8-cfd5-4805-841c-b3ce3c4b1325fileName">%2Fme%2Ftracks%2Fcontains</con:setting>
   </con:settings>
   <con:parameters/>

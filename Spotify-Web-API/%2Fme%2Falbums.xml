@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="73dc33aa-576c-4e45-b7f5-53396e06c79b" name="/me/albums" path="/me/albums">
-  <con:settings id="4690aac5-8be5-4526-a432-f27f01ddbc61">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="73dc33aa-576c-4e45-b7f5-53396e06c79b" name="/me/albums" path="/me/albums">
+  <con:settings id="41d24d8c-cdf3-48dc-9258-1a73244b997d">
     <con:setting id="73dc33aa-576c-4e45-b7f5-53396e06c79bfileName">%2Fme%2Falbums</con:setting>
   </con:settings>
   <con:parameters/>

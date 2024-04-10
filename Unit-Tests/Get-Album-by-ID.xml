@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="88cc777f-3b51-4809-bdc5-4886ae6bd2e2" keepSession="false" name="Get Album by ID" searchProperties="true" timeout="0">
-  <con:settings id="f36f1595-00c9-4945-b9ef-483e2eb1dcdd">
+  <con:settings id="3b5bf901-1b10-45c7-8aec-dceb00abf0d6">
     <con:setting id="88cc777f-3b51-4809-bdc5-4886ae6bd2e2fileName">Get-Album-by-ID</con:setting>
   </con:settings>
   <con:testStep id="d868df17-1bfa-496d-9059-cb5c7c6e9487" name="Get Album by ID- Morning View" type="restrequest">

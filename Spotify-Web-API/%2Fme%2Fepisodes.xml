@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="e3b7ec1c-5876-45a6-bc0e-f25f13ea0f6e" name="/me/episodes" path="/me/episodes">
-  <con:settings id="fc6ccc9c-7dfb-46de-a724-7a811296f23b">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e3b7ec1c-5876-45a6-bc0e-f25f13ea0f6e" name="/me/episodes" path="/me/episodes">
+  <con:settings id="2ff8ce2a-8c0e-4ab5-b915-792861290a08">
     <con:setting id="e3b7ec1c-5876-45a6-bc0e-f25f13ea0f6efileName">%2Fme%2Fepisodes</con:setting>
   </con:settings>
   <con:parameters/>

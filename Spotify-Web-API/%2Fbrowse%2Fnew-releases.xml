@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="e0003da9-017d-4a5e-8a8e-8b564b440150" name="/browse/new-releases" path="/browse/new-releases">
-  <con:settings id="1b6a1896-a456-4c41-a63e-844e025a1197">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="e0003da9-017d-4a5e-8a8e-8b564b440150" name="/browse/new-releases" path="/browse/new-releases">
+  <con:settings id="49f096bb-cf1f-4f60-84ca-7464f50396e0">
     <con:setting id="e0003da9-017d-4a5e-8a8e-8b564b440150fileName">%2Fbrowse%2Fnew-releases</con:setting>
   </con:settings>
   <con:parameters/>
