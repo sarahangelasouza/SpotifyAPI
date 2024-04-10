@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="c87deb5f-3484-4e29-a980-1ea09b679cf8" keepSession="false" name="Get Track" searchProperties="true" timeout="0">
-  <con:settings id="bce6af0b-dd8d-4dea-924d-18f6e7272c10">
+  <con:settings id="5593af7b-a638-4903-9d2b-1719cb4b8aba">
     <con:setting id="c87deb5f-3484-4e29-a980-1ea09b679cf8fileName">Get-Track</con:setting>
   </con:settings>
-  <con:testStep id="be5d4216-246c-4c53-b628-e2d0e1e36dda" name="Get Track - Tell It to My Heart" type="restrequest">
+  <con:testStep id="be5d4216-246c-4c53-b628-e2d0e1e36dda" name="Get Track" type="restrequest">
     <con:settings/>
     <con:config xsi:type="con:RestRequestStep" methodName="get-track" resourcePath="/tracks/{id}" service="Spotify Web API">
-      <con:restRequest id="1196053d-2875-4b52-9c43-146adcd377b9" mediaType="application/json" name="Get Track - Tell It to My Heart">
+      <con:restRequest id="1196053d-2875-4b52-9c43-146adcd377b9" mediaType="application/json" name="Get Track">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="51fde752-0af8-4fbe-8ca8-904a05d98b47" name="/me/player/pause" path="/me/player/pause">
-  <con:settings id="1452f065-cefd-4061-b162-e6d571928caf">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="51fde752-0af8-4fbe-8ca8-904a05d98b47" name="/me/player/pause" path="/me/player/pause">
+  <con:settings id="53b5fed3-d487-43f9-ac1b-d228e29f8ae2">
     <con:setting id="51fde752-0af8-4fbe-8ca8-904a05d98b47fileName">%2Fme%2Fplayer%2Fpause</con:setting>
   </con:settings>
   <con:parameters/>

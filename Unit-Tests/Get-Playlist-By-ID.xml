@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="08b9a7af-1385-4403-a0e8-fc117645938f" keepSession="false" name="Get Playlist By ID" searchProperties="true" timeout="0">
-  <con:settings id="d1a70d93-a2ee-4e3e-aaf8-09cb9f64879e">
+  <con:settings id="9a3c46c8-356d-480a-b131-7205dc43d001">
     <con:setting id="08b9a7af-1385-4403-a0e8-fc117645938ffileName">Get-Playlist-By-ID</con:setting>
   </con:settings>
   <con:testStep id="7e8f62ce-de2c-49ae-b852-904ec93d46f0" name="Get Artist By ID - Beat Saber - BTS" type="restrequest">

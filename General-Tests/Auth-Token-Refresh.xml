@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="17a6e379-3ac6-48dd-83e5-105c54e805c2" keepSession="false" name="Auth Token Refresh" searchProperties="true" timeout="0">
-  <con:settings id="fe309d85-94e8-4dfc-b67b-7f3521d62575">
+  <con:settings id="f833927e-af75-4408-b145-c542d7ec9495">
     <con:setting id="17a6e379-3ac6-48dd-83e5-105c54e805c2fileName">Auth-Token-Refresh</con:setting>
   </con:settings>
   <con:testStep id="cd2443de-35bf-4776-b07d-d60e1916f8c4" name="Get Artist" type="restrequest">

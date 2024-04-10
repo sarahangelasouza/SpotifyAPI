@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e" name="/me/player/recently-played" path="/me/player/recently-played">
-  <con:settings id="234566a0-56ad-46fa-8ff5-7a7fe8508df4">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8e" name="/me/player/recently-played" path="/me/player/recently-played">
+  <con:settings id="1b2a8ef4-3d72-4eff-802b-a5cb1db48f38">
     <con:setting id="8d2540f4-0fde-4e91-a4c6-7fd873c24d8efileName">%2Fme%2Fplayer%2Frecently-played</con:setting>
   </con:settings>
   <con:parameters/>

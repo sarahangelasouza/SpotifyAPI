@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="bdac6fd8-ea8e-4956-9371-7b821920c80b" name="/users/{user_id}/playlists" path="/users/{user_id}/playlists">
-  <con:settings id="7e9e3f1a-7d4e-4f94-89e8-3083b2e21d1d">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="bdac6fd8-ea8e-4956-9371-7b821920c80b" name="/users/{user_id}/playlists" path="/users/{user_id}/playlists">
+  <con:settings id="12849065-7e4d-4474-b81a-74f5266193f4">
     <con:setting id="bdac6fd8-ea8e-4956-9371-7b821920c80bfileName">%2Fusers%2F%7Buser_id%7D%2Fplaylists</con:setting>
   </con:settings>
   <con:parameters/>

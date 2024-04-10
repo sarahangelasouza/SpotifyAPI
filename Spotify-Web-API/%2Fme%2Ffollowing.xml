@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="bf819d20-f766-4220-95c3-632bbd409500" name="/me/following" path="/me/following">
-  <con:settings id="6be66359-2971-4df7-a7d8-c52c5a28c855">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="bf819d20-f766-4220-95c3-632bbd409500" name="/me/following" path="/me/following">
+  <con:settings id="fd32470b-92fc-4c6e-9a52-16ee129898ef">
     <con:setting id="bf819d20-f766-4220-95c3-632bbd409500fileName">%2Fme%2Ffollowing</con:setting>
   </con:settings>
   <con:parameters/>

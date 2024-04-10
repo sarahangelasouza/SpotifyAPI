@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="bdc253c1-7c99-43cf-9efa-90adcd7b23ac" keepSession="false" name="Get Artist By ID" searchProperties="true" timeout="0">
-  <con:settings id="80df5b2c-fcd4-43e3-910f-bb9e2141e199">
+  <con:settings id="8a585f7d-cf1e-4b71-bace-1ed3c3bb77fd">
     <con:setting id="bdc253c1-7c99-43cf-9efa-90adcd7b23acfileName">Get-Artist-By-ID</con:setting>
   </con:settings>
   <con:testStep id="8b232bfc-881e-4bd7-866f-5e7e7e23f827" name="GetArtistByID - Billy Joel" type="restrequest">
