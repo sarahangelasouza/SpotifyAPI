@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" id="9e8ee046-8d87-4bc4-b049-c0f2c8a4a3c0" name="/audio-analysis/{id}" path="/audio-analysis/{id}">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="9e8ee046-8d87-4bc4-b049-c0f2c8a4a3c0" name="/audio-analysis/{id}" path="/audio-analysis/{id}">
   <con:settings id="4285c904-3032-4f8e-9d32-24b3cbf429af">
     <con:setting id="9e8ee046-8d87-4bc4-b049-c0f2c8a4a3c0fileName">%2Faudio-analysis%2F%7Bid%7D</con:setting>
   </con:settings>
