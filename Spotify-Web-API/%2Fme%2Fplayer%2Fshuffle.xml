@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="3e401a3c-d3e0-4416-b680-4ea3c47914f0" name="/me/player/shuffle" path="/me/player/shuffle">
-  <con:settings id="317b400f-c2d5-4783-b4b6-6d8880b20128">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="3e401a3c-d3e0-4416-b680-4ea3c47914f0" name="/me/player/shuffle" path="/me/player/shuffle">
+  <con:settings id="a79e5dc6-f374-412e-9a6d-bbc68a3d3bb5">
     <con:setting id="3e401a3c-d3e0-4416-b680-4ea3c47914f0fileName">%2Fme%2Fplayer%2Fshuffle</con:setting>
   </con:settings>
   <con:parameters/>

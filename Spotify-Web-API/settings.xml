@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestService" definitionUrl="file:/C:/Users/sarah.souza/Downloads/SAMUELYOUNG-Full_Spotify_Web_Api-2022.7.12-resolved%20(1).json" id="0121ae6c-b83b-4593-a929-7b1da8a60734" name="Spotify Web API" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification">
-  <con:description id="c8c4a097-4101-4e3b-9d61-8253f7cd82b0">You can use Spotify's Web API to discover music and podcasts, manage your Spotify library, control audio playback, and much more. Browse our available Web API endpoints using the sidebar at left, or via the navigation bar on top of this page on smaller screens.
+  <con:description id="82c85aea-60e2-492c-95f3-1dcff7a04efb">You can use Spotify's Web API to discover music and podcasts, manage your Spotify library, control audio playback, and much more. Browse our available Web API endpoints using the sidebar at left, or via the navigation bar on top of this page on smaller screens.
 
 In order to make successful Web API requests your app will need a valid access token. One can be obtained through &lt;a href="https://developer.spotify.com/documentation/general/guides/authorization-guide/">OAuth 2.0&lt;/a>.
 

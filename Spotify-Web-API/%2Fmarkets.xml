@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="74db7a9c-ff62-465c-a463-d12cf4953c67" name="/markets" path="/markets">
-  <con:settings id="ac145cd5-df83-443c-aa96-1175ba032f42">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="74db7a9c-ff62-465c-a463-d12cf4953c67" name="/markets" path="/markets">
+  <con:settings id="222ec05e-3d88-440c-9da0-0d8fa431f78b">
     <con:setting id="74db7a9c-ff62-465c-a463-d12cf4953c67fileName">%2Fmarkets</con:setting>
   </con:settings>
   <con:parameters/>

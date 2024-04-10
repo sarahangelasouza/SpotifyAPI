@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="3395742d-e13b-49de-9b43-996528dde23d" name="/audio-features" path="/audio-features">
-  <con:settings id="220a01b9-5396-4725-a7ed-c65ac654d395">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="3395742d-e13b-49de-9b43-996528dde23d" name="/audio-features" path="/audio-features">
+  <con:settings id="4f959045-bde6-494a-b9b4-33e5be485e8c">
     <con:setting id="3395742d-e13b-49de-9b43-996528dde23dfileName">%2Faudio-features</con:setting>
   </con:settings>
   <con:parameters/>
