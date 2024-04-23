@@ -38,7 +38,12 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>ArtistID</con:name>
+      <con:value>6zFYqv1mOsgBRQbae3JJ9e</con:value>
+    </con:property>
+  </con:properties>
   <con:reportParameters/>
   <con:tagId>1651f3ea-e09c-4f78-bdf4-ae34962480ce</con:tagId>
 </con:testCase>

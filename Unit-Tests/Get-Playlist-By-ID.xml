@@ -30,11 +30,17 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="playlist_id" value="2ZomnxDAZhJ9I7hRVeeavK"/>
+          <con:entry key="market" value="US"/>
+          <con:entry key="playlist_id" value="${#TestCase#PlaylistID}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>PlaylistID</con:name>
+      <con:value>2ZomnxDAZhJ9I7hRVeeavK</con:value>
+    </con:property>
+  </con:properties>
   <con:reportParameters/>
 </con:testCase>

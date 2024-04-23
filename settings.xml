@@ -16,7 +16,7 @@
   <con:entry key="Test Suite Tags" value=""/>
   <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
   <con:entry key="System Properties" value=""/>
-  <con:entry key="Test Suite" value="Test Suite 1"/>
+  <con:entry key="Test Suite" value="GetArtistsData"/>
   <con:entry key="Run in-process" value="false"/>
   <con:entry key="Password" value=""/>
   <con:entry key="Print Report" value="true"/>
@@ -25,7 +25,7 @@
   <con:entry key="Export JUnit Results with test properties" value="false"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="Project Properties" value=""/>
-  <con:entry key="Test Case" value="Test Case 1"/>
+  <con:entry key="Test Case" value="GetArtists-Pos"/>
   <con:entry key="Slack Access Token" value=""/>
   <con:entry key="Project Password" value=""/>
   <con:entry key="Username" value=""/>
@@ -79,10 +79,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBHi0yMOFSviBeDoFXs2ZL4Ghz5gQ_gsNF3WqHYWBQtO_3E_ujXU6yNmrTMXtw7xRUjV-1z2-2_Ycdy8xy_e8EpA7QHww28Cx-d9Qz12y7TGb0QPL9JvkyHAA7-R9UjGNXQkzTsFM4NBcj4QMnPvUGyGDTOxhZCuS28gYs7ptxwbxxiNvCrqeTUxp5ftQb__SBqKhB_oUXuwL8XlrzvJqryIVi7PrgOLbMNFkU-msvUSej27kXKiel8uef2iNVt9ngsEPsPrS1J5ziGPvcbCLrgjb9Tu6tGrXXHNLY3uHkfRNxLZU-sVJ7aHEkErdPcM0AIjOMIHx-ZKoeDu_Wd</con:accessToken>
+      <con:accessToken>BQC4MQoR_UtIQoYIx9bY6cQ_LRTmrXBRvfdKYu3wsjY4j1kvGjUwVkQpl_Crt9pU5zXxS6U1oHDH0em9-3ljxLpcHRMOsYCXLjc31b1MQEJshz9ZJw6ioJbJxQ-eRZ2sTlVWQaIYXbYidLZjrkCAniXicf5oHzmSvUI4KpwYb4yQQWSPfRRmVAPp2bisiGqH2-RTL1vwHfZjoAKOE0saKGUHXPllW7TStb3xWpOAVQAQGn9oBqJ9jK8zNQqqn5XMtaLgMqJrpjk_Ch56W5zWkQryUgyPGUlQI_z49jwwsIDJH7PKbNNZUGXHWSDCa0TDVrwLQ2q9hMm39t03kmuq</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1712592404</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1713877871</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -96,15 +97,6 @@
       <con:responseType>id_token</con:responseType>
     </con:oAuth2Profile>
     <con:oAuth2Profile>
-      <con:name>asdasd</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth2Profile>
-    <con:oAuth2Profile>
       <con:name>auth_properties</con:name>
       <con:type>OAuth 2.0</con:type>
       <con:authorizationURI>${#Project#authURL}</con:authorizationURI>
@@ -112,6 +104,7 @@
       <con:redirectURI>${#Project#redirectURL}</con:redirectURI>
       <con:accessToken>BQCRQeRkn5HcjHidJom82gHTwucEXdAKlDVP36Zp6aYI8V6balHqvL6CqMZRyXdvsvlwxONX5BZyxJzQ2v-RRob_A97B9LbhHtrU7Ope0ya-3pMjpO-2fBV2--UtzbVBHVLEvMXUrwvqLFPfeyRsicMVEN0OgEhGobL2-yzjYp55fOC_xgMl6XzV7QGLZZuZA5nmTA</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
       <con:accessTokenIssuedTime>1712332440</con:accessTokenIssuedTime>
       <con:clientID>${#Project#clientID}</con:clientID>
@@ -161,10 +154,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBHi0yMOFSviBeDoFXs2ZL4Ghz5gQ_gsNF3WqHYWBQtO_3E_ujXU6yNmrTMXtw7xRUjV-1z2-2_Ycdy8xy_e8EpA7QHww28Cx-d9Qz12y7TGb0QPL9JvkyHAA7-R9UjGNXQkzTsFM4NBcj4QMnPvUGyGDTOxhZCuS28gYs7ptxwbxxiNvCrqeTUxp5ftQb__SBqKhB_oUXuwL8XlrzvJqryIVi7PrgOLbMNFkU-msvUSej27kXKiel8uef2iNVt9ngsEPsPrS1J5ziGPvcbCLrgjb9Tu6tGrXXHNLY3uHkfRNxLZU-sVJ7aHEkErdPcM0AIjOMIHx-ZKoeDu_Wd</con:accessToken>
+      <con:accessToken>BQC4MQoR_UtIQoYIx9bY6cQ_LRTmrXBRvfdKYu3wsjY4j1kvGjUwVkQpl_Crt9pU5zXxS6U1oHDH0em9-3ljxLpcHRMOsYCXLjc31b1MQEJshz9ZJw6ioJbJxQ-eRZ2sTlVWQaIYXbYidLZjrkCAniXicf5oHzmSvUI4KpwYb4yQQWSPfRRmVAPp2bisiGqH2-RTL1vwHfZjoAKOE0saKGUHXPllW7TStb3xWpOAVQAQGn9oBqJ9jK8zNQqqn5XMtaLgMqJrpjk_Ch56W5zWkQryUgyPGUlQI_z49jwwsIDJH7PKbNNZUGXHWSDCa0TDVrwLQ2q9hMm39t03kmuq</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1712592404</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1713877871</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -178,15 +172,6 @@
       <con:responseType>id_token</con:responseType>
     </con:oAuth20AuthEntry>
     <con:oAuth20AuthEntry>
-      <con:name>asdasd</con:name>
-      <con:type>OAuth 2.0</con:type>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
-      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
-      <con:jwtConfiguration/>
-      <con:responseType>id_token</con:responseType>
-    </con:oAuth20AuthEntry>
-    <con:oAuth20AuthEntry>
       <con:name>auth_properties</con:name>
       <con:type>OAuth 2.0</con:type>
       <con:authorizationURI>${#Project#authURL}</con:authorizationURI>
@@ -194,6 +179,7 @@
       <con:redirectURI>${#Project#redirectURL}</con:redirectURI>
       <con:accessToken>BQCRQeRkn5HcjHidJom82gHTwucEXdAKlDVP36Zp6aYI8V6balHqvL6CqMZRyXdvsvlwxONX5BZyxJzQ2v-RRob_A97B9LbhHtrU7Ope0ya-3pMjpO-2fBV2--UtzbVBHVLEvMXUrwvqLFPfeyRsicMVEN0OgEhGobL2-yzjYp55fOC_xgMl6XzV7QGLZZuZA5nmTA</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
       <con:accessTokenIssuedTime>1712332440</con:accessTokenIssuedTime>
       <con:clientID>${#Project#clientID}</con:clientID>

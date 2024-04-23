@@ -36,6 +36,11 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>AlbumID</con:name>
+      <con:value>1rQZbncicoXyB64DqoH7OY</con:value>
+    </con:property>
+  </con:properties>
   <con:reportParameters/>
 </con:testCase>
