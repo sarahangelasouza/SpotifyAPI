@@ -51,6 +51,9 @@
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -119,6 +122,9 @@
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -159,6 +165,9 @@
           </con:entry>
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -219,6 +228,9 @@
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -262,6 +274,9 @@
           </con:entry>
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -313,6 +328,9 @@
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -357,6 +375,9 @@
           </con:entry>
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -413,6 +434,9 @@
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -467,6 +491,9 @@
           </con:entry>
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -523,8 +550,33 @@
           <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="tcintegrationteststep" name="TestComplete" id="b48d8f06-01f9-4a20-914c-956e4a828f1c">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 15</testRunner>
+      <runMode/>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile/>
+      <projectName/>
+      <scriptUnit/>
+      <scriptRoutine/>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
     </con:config>
   </con:testStep>
   <con:properties/>
@@ -603,6 +655,9 @@
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
     <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>

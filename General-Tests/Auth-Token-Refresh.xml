@@ -35,6 +35,11 @@
         <con:parameterOrder>
           <con:entry>id</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -70,6 +75,11 @@
         <con:parameterOrder>
           <con:entry>id</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -111,9 +121,19 @@
         <con:parameterOrder>
           <con:entry>id</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>

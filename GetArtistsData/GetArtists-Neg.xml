@@ -13,7 +13,7 @@
     <con:config xsi:type="con:DataSourceStep">
       <con:dataSource type="Grid">
         <con:configuration>
-          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check>
           <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">BTS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">3Nrfpe0tUJi4K4DXYWgMUX</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
           <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Daft Punk</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">4tZwfgrHOc3mvqYlEYSvVi</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
           <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Queen</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1dfeR4HaWDbWqFHLkxsg1d</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
@@ -67,6 +67,11 @@
         <con:parameterOrder>
           <con:entry>id</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -101,4 +106,9 @@
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>
