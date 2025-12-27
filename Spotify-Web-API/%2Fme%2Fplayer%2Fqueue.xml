@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="fb056954-7bb6-4d88-95fe-75749a8c48af" name="/me/player/queue" path="/me/player/queue">
-  <con:settings id="0e431be6-e710-4aa5-8ce0-3599d01ce95c">
+  <con:settings id="3bfbbde1-0570-4aa8-8570-9024bc243d97">
     <con:setting id="fb056954-7bb6-4d88-95fe-75749a8c48affileName">%2Fme%2Fplayer%2Fqueue</con:setting>
   </con:settings>
   <con:parameters/>
@@ -65,6 +65,21 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+          <con:authProfile>New Spotify July 23</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>

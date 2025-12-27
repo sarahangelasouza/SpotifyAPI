@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="53086958-be70-4ec4-af60-145b9a995467" name="/playlists/{playlist_id}" path="/playlists/{playlist_id}">
-  <con:settings id="8e79d46a-7710-42bd-a4c3-6e8300e3fbe8">
+  <con:settings id="a19e4861-40f3-4a6e-8860-bd6ebb288789">
     <con:setting id="53086958-be70-4ec4-af60-145b9a995467fileName">%2Fplaylists%2F%7Bplaylist_id%7D</con:setting>
   </con:settings>
   <con:parameters/>
@@ -238,6 +238,11 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
         <con:entry key="playlist_id" value="37i9dQZF1EP6YuccBxUcC1?si=f20317d7d710422a"/>
       </con:parameters>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
   <con:method id="93a8da05-e917-4bbb-97d9-0bae974bfdf3" method="PUT" name="change-playlist-details">
     <con:description>Change a playlist's name and public/private state. (The user must, of
@@ -310,6 +315,21 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+          <con:authProfile>New Spotify July 23</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>

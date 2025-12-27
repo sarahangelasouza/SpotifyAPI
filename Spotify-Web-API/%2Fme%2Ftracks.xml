@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="f2074b06-fe63-436f-aafa-ea7148ceb8bf" name="/me/tracks" path="/me/tracks">
-  <con:settings id="33d8e411-760f-4026-af2d-516fe4ada09d">
+  <con:settings id="31f3bfde-c3a8-49a8-a4a5-c56ca67cf89f">
     <con:setting id="f2074b06-fe63-436f-aafa-ea7148ceb8bffileName">%2Fme%2Ftracks</con:setting>
   </con:settings>
   <con:parameters/>
@@ -181,7 +181,17 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+          <con:authProfile>New Spotify July 23</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
   <con:method id="9a0934e4-6598-4a9d-8d77-8939b27800f6" method="DELETE" name="remove-tracks-user">
     <con:description>Remove one or more tracks from the current user's 'Your Music' library.</con:description>
@@ -249,7 +259,17 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+          <con:authProfile>New Spotify July 23</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
   <con:method id="286026f8-64ae-4607-a7d3-b9b2f6cd22be" method="PUT" name="save-tracks-user">
     <con:description>Save one or more tracks to the current user's 'Your Music' library.</con:description>
@@ -317,6 +337,21 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+          <con:authProfile>New Spotify July 23</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>

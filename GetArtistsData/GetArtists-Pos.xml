@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="8888f999-e5ed-447c-aeab-f0d67d58c306" keepSession="false" name="GetArtists-Pos" searchProperties="true" timeout="0">
-  <con:settings id="125c0525-ae20-4d14-be4c-d3696421e0bb">
+  <con:settings id="0a784a87-f522-4510-8fdc-886582ec1ff4">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
     <con:setting id="FlowLayout">false</con:setting>
@@ -67,6 +67,11 @@
         <con:parameterOrder>
           <con:entry>id</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -101,4 +106,9 @@
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>

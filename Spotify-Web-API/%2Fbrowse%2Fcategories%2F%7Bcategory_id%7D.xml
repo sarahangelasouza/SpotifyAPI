@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="e3db7075-2fc0-4555-9115-df1f0c7b8e0f" name="/browse/categories/{category_id}" path="/browse/categories/{category_id}">
-  <con:settings id="831bc0f4-364c-40de-a746-b41055ad7c7c">
+  <con:settings id="d607802b-9faf-4275-a8ab-01b682d8a78a">
     <con:setting id="e3db7075-2fc0-4555-9115-df1f0c7b8e0ffileName">%2Fbrowse%2Fcategories%2F%7Bcategory_id%7D</con:setting>
   </con:settings>
   <con:parameters/>
@@ -85,6 +85,21 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+          <con:authProfile>New Spotify July 23</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="0d70ac7d-1b20-4c2d-9727-0e0bec37f3c6" name="/tracks/{id}" path="/tracks/{id}">
-  <con:settings id="6cd952e8-73e5-4d05-92c2-592650a8afea">
+  <con:settings id="78ad5ba7-7118-4634-b40b-f08bb6b76b2f">
     <con:setting id="0d70ac7d-1b20-4c2d-9727-0e0bec37f3c6fileName">%2Ftracks%2F%7Bid%7D</con:setting>
   </con:settings>
   <con:parameters/>
@@ -169,5 +169,15 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
         <con:entry key="id" value="4P5KoWXOxwuobLmHXLMobV"/>
       </con:parameters>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>
