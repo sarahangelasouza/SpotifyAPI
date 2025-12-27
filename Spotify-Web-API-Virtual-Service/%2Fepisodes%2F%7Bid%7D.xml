@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/episodes/{id}" method="GET" resourcePath="/episodes/{id}" id="da834299-2965-4e38-86f1-01a7c5841960">
+  <con:settings id="749102b5-8a0c-4bd1-8150-fbda11f42c69">
+    <con:setting id="da834299-2965-4e38-86f1-01a7c5841960fileName">%2Fepisodes%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="000213c2-2385-4077-bf4d-c6bc69aef4e4" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "audio_preview_url" : "https://p.scdn.co/mp3-preview/2f37da1d4221f40b9d1a98cd191f4d6f1646ad17",
+  "description" : "A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.\n",
+  "html_description" : "&lt;p>A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.&lt;/p>\n",
+  "duration_ms" : 1686230,
+  "explicit" : true,
+  "external_urls" : {
+    "spotify" : "string"
+  },
+  "href" : "https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ",
+  "id" : "5Xt5DXGzch68nYYamXrNxZ",
+  "images" : [ {
+    "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+    "height" : 300,
+    "width" : 300
+  } ],
+  "is_externally_hosted" : true,
+  "is_playable" : true,
+  "language" : "en",
+  "languages" : [ "fr", "en" ],
+  "name" : "Starting Your Own Podcast: Tips, Tricks, and Advice From Anchor Creators\n",
+  "release_date" : "1981-12-15",
+  "release_date_precision" : "day",
+  "resume_point" : {
+    "fully_played" : true,
+    "resume_position_ms" : 0
+  },
+  "type" : "episode",
+  "uri" : "spotify:episode:0zLhl3WsOCQHbe1BPTiHgr",
+  "restrictions" : {
+    "reason" : "string"
+  },
+  "show" : {
+    "available_markets" : [ "string" ],
+    "copyrights" : [ {
+      "text" : "string",
+      "type" : "string"
+    } ],
+    "description" : "string",
+    "html_description" : "string",
+    "explicit" : true,
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "href" : "string",
+    "id" : "string",
+    "images" : [ {
+      "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+      "height" : 300,
+      "width" : 300
+    } ],
+    "is_externally_hosted" : true,
+    "languages" : [ "string" ],
+    "media_type" : "string",
+    "name" : "string",
+    "publisher" : "string",
+    "type" : "show",
+    "uri" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="d80c1533-9c69-4712-8605-bbe5c11539e7" httpResponseStatus="401" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="e8ec3ae2-83fc-4120-b271-23dae0ebdd19" httpResponseStatus="403" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 4" id="4c802f37-ef66-4887-846b-b65edea16da1" httpResponseStatus="429" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>

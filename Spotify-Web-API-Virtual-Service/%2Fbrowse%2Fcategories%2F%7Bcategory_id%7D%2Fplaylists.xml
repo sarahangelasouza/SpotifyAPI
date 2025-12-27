@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/browse/categories/{category_id}/playlists" method="GET" resourcePath="/browse/categories/{category_id}/playlists" id="89089ed4-185f-4eb5-9013-a6f3b7f74303">
+  <con:settings id="29b42215-5e85-48db-aa02-7955442a310f">
+    <con:setting id="89089ed4-185f-4eb5-9013-a6f3b7f74303fileName">%2Fbrowse%2Fcategories%2F%7Bcategory_id%7D%2Fplaylists</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="636dc7fa-34b7-4244-9b00-57d494b01e25" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "playlists" : {
+    "href" : "https://api.spotify.com/v1/me/shows?offset=0&amp;limit=20\n",
+    "items" : [ {
+      "collaborative" : true,
+      "description" : "string",
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "string",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "name" : "string",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "followers" : {
+          "href" : "string",
+          "total" : 0
+        },
+        "href" : "string",
+        "id" : "string",
+        "type" : "user",
+        "uri" : "string",
+        "display_name" : "string"
+      },
+      "public" : true,
+      "snapshot_id" : "string",
+      "tracks" : {
+        "href" : "string",
+        "total" : 0
+      },
+      "type" : "string",
+      "uri" : "string"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+    "offset" : 0,
+    "previous" : "https://api.spotify.com/v1/me/shows?offset=1&amp;limit=1",
+    "total" : 4
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="4a27b289-2725-46be-9775-20569813000c" httpResponseStatus="401" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="99bdf711-4b63-4f3c-8de6-25c28e61b89e" httpResponseStatus="403" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 4" id="0a2d01ef-190b-4aa2-a486-53ca1ff14cae" httpResponseStatus="429" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>

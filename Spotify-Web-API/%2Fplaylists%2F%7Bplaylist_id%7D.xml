@@ -223,15 +223,20 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
 }</con:sampleContent>
     </con:representation>
     <con:request id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json" name="Request 1">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
+      <con:originalUri>https://api.spotify.com/v1/playlists/37i9dQZF1EP6YuccBxUcC1%3Fsi%3Df20317d7d710422a</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="playlist_id" value="37i9dQZF1EP6YuccBxUcC1?si=f20317d7d710422a"/>
+      </con:parameters>
     </con:request>
   </con:method>
   <con:method id="93a8da05-e917-4bbb-97d9-0bae974bfdf3" method="PUT" name="change-playlist-details">

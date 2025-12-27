@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="74a34b8f-a1ee-41d1-b56e-030723ae6b86" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0">
+  <con:settings id="dc780186-e883-48a4-a4f8-91b2353076a4">
+    <con:setting id="74a34b8f-a1ee-41d1-b56e-030723ae6b86fileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Get Playlist by ID" id="37b051de-22f4-4f93-a0c8-c791b70222dc">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/playlists/{playlist_id}" methodName="get-playlist" xsi:type="con:RestRequestStep">
+      <con:restRequest id="1a10db2d-d888-4d48-b186-d7e3dd61b33d" mediaType="application/json" name="Get Playlist by ID">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/playlists/37i9dQZF1EP6YuccBxUcC1%3Fsi%3Df20317d7d710422a</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="08e465c4-8f4a-46f6-81ba-5971bec88ff2" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="d9e50434-0dc4-4923-b849-3e667293f82c" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>New Spotify July 23</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="playlist_id" value="4qo59eewXcLCjyrfHbt7vp"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

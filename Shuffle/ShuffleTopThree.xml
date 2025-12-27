@@ -8,6 +8,28 @@
     <con:setting id="IncludeCoverage">true</con:setting>
     <con:setting id="b3b33a8f-fe50-4b9a-b07e-0109a2390de6fileName">ShuffleTopThree</con:setting>
   </con:settings>
+  <con:testStep type="tcintegrationteststep" name="TestComplete" id="06f4afcf-d9fe-44c0-a70e-08f64fd14d2a">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 15</testRunner>
+      <runMode/>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile/>
+      <projectName/>
+      <scriptUnit/>
+      <scriptRoutine/>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
   <con:testStep id="b5e08704-245c-43ee-9617-7a3f99444a5b" name="CurrentTrack" type="restrequest">
     <con:settings/>
     <con:config xsi:type="con:RestRequestStep" methodName="get-the-users-currently-playing-track" resourcePath="/me/player/currently-playing" service="Spotify Web API">

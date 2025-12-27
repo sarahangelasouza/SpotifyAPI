@@ -154,15 +154,20 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
 }</con:sampleContent>
     </con:representation>
     <con:request id="1196053d-2875-4b52-9c43-146adcd377b9" mediaType="application/json" name="Request 1">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://api.spotify.com/v1</con:endpoint>
       <con:request/>
+      <con:originalUri>https://api.spotify.com/v1/tracks/4P5KoWXOxwuobLmHXLMobV</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="id" value="4P5KoWXOxwuobLmHXLMobV"/>
+      </con:parameters>
     </con:request>
   </con:method>
 </con:resource>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/audio-analysis/{id}" method="GET" resourcePath="/audio-analysis/{id}" id="a68fee9e-3132-44f3-9ccb-ce55600e8511">
+  <con:settings id="8f071eeb-2e6d-41d3-8b85-762b0063f852">
+    <con:setting id="a68fee9e-3132-44f3-9ccb-ce55600e8511fileName">%2Faudio-analysis%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="075cba6d-947c-4655-95e9-b0847dc709c8" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "meta" : {
+    "analyzer_version" : "4.0.0",
+    "platform" : "Linux",
+    "detailed_status" : "OK",
+    "status_code" : 0,
+    "timestamp" : 1495193577,
+    "analysis_time" : 6.93906,
+    "input_process" : "libvorbisfile L+R 44100->22050"
+  },
+  "track" : {
+    "num_samples" : 4585515,
+    "duration" : 207.95985,
+    "sample_md5" : "string",
+    "offset_seconds" : 0,
+    "window_seconds" : 0,
+    "analysis_sample_rate" : 22050,
+    "analysis_channels" : 1,
+    "end_of_fade_in" : 0,
+    "start_of_fade_out" : 201.13705,
+    "loudness" : -5.883,
+    "tempo" : 118.211,
+    "tempo_confidence" : 0.73,
+    "time_signature" : 4,
+    "time_signature_confidence" : 0.994,
+    "key" : 9,
+    "key_confidence" : 0.408,
+    "mode" : 0,
+    "mode_confidence" : 0.485,
+    "codestring" : "string",
+    "code_version" : 3.15,
+    "echoprintstring" : "string",
+    "echoprint_version" : 4.15,
+    "synchstring" : "string",
+    "synch_version" : 1,
+    "rhythmstring" : "string",
+    "rhythm_version" : 1
+  },
+  "bars" : [ {
+    "start" : 0.49567,
+    "duration" : 2.18749,
+    "confidence" : 0.925
+  } ],
+  "beats" : [ {
+    "start" : 0.49567,
+    "duration" : 2.18749,
+    "confidence" : 0.925
+  } ],
+  "sections" : [ {
+    "start" : 0,
+    "duration" : 6.97092,
+    "confidence" : 1,
+    "loudness" : -14.938,
+    "tempo" : 113.178,
+    "tempo_confidence" : 0.647,
+    "key" : 9,
+    "key_confidence" : 0.297,
+    "mode" : 1.5,
+    "mode_confidence" : 0.471,
+    "time_signature" : 4,
+    "time_signature_confidence" : 1
+  } ],
+  "segments" : [ {
+    "start" : 0.70154,
+    "duration" : 0.19891,
+    "confidence" : 0.435,
+    "loudness_start" : -23.053,
+    "loudness_max" : -14.25,
+    "loudness_max_time" : 0.07305,
+    "loudness_end" : 0,
+    "pitches" : [ 0.212, 0.141, 0.294 ],
+    "timbre" : [ 42.115, 64.373, -0.233 ]
+  } ],
+  "tatums" : [ {
+    "start" : 0.49567,
+    "duration" : 2.18749,
+    "confidence" : 0.925
+  } ]
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="b2a091f9-81b4-4c85-9f14-28f14c6bdc12" httpResponseStatus="401" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="89b4c986-f94e-4cee-b542-bf679a6db0ea" httpResponseStatus="403" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 4" id="8dedd016-40c3-41c6-8486-bcb84bd30c5d" httpResponseStatus="429" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>

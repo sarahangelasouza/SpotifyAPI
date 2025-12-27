@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/me/albums" method="GET" resourcePath="/me/albums" id="7a2395dc-2cde-4983-93a3-05222421eeef">
+  <con:settings id="2e40f11d-fa69-4c1d-a235-a705a5449c5d">
+    <con:setting id="7a2395dc-2cde-4983-93a3-05222421eeeffileName">%2Fme%2Falbums</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="96c2dd56-7653-4dfb-af91-05759e89f861" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[{
+  "href" : "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+  "items" : [ {
+    "added_at" : "2015-07-20T15:49:04-07:00",
+    "album" : {
+      "album_type" : "compilation",
+      "total_tracks" : 9,
+      "available_markets" : [ "CA", "BR", "IT" ],
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "2up3OPMp9Tb4dAKM2erWXQ",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "name" : "string",
+      "release_date" : "1981-12",
+      "release_date_precision" : "year",
+      "restrictions" : {
+        "reason" : "market"
+      },
+      "type" : "album",
+      "uri" : "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "name" : "string",
+        "type" : "artist",
+        "uri" : "string"
+      } ],
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+        "items" : [ {
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "string"
+            },
+            "href" : "string",
+            "id" : "string",
+            "name" : "string",
+            "type" : "artist",
+            "uri" : "string"
+          } ],
+          "available_markets" : [ "string" ],
+          "disc_number" : 0,
+          "duration_ms" : 0,
+          "explicit" : true,
+          "external_urls" : {
+            "spotify" : "string"
+          },
+          "href" : "string",
+          "id" : "string",
+          "is_playable" : true,
+          "linked_from" : {
+            "external_urls" : {
+              "spotify" : "string"
+            },
+            "href" : "string",
+            "id" : "string",
+            "type" : "string",
+            "uri" : "string"
+          },
+          "restrictions" : {
+            "reason" : "string"
+          },
+          "name" : "string",
+          "preview_url" : "string",
+          "track_number" : 0,
+          "type" : "string",
+          "uri" : "string",
+          "is_local" : true
+        } ],
+        "limit" : 20,
+        "next" : "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+        "offset" : 0,
+        "previous" : "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+        "total" : 4
+      },
+      "popularity" : 0,
+      "label" : "string",
+      "external_ids" : {
+        "isrc" : "string",
+        "ean" : "string",
+        "upc" : "string"
+      },
+      "genres" : [ "string" ],
+      "copyrights" : [ {
+        "text" : "string",
+        "type" : "string"
+      } ]
+    }
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+  "offset" : 0,
+  "previous" : "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+  "total" : 4
+}]]></con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="b886c3db-8cdc-4227-ad85-bf5088729e93" httpResponseStatus="401" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="ae6f06b3-b4a7-4bd7-bc91-246a130532a2" httpResponseStatus="403" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 4" id="32649b78-3d59-4c2e-b62a-1879cd33db48" httpResponseStatus="429" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>

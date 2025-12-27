@@ -16,6 +16,8 @@ The base URI for all Web API requests is `https://api.spotify.com/v1`.</con:desc
     </con:part>
   </con:definitionCache>
   <con:endpoints>
+    <con:endpoint>http://localhost:8088/</con:endpoint>
+    <con:endpoint>http://localhost:8089/</con:endpoint>
     <con:endpoint>https://api.spotify.com/v1</con:endpoint>
   </con:endpoints>
   <con:environmentSpec>

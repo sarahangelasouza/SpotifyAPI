@@ -1,0 +1,10 @@
+<con:reportTemplate xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:name>custom-report</con:name>
+  <con:reportType>COMMON</con:reportType>
+  <con:reportLevel>MAINREPORT</con:reportLevel>
+  <con:data xsi:nil="true"/>
+  <con:subreports>TestStepParametersReport</con:subreports>
+  <con:subreports>TestStepResultsReport</con:subreports>
+  <con:subreports>TestStepSubParametersReport</con:subreports>
+  <con:scope>PROJECT</con:scope>
+</con:reportTemplate>

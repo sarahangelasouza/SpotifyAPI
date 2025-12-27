@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="a08d090d-64b9-480e-8e32-a93d8e327fa4" keepSession="false" name="ShuffleTopThree 2" searchProperties="true" timeout="0" wsrmAckTo="" wsrmEnabled="false" wsrmVersion="1.0" zephyrTestId="" zephyrTestName="">
+  <con:settings id="e98be4e7-04c5-41b8-80dd-08bbe666590a">
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="a08d090d-64b9-480e-8e32-a93d8e327fa4fileName">ShuffleTopThree-2</con:setting>
+  </con:settings>
+  <con:testStep type="tcintegrationteststep" name="TestComplete" id="f12d59d7-42ba-4e1d-bbe4-4b82394d43a8">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 15</testRunner>
+      <runMode/>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile/>
+      <projectName/>
+      <scriptUnit/>
+      <scriptRoutine/>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="5ce2a537-9da3-489e-a201-734f185a2239" name="DeviceList" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="get-a-users-available-devices" resourcePath="/me/player/devices" service="Spotify Web API">
+      <con:restRequest id="e2c5bfb8-43bf-4e37-aad7-4b757cb70587" mediaType="application/json" name="DeviceList">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Basic ${DeviceList#Response#$['error']['status']}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/devices</con:originalUri>
+        <con:assertion id="f093da28-2546-48e6-b84e-14ec0e6839a6" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="ac83fd3d-671b-4eea-afc7-f9620449b3d8" name="ArtistTopTracks" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="get-an-artists-top-tracks" resourcePath="/artists/{id}/top-tracks" service="Spotify Web API">
+      <con:restRequest id="d20d1bee-63c9-4b90-8092-3f2293bb0df3" mediaType="application/json" name="ArtistTopTracks">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists/08GQAI4eElDnROBrJRGE0X/top-tracks</con:originalUri>
+        <con:assertion id="6c63abb5-4ec6-4fe4-860f-e3ee45f6b615" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion id="6641b8b6-3af5-48ae-98d8-7c584f69a0b9" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion id="b30f522b-d8c0-4d60-a0cc-660dece4aaab" name="Match content of [id]" type="JsonPath Match">
+          <con:configuration>
+            <path>$['tracks'][0]['album']['artists'][0]['id']</path>
+            <content>${CurrentTrack#Response#$['item']['album']['artists'][0]['id']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="market" value="US"/>
+          <con:entry key="id" value="${CurrentTrack#Response#$['item']['album']['artists'][0]['id']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="a11901ca-c075-46e2-a7ec-c7bfd7c94a53" name="Queue 1" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API">
+      <con:restRequest id="4efd5628-abdf-477a-9bb7-154551518630" mediaType="application/json" name="Queue 1" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/queue</con:originalUri>
+        <con:assertion id="1ff2407d-13fd-40cb-ba33-5a1dd0005234" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="device_id" value="${DeviceList#Response#$['devices'][0]['id']}"/>
+          <con:entry key="uri" value="${ArtistTopTracks#Response#$['tracks'][0]['uri']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="c86f9572-8b82-4016-b6bc-10fdecf36b16" name="Queue 2" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API">
+      <con:restRequest id="4efd5628-abdf-477a-9bb7-154551518630" mediaType="application/json" name="Queue 2" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/queue</con:originalUri>
+        <con:assertion id="cc7833c2-7a48-44a1-a07d-d87b21b61987" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>204</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion id="1ff2407d-13fd-40cb-ba33-5a1dd0005234" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="device_id" value="${DeviceList#Response#$['devices'][0]['id']}"/>
+          <con:entry key="uri" value="${ArtistTopTracks#Response#$['tracks'][1]['uri']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="00ce0742-1b56-42db-a268-80ac3d2563df" name="Queue 3" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="add-to-queue" resourcePath="/me/player/queue" service="Spotify Web API">
+      <con:restRequest id="4efd5628-abdf-477a-9bb7-154551518630" mediaType="application/json" name="Queue 3" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/queue</con:originalUri>
+        <con:assertion id="cc7833c2-7a48-44a1-a07d-d87b21b61987" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>204</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="device_id" value="${DeviceList#Response#$['devices'][0]['id']}"/>
+          <con:entry key="uri" value="${ArtistTopTracks#Response#$['tracks'][2]['uri']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="bea4c5cc-9a8e-43f0-8353-a7b1b9eb7d1d" name="Delay 3" type="delay">
+    <con:settings/>
+    <con:config>
+      <delay>2000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="7841e8b1-8758-4252-9b86-c8b3f11771a2" name="Play Next 1" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API">
+      <con:restRequest id="5ae581cf-aac5-4e81-8ed1-cc6814e886c1" mediaType="application/json" name="Play Next 1" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/next</con:originalUri>
+        <con:assertion id="dfd97fa9-018d-4c4f-bfcc-4cb1c6b3d1ba" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>204</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion disabled="true" id="f6643dd3-ac3d-43a1-80f7-acd999f45842" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="device_id" value="${DeviceList#Response#$['devices'][0]['id']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="1d1743a8-50ba-4afa-8eb8-e309fd685ac0" name="Delay" type="delay">
+    <con:settings/>
+    <con:config>
+      <delay>3000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="a32c971b-fef0-4e98-8c1c-ed95051055a9" name="Play Next 2" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API">
+      <con:restRequest id="5ae581cf-aac5-4e81-8ed1-cc6814e886c1" mediaType="application/json" name="Play Next 2" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/next</con:originalUri>
+        <con:assertion id="dfd97fa9-018d-4c4f-bfcc-4cb1c6b3d1ba" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>204</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion disabled="true" id="f6643dd3-ac3d-43a1-80f7-acd999f45842" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="device_id" value="${DeviceList#Response#$['devices'][0]['id']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="550c1e7d-42f5-4743-b268-09286af63e15" name="Delay 2" type="delay">
+    <con:settings/>
+    <con:config>
+      <delay>3000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep id="22834bda-db82-44ec-a9a4-60cf3087e682" name="Play Next 3" type="restrequest">
+    <con:settings/>
+    <con:config xsi:type="con:RestRequestStep" methodName="skip-users-playback-to-next-track" resourcePath="/me/player/next" service="Spotify Web API">
+      <con:restRequest id="5ae581cf-aac5-4e81-8ed1-cc6814e886c1" mediaType="application/json" name="Play Next 3" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/me/player/next</con:originalUri>
+        <con:assertion id="dfd97fa9-018d-4c4f-bfcc-4cb1c6b3d1ba" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>204</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion id="691e2960-ffa7-419e-8621-e433727d1836" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="device_id" value="${DeviceList#Response#$['devices'][0]['id']}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+            <con:authProfile>Temp</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>131096a9-01ef-475b-9394-03d82b41e6b8</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>f7c4ea6b-20d1-4414-a8fa-acfc586fa8e7</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>9afea640-af47-41e5-88e2-4454b5a9b58f</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>55b4c72c-e6d4-456d-8fa1-82b7fe96c23c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>1dc3ec7f-ad1e-4add-9f3b-4008a24a1c5a</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c5e0ecc6-ec65-4b77-b1fc-e9399051f9f6</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b3470037-9a62-4704-bc4b-c5aaee8347d1</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a5e1fc74-8307-4c63-9c29-be924a2b96be</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>916691d7-e3dd-405e-a048-a9dd05fb7b14</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>2459727a-d251-4db0-945b-833de4053b54</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>ea099b56-b8ec-4113-b87f-d1917f2e10e3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>3c438e7f-ed5d-4c3e-b39c-b5506905f077</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:environmentSpec>
+    <con:entry environmentId="eab18c38-7c0a-4628-9ef5-5174ec6da462">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="50a15058-15e9-4cba-92fb-2c56533b5324">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="ff8daa3c-8182-4fec-b41f-1862d5abfbc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="a0ea66f6-ea5c-446b-9ec0-d7dbb3d0edfb">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0a0272d6-0bc1-4dfc-bf47-baba2aa686ba">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tagId>4b41bb44-9ebf-4819-987e-fdeff3ce4afa</con:tagId>
+</con:testCase>

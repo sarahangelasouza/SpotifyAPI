@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="35bfa7bb-06ff-44dd-a3cb-381906cdf96e" name="Daylist Playlists">
+  <con:settings id="7192d603-0bc5-48d1-9c3f-199f118fd2e6">
+    <con:setting id="35bfa7bb-06ff-44dd-a3cb-381906cdf96efileName">Daylist-Playlists</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

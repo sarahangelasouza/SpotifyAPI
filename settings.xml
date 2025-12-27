@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project xmlns:con="http://eviware.com/soapui/config" abortOnError="false" activeEnvironment="Default environment" authProfile="New Spotify July 23" created="3.42.2" encryptionMode="Not encrypted" id="41f2263d-6b3c-4289-a97e-31520775f985" name="SpotifyAPI" projectVersion="" resourceRoot="" runType="SEQUENTIAL" updated="3.51.0">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" abortOnError="false" activeEnvironment="Default environment" authProfile="New Spotify July 23" created="3.42.2" encryptionMode="Not encrypted" id="41f2263d-6b3c-4289-a97e-31520775f985" name="SpotifyAPI" projectVersion="" resourceRoot="" runType="SEQUENTIAL" updated="3.55.0" compositeProjectFormat="1.3">
   <con:settings>
     <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -16,16 +16,18 @@
   <con:entry key="Test Suite Tags" value=""/>
   <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
   <con:entry key="System Properties" value=""/>
-  <con:entry key="Test Suite" value="Test Suite 1"/>
+  <con:entry key="Test Suite" value="GetArtistsData"/>
   <con:entry key="Run in-process" value="false"/>
   <con:entry key="Password" value=""/>
   <con:entry key="Print Report" value="true"/>
   <con:entry key="Open Report" value="false"/>
   <con:entry key="Test Case Tags" value=""/>
   <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Select test suits containing:" value="At least one tag"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="Project Properties" value=""/>
-  <con:entry key="Test Case" value="Test Case 1"/>
+  <con:entry key="Select test cases containing:" value="At least one tag"/>
+  <con:entry key="Test Case" value="GetArtists-Pos"/>
   <con:entry key="Slack Access Token" value=""/>
   <con:entry key="Project Password" value=""/>
   <con:entry key="Username" value=""/>
@@ -79,10 +81,10 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBHi0yMOFSviBeDoFXs2ZL4Ghz5gQ_gsNF3WqHYWBQtO_3E_ujXU6yNmrTMXtw7xRUjV-1z2-2_Ycdy8xy_e8EpA7QHww28Cx-d9Qz12y7TGb0QPL9JvkyHAA7-R9UjGNXQkzTsFM4NBcj4QMnPvUGyGDTOxhZCuS28gYs7ptxwbxxiNvCrqeTUxp5ftQb__SBqKhB_oUXuwL8XlrzvJqryIVi7PrgOLbMNFkU-msvUSej27kXKiel8uef2iNVt9ngsEPsPrS1J5ziGPvcbCLrgjb9Tu6tGrXXHNLY3uHkfRNxLZU-sVJ7aHEkErdPcM0AIjOMIHx-ZKoeDu_Wd</con:accessToken>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessToken>BQBfiMppH9I0jCl_tR5rLjrqK0Nd-sMv0ZjI3XxIXseZH5gw8IAlwe1dC4Vh8z-iAiKwO3b8YOAGXbMWmub4eR-5fH9EbywAFqkEfE8pa8VFHWMoHGRWLpuVws6Dvdexed6ZF_G9WJDS6z2U405FPyQyVKShy6Yo6-ccQxQdMw7JM5buWPFnhhAIVV2RWujwe4GF6MrFqlsTCcSY7oHd-_PgS43GcW2cD53K_iSIi_jprDQ6Zs8EOmBbxSFIlcpjd4x77bn4_v-zHe23AIbQvVCrSHYDwi6Ok2R3cJoxiGQr0GEQel4IZEnMlgPWfA5wO2qgjcHEkzhSS3N4wzpauJcSM1hN</con:accessToken>
+      <con:accessTokenPosition>QUERY</con:accessTokenPosition>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1712592404</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1729643159</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -161,10 +163,10 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBHi0yMOFSviBeDoFXs2ZL4Ghz5gQ_gsNF3WqHYWBQtO_3E_ujXU6yNmrTMXtw7xRUjV-1z2-2_Ycdy8xy_e8EpA7QHww28Cx-d9Qz12y7TGb0QPL9JvkyHAA7-R9UjGNXQkzTsFM4NBcj4QMnPvUGyGDTOxhZCuS28gYs7ptxwbxxiNvCrqeTUxp5ftQb__SBqKhB_oUXuwL8XlrzvJqryIVi7PrgOLbMNFkU-msvUSej27kXKiel8uef2iNVt9ngsEPsPrS1J5ziGPvcbCLrgjb9Tu6tGrXXHNLY3uHkfRNxLZU-sVJ7aHEkErdPcM0AIjOMIHx-ZKoeDu_Wd</con:accessToken>
-      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessToken>BQBfiMppH9I0jCl_tR5rLjrqK0Nd-sMv0ZjI3XxIXseZH5gw8IAlwe1dC4Vh8z-iAiKwO3b8YOAGXbMWmub4eR-5fH9EbywAFqkEfE8pa8VFHWMoHGRWLpuVws6Dvdexed6ZF_G9WJDS6z2U405FPyQyVKShy6Yo6-ccQxQdMw7JM5buWPFnhhAIVV2RWujwe4GF6MrFqlsTCcSY7oHd-_PgS43GcW2cD53K_iSIi_jprDQ6Zs8EOmBbxSFIlcpjd4x77bn4_v-zHe23AIbQvVCrSHYDwi6Ok2R3cJoxiGQr0GEQel4IZEnMlgPWfA5wO2qgjcHEkzhSS3N4wzpauJcSM1hN</con:accessToken>
+      <con:accessTokenPosition>QUERY</con:accessTokenPosition>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1712592404</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1729643159</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/me/player/currently-playing" method="GET" resourcePath="/me/player/currently-playing" id="c3081a12-0110-4818-a962-8ffe72ee691a">
+  <con:settings id="8770015c-f744-41f4-bd41-bfc21b729d49">
+    <con:setting id="c3081a12-0110-4818-a962-8ffe72ee691afileName">%2Fme%2Fplayer%2Fcurrently-playing</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="38586447-f1be-476a-89a1-0357f19499d1" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "context" : {
+    "type" : "string",
+    "href" : "string",
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "uri" : "string"
+  },
+  "timestamp" : 0,
+  "progress_ms" : 0,
+  "is_playing" : true,
+  "item" : {
+    "album" : {
+      "album_type" : "compilation",
+      "total_tracks" : 9,
+      "available_markets" : [ "CA", "BR", "IT" ],
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "2up3OPMp9Tb4dAKM2erWXQ",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "name" : "string",
+      "release_date" : "1981-12",
+      "release_date_precision" : "year",
+      "restrictions" : {
+        "reason" : "market"
+      },
+      "type" : "album",
+      "uri" : "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+      "album_group" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "string"
+        },
+        "href" : "string",
+        "id" : "string",
+        "name" : "string",
+        "type" : "artist",
+        "uri" : "string"
+      } ]
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "followers" : {
+        "href" : "string",
+        "total" : 0
+      },
+      "genres" : [ "Prog rock", "Grunge" ],
+      "href" : "string",
+      "id" : "string",
+      "images" : [ {
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+        "height" : 300,
+        "width" : 300
+      } ],
+      "name" : "string",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "string"
+    } ],
+    "available_markets" : [ "string" ],
+    "disc_number" : 0,
+    "duration_ms" : 0,
+    "explicit" : true,
+    "external_ids" : {
+      "isrc" : "string",
+      "ean" : "string",
+      "upc" : "string"
+    },
+    "external_urls" : {
+      "spotify" : "string"
+    },
+    "href" : "string",
+    "id" : "string",
+    "is_playable" : true,
+    "linked_from" : {
+      "external_urls" : {
+        "spotify" : "string"
+      },
+      "href" : "string",
+      "id" : "string",
+      "type" : "string",
+      "uri" : "string"
+    },
+    "restrictions" : {
+      "reason" : "string"
+    },
+    "name" : "string",
+    "popularity" : 0,
+    "preview_url" : "string",
+    "track_number" : 0,
+    "type" : "string",
+    "uri" : "string",
+    "is_local" : true
+  },
+  "currently_playing_type" : "string"
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="43e2ee9d-ef79-4d06-beab-629dfd1bf5a6" httpResponseStatus="401" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="bf116a2b-9a6c-4b89-8e3b-369b8f637488" httpResponseStatus="403" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+  <con:response name="Response 4" id="34c33d78-7cdf-4003-aedf-7745798c9b56" httpResponseStatus="429" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+  "error" : {
+    "status" : 0,
+    "message" : "string"
+  }
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>

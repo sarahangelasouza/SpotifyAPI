@@ -26,6 +26,7 @@
       <con:restartShared>true</con:restartShared>
       <con:property>Artist</con:property>
       <con:property>ArtistID</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
       <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
     </con:config>
