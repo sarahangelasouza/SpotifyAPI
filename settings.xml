@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project xmlns:con="http://eviware.com/soapui/config" abortOnError="false" activeEnvironment="Default environment" authProfile="New Spotify July 23" created="3.42.2" encryptionMode="Not encrypted" id="41f2263d-6b3c-4289-a97e-31520775f985" name="SpotifyAPI" projectVersion="" resourceRoot="" runType="SEQUENTIAL" updated="3.55.0" compositeProjectFormat="1.3">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" abortOnError="false" activeEnvironment="Default environment" authProfile="New Spotify July 23" created="3.42.2" encryptionMode="Not encrypted" id="41f2263d-6b3c-4289-a97e-31520775f985" name="SpotifyAPI" projectVersion="" resourceRoot="" runType="SEQUENTIAL" updated="3.64.0" compositeProjectFormat="1.3">
   <con:settings>
     <con:setting id="41f2263d-6b3c-4289-a97e-31520775f985fileName">SpotifyAPI-readyapi-project</con:setting>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -81,10 +81,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBfiMppH9I0jCl_tR5rLjrqK0Nd-sMv0ZjI3XxIXseZH5gw8IAlwe1dC4Vh8z-iAiKwO3b8YOAGXbMWmub4eR-5fH9EbywAFqkEfE8pa8VFHWMoHGRWLpuVws6Dvdexed6ZF_G9WJDS6z2U405FPyQyVKShy6Yo6-ccQxQdMw7JM5buWPFnhhAIVV2RWujwe4GF6MrFqlsTCcSY7oHd-_PgS43GcW2cD53K_iSIi_jprDQ6Zs8EOmBbxSFIlcpjd4x77bn4_v-zHe23AIbQvVCrSHYDwi6Ok2R3cJoxiGQr0GEQel4IZEnMlgPWfA5wO2qgjcHEkzhSS3N4wzpauJcSM1hN</con:accessToken>
+      <con:accessToken>BQA2qaaF0J7R-mi5ydwQ-9QDiPUddzVlRH2mOHreasTq5Z6azUp27bZ1HtNBjWhFQv39DK_yP45RySnXFDj9XjbQFbIJRV43e0F2LQFh3w5aMTTe7FMOJarNF_mOGZw7aeQtEgfx8k9OB_LJsAriJKhYC4UNPVuUGkUN311HAV42a9Hv5PNE0TNlfsXm6iajVtQbdn0n-ojyqe73QltX33WZyt-e4abjgGdCf-VdQnelFQvfUtGARnqzQKTQaDo60iMXXEwyHXHVVFa57_i4n_rrAEOvf1JFcVjumndFh8kHJV1axiI4PCCN_-apTGFRVoGKM_XYGQ8KCLfkHAN5H5F8RZ00YbrNlrzgrfFi4NDo_jfrTUx_egrPQ7MObfhhjSy1BGSU31o</con:accessToken>
       <con:accessTokenPosition>QUERY</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1729643159</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1766801860</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -114,6 +115,7 @@
       <con:redirectURI>${#Project#redirectURL}</con:redirectURI>
       <con:accessToken>BQCRQeRkn5HcjHidJom82gHTwucEXdAKlDVP36Zp6aYI8V6balHqvL6CqMZRyXdvsvlwxONX5BZyxJzQ2v-RRob_A97B9LbhHtrU7Ope0ya-3pMjpO-2fBV2--UtzbVBHVLEvMXUrwvqLFPfeyRsicMVEN0OgEhGobL2-yzjYp55fOC_xgMl6XzV7QGLZZuZA5nmTA</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
       <con:accessTokenIssuedTime>1712332440</con:accessTokenIssuedTime>
       <con:clientID>${#Project#clientID}</con:clientID>
@@ -163,10 +165,11 @@
       <con:authorizationURI>https://accounts.spotify.com/authorize?</con:authorizationURI>
       <con:accessTokenURI>https://accounts.spotify.com/api/token</con:accessTokenURI>
       <con:redirectURI>http://localhost:8081/callback</con:redirectURI>
-      <con:accessToken>BQBfiMppH9I0jCl_tR5rLjrqK0Nd-sMv0ZjI3XxIXseZH5gw8IAlwe1dC4Vh8z-iAiKwO3b8YOAGXbMWmub4eR-5fH9EbywAFqkEfE8pa8VFHWMoHGRWLpuVws6Dvdexed6ZF_G9WJDS6z2U405FPyQyVKShy6Yo6-ccQxQdMw7JM5buWPFnhhAIVV2RWujwe4GF6MrFqlsTCcSY7oHd-_PgS43GcW2cD53K_iSIi_jprDQ6Zs8EOmBbxSFIlcpjd4x77bn4_v-zHe23AIbQvVCrSHYDwi6Ok2R3cJoxiGQr0GEQel4IZEnMlgPWfA5wO2qgjcHEkzhSS3N4wzpauJcSM1hN</con:accessToken>
+      <con:accessToken>BQA2qaaF0J7R-mi5ydwQ-9QDiPUddzVlRH2mOHreasTq5Z6azUp27bZ1HtNBjWhFQv39DK_yP45RySnXFDj9XjbQFbIJRV43e0F2LQFh3w5aMTTe7FMOJarNF_mOGZw7aeQtEgfx8k9OB_LJsAriJKhYC4UNPVuUGkUN311HAV42a9Hv5PNE0TNlfsXm6iajVtQbdn0n-ojyqe73QltX33WZyt-e4abjgGdCf-VdQnelFQvfUtGARnqzQKTQaDo60iMXXEwyHXHVVFa57_i4n_rrAEOvf1JFcVjumndFh8kHJV1axiI4PCCN_-apTGFRVoGKM_XYGQ8KCLfkHAN5H5F8RZ00YbrNlrzgrfFi4NDo_jfrTUx_egrPQ7MObfhhjSy1BGSU31o</con:accessToken>
       <con:accessTokenPosition>QUERY</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
-      <con:accessTokenIssuedTime>1729643159</con:accessTokenIssuedTime>
+      <con:accessTokenIssuedTime>1766801860</con:accessTokenIssuedTime>
       <con:manualAccessTokenExpirationTime>10</con:manualAccessTokenExpirationTime>
       <con:useManualAccessTokenExpirationTime>true</con:useManualAccessTokenExpirationTime>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -196,6 +199,7 @@
       <con:redirectURI>${#Project#redirectURL}</con:redirectURI>
       <con:accessToken>BQCRQeRkn5HcjHidJom82gHTwucEXdAKlDVP36Zp6aYI8V6balHqvL6CqMZRyXdvsvlwxONX5BZyxJzQ2v-RRob_A97B9LbhHtrU7Ope0ya-3pMjpO-2fBV2--UtzbVBHVLEvMXUrwvqLFPfeyRsicMVEN0OgEhGobL2-yzjYp55fOC_xgMl6XzV7QGLZZuZA5nmTA</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>RETRIEVED_FROM_SERVER</con:accessTokenStatus>
       <con:accessTokenStartingStatus>RETRIEVED_FROM_SERVER</con:accessTokenStartingStatus>
       <con:accessTokenIssuedTime>1712332440</con:accessTokenIssuedTime>
       <con:clientID>${#Project#clientID}</con:clientID>

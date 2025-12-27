@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ba803de1-17c5-464d-93ac-89bfe001fc08" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="CheckTop20WithDataSink" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="ba803de1-17c5-464d-93ac-89bfe001fc08fileName">CheckTop20WithDataSink</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source" id="43bed0f4-0177-4521-b4d5-2c964de6a7b4">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:config xsi:type="con:DataSourceStep">
+      <con:dataSource type="File">
+        <con:configuration>
+          <fileName>C:/Users/Sarah/Documents/TestData/spotifyArtists.csv</fileName>
+          <separator>,</separator>
+          <trim>true</trim>
+          <charset>Cp1252</charset>
+          <quotedValues>true</quotedValues>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>"artist_name"</con:property>
+      <con:property>"artist_id"</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+      <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Check Artist Info" id="d8aebc46-87b5-42a4-862c-64cd50d6b7af">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/artists/{id}" methodName="get-an-artist" xsi:type="con:RestRequestStep">
+      <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="Check Artist Info">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="97687df9-51a9-4aa5-804a-dc4186a660e3" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="703978a5-54f5-49fd-bbb3-112e50ed6213" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="aff5c546-c35a-49da-836e-3a7defd799f0" name="Match content artist name">
+          <con:configuration>
+            <path>$['name']</path>
+            <content>${Data Source#"artist_name"}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>New Spotify July 23</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${Data Source#&quot;artist_id&quot;}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="aca92bd7-2e09-4e3d-959e-83dc6ab291e9">
+    <con:settings/>
+    <con:config>
+      <script>def requestStepName = 'Check Artist Info'
+def assertionName   = 'Match content artist name'
+def failStepName    = 'Data Sink'
+def delayStep = 'Delay'
+
+def step = context.testCase.getTestStepByName(requestStepName)
+def a = step.getAssertionByName(assertionName)
+
+// Ensure properties exist and set default values
+def artist = context.expand( '${Check Artist Info#Response#$[\'name\']}' )
+def artistID = context.expand( '${Check Artist Info#Response#$[\'id\']}' )
+
+//Check if Values Populated. Instead of blacnk values replace these with "-----" to indicate no value populated. 
+if(artist==""){
+	//log.info("rewriting artist")
+	artist = "-----"
+}
+if(artistID==""){
+   // log.info("rewriting artistID")
+	artistID="-----"
+}
+
+//map artist names back to test case properties
+context.testCase.setPropertyValue('rsp_artist', artist)
+context.testCase.setPropertyValue('rsp_artistID', artistID)
+
+//validate if the asertion exists
+if (a == null) {
+    log.warn("Assertion not found: '${assertionName}' on step '${requestStepName}'")
+    return
+}
+
+//check the status of the assertion
+def status = a.status.toString()
+log.info("Assertion '${assertionName}' status: ${status}")
+
+//if not pass state, then 
+if (status !='PASS') {
+    testRunner.gotoStepByName(failStepName)
+}else{
+	testRunner.gotoStepByName(delayStep)
+}
+
+</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Data Sink" id="2c41632a-317b-458e-a1b2-99262446c66b">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>Tx_artistID</con:name>
+          <con:value>${Data Source#"artist_id"}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Rx_artistID</con:name>
+          <con:value>${#TestCase#rsp_artistID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Tx_artistName</con:name>
+          <con:value>${Data Source#"artist_name"}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Rx_artistName</con:name>
+          <con:value>${#TestCase#rsp_artist}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="10099f58-cb71-49d2-94d6-4a9bde5a9890">
+    <con:settings/>
+    <con:config>
+      <delay>200</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="b85a3707-aa6e-408b-9f8e-7337b31b157f">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>artist</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>rsp_artist</con:name>
+      <con:value>-----</con:value>
+    </con:property>
+    <con:property>
+      <con:name>rsp_artistID</con:name>
+      <con:value>-----</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+</con:testCase>

@@ -65,6 +65,7 @@ Shuffle\ShuffleTopThree.xml
 Shuffle\ShuffleTopThree-2.xml
 GetArtistsData\GetArtists-Neg.xml
 GetArtistsData\GetArtists-Pos.xml
+GetArtistsData\CheckTop20WithDataSink.xml
 Unit-Tests\Get-Artist-By-ID.xml
 Unit-Tests\Get-Playlist-By-ID.xml
 Unit-Tests\Get-Album-by-ID.xml

@@ -26,6 +26,7 @@
       <con:restartShared>true</con:restartShared>
       <con:property>Artist</con:property>
       <con:property>ArtistID</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
       <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
     </con:config>
@@ -61,7 +62,7 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="id" value="${Data Source#ArtistID}"/>
+          <con:entry key="id" value="1HY2Jd0NmPuamShAr6KMms"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>id</con:entry>
