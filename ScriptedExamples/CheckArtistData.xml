@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="b05774ca-dede-480e-9f06-9c4b171f9bae" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="CheckArtistData" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="b05774ca-dede-480e-9f06-9c4b171f9baefileName">CheckArtistData</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source" id="1afe7bbb-a228-45fc-a87d-026a63d91c04">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep">
+      <con:dataSource type="File">
+        <con:configuration>
+          <fileName>C:/Users/Sarah/Documents/TestData/spotifyArtists.csv</fileName>
+          <separator>,</separator>
+          <trim>true</trim>
+          <charset>UTF-8</charset>
+          <quotedValues>true</quotedValues>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>artistName</con:property>
+      <con:property>artistID</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+      <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="GetArtist" id="c2ed1992-0a4d-4edc-a723-111972c83f5c">
+    <con:settings/>
+    <con:config service="Spotify Web API" resourcePath="/artists/{id}" methodName="get-an-artist" xsi:type="con:RestRequestStep">
+      <con:restRequest id="94ef156f-2626-4c65-8677-b32ef224668f" mediaType="application/json" name="GetArtist">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="3af963ee-1cb0-4b64-b733-a9d9ee3adc23" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="5511a116-5672-4803-bae9-bc861a9706eb" name="Response SLA">
+          <con:configuration>
+            <SLA>350</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="41402262-e92d-4248-a164-852094a00898" name="Match artist name">
+          <con:configuration>
+            <path>$['name']</path>
+            <content>${Data Source#artistName}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="f5319ac1-226c-40d6-867b-a23196667ade" name="Match artist ID">
+          <con:configuration>
+            <path>$['id']</path>
+            <content>${Data Source#artistID}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Spotify OAuth 2 JWT</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${Data Source#artistID}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
+            <con:authProfile>New Spotify July 23</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="eb280684-953d-4d61-b826-d2db5ef2362f">
+    <con:settings/>
+    <con:config>
+      <delay>200</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="aa440371-3486-4b91-a0a7-6a7a4d269fec">
+    <con:settings/>
+    <con:config>
+      <script>/*
+This script will save all failed artist info to a data sink, helping validate results quicker. 
+Fields in the response that are empty will be replaced with a "No &lt;data_type>  provided" message
+*/
+
+// --------------------
+// Configuration
+// --------------------
+def REQUEST_STEP   = "GetArtist"
+def DATA_SINK_STEP = "Data Sink"
+def DATA_SOURCE_LOOP_STEP = "Data Source Loop"
+
+def NAME_ASSERTION = "Match artist name"
+def ID_ASSERTION   = "Match artist ID"
+
+// --------------------
+// Get REST request step
+// --------------------
+def requestStep = testRunner.testCase.getTestStepByName(REQUEST_STEP)
+
+// --------------------
+// Get assertions
+// --------------------
+def nameAssertion = requestStep.getAssertionByName(NAME_ASSERTION)
+def idAssertion   = requestStep.getAssertionByName(ID_ASSERTION)
+
+// --------------------
+// Check assertion status
+// --------------------
+def nameNotPass = nameAssertion.status.toString() != "PASS"
+def idNotPass   = idAssertion.status.toString() != "PASS"
+
+// --------------------
+// Read response values (directly)
+// --------------------
+def artistNameValue = context.expand('${GetArtist#Response#$[\'name\']}')
+def artistIDValue   = context.expand('${GetArtist#Response#$[\'id\']}')
+
+// --------------------
+// Overwrite empty values
+// --------------------
+if (artistNameValue == "") {
+    testRunner.testCase.setPropertyValue("CurrentArtist", "No artist name provided")
+} else {
+    testRunner.testCase.setPropertyValue("CurrentArtist", artistNameValue)
+}
+
+if (artistIDValue == "") {
+    testRunner.testCase.setPropertyValue("CurrentArtistID", "No artist ID provided")
+} else {
+    testRunner.testCase.setPropertyValue("CurrentArtistID", artistIDValue)
+}
+
+// --------------------
+// Route to Data Sink
+// --------------------
+if (nameNotPass || idNotPass) {
+    testRunner.gotoStepByName(DATA_SINK_STEP)
+} else {
+    testRunner.gotoStepByName(DATA_SOURCE_LOOP_STEP)
+}
+</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Data Sink" id="f3679c80-dfde-41bd-939d-3fb0e544dacd">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>req_ArtistID</con:name>
+          <con:value>${Data Source#artistID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>req_ArtistName</con:name>
+          <con:value>${Data Source#artistName}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>rsp_ArtistID</con:name>
+          <con:value>${#TestCase#CurrentArtistID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>rsp_ArtistName</con:name>
+          <con:value>${#TestCase#CurrentArtist}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="ee0f2b8e-f3dc-4fb8-8af0-b0f03f9ebc3f">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>GetArtist</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>CurrentArtist</con:name>
+      <con:value>Adele</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CurrentArtistID</con:name>
+      <con:value>4dpARuHxo51G3z768sgnrY</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+</con:testCase>

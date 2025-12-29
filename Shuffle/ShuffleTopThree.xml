@@ -579,7 +579,7 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="tcintegrationteststep" name="TestComplete" id="b48d8f06-01f9-4a20-914c-956e4a828f1c">
+  <con:testStep type="tcintegrationteststep" name="TestComplete 2" id="b48d8f06-01f9-4a20-914c-956e4a828f1c">
     <con:settings/>
     <con:config>
       <timeout/>

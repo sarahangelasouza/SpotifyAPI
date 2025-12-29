@@ -104,7 +104,7 @@ timestamp...). Unfortunately, re-authenticating the user won't help here.</con:d
   </con:method>
   <con:environmentSpec>
     <con:entry environmentId="Default">
-      <con:authProfile>New Spotify July 23</con:authProfile>
+      <con:authProfile>Spotify OAuth 2 JWT</con:authProfile>
     </con:entry>
     <con:entry environmentId="4f9a23ac-e2f5-4dd1-8154-c8a3bbf422dc">
       <con:authProfile>Inherit From Parent</con:authProfile>

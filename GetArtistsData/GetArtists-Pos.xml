@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="8888f999-e5ed-447c-aeab-f0d67d58c306" keepSession="false" name="GetArtists-Pos" searchProperties="true" timeout="0">
+<con:testCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="8888f999-e5ed-447c-aeab-f0d67d58c306" keepSession="false" name="GetArtists-Pos" searchProperties="true" timeout="0">
   <con:settings id="0a784a87-f522-4510-8fdc-886582ec1ff4">
     <con:setting id="IncludeOverview">true</con:setting>
     <con:setting id="IncludeResults">true</con:setting>
@@ -57,7 +57,7 @@
           </con:configuration>
         </con:assertion>
         <con:credentials>
-          <con:selectedAuthProfile>New Spotify July 23</con:selectedAuthProfile>
+          <con:selectedAuthProfile>Spotify OAuth 2 JWT</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

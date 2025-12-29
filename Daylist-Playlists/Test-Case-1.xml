@@ -25,7 +25,7 @@
           </con:configuration>
         </con:assertion>
         <con:credentials>
-          <con:selectedAuthProfile>New Spotify July 23</con:selectedAuthProfile>
+          <con:selectedAuthProfile>Spotify OAuth 2 JWT</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
